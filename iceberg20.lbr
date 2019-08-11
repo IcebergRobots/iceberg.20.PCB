@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -254,25 +254,6 @@
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
-<package name="DIODE" urn="urn:adsk.eagle:footprint:12594999/1" locally_modified="yes">
-<description>Axial Diode, 9.00 mm pitch, 5.10 mm body length, 2.60 mm body diameter
-&lt;p&gt;Axial Diode package with 9.00 mm pitch, 0.70 mm lead diameter, 5.10 mm body length and 2.60 mm body diameter&lt;/p&gt;</description>
-<wire x1="-2.6" y1="1.35" x2="-2.6" y2="-1.35" width="0.12" layer="21"/>
-<wire x1="-2.6" y1="-1.35" x2="2.6" y2="-1.35" width="0.12" layer="21"/>
-<wire x1="2.6" y1="-1.35" x2="2.6" y2="1.35" width="0.12" layer="21"/>
-<wire x1="2.6" y1="1.35" x2="-2.6" y2="1.35" width="0.12" layer="21"/>
-<wire x1="-1.95" y1="1.35" x2="-1.95" y2="-1.35" width="0.12" layer="21"/>
-<wire x1="-2.6" y1="0" x2="-3.421" y2="0" width="0.12" layer="21"/>
-<wire x1="2.6" y1="0" x2="3.421" y2="0" width="0.12" layer="21"/>
-<wire x1="2.6" y1="-1.35" x2="-2.6" y2="-1.35" width="0.12" layer="51"/>
-<wire x1="-2.6" y1="-1.35" x2="-2.6" y2="1.35" width="0.12" layer="51"/>
-<wire x1="-2.6" y1="1.35" x2="2.6" y2="1.35" width="0.12" layer="51"/>
-<wire x1="2.6" y1="1.35" x2="2.6" y2="-1.35" width="0.12" layer="51"/>
-<pad name="1" x="-4.5" y="0" drill="0.95" diameter="1.65"/>
-<pad name="2" x="4.5" y="0" drill="0.95" diameter="1.65"/>
-<text x="0" y="1.985" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.985" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
 <package name="CAPACITOR-THT-13" urn="urn:adsk.eagle:footprint:12595022/1" locally_modified="yes">
 <description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
 &lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
@@ -284,6 +265,21 @@
 <pad name="2" x="2.54" y="0" drill="0.85" diameter="1.55"/>
 <text x="0" y="7.385" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-7.385" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="DO-214BA" urn="urn:adsk.eagle:footprint:12595772/1" locally_modified="yes">
+<description>Molded Body, 5.36 X 2.65 X 2.74 mm body
+&lt;p&gt;Molded Body package with body size 5.36 X 2.65 X 2.74 mm&lt;/p&gt;</description>
+<wire x1="2.87" y1="1.45" x2="-3.9881" y2="1.45" width="0.12" layer="21"/>
+<wire x1="-3.9881" y1="1.45" x2="-3.9881" y2="-1.45" width="0.12" layer="21"/>
+<wire x1="-3.9881" y1="-1.45" x2="2.87" y2="-1.45" width="0.12" layer="21"/>
+<wire x1="2.87" y1="-1.45" x2="-2.87" y2="-1.45" width="0.12" layer="51"/>
+<wire x1="-2.87" y1="-1.45" x2="-2.87" y2="1.45" width="0.12" layer="51"/>
+<wire x1="-2.87" y1="1.45" x2="2.87" y2="1.45" width="0.12" layer="51"/>
+<wire x1="2.87" y1="1.45" x2="2.87" y2="-1.45" width="0.12" layer="51"/>
+<smd name="1" x="-2.3163" y="0" dx="2.7155" dy="1.7094" layer="1" roundness="25"/>
+<smd name="2" x="2.3163" y="0" dx="2.7155" dy="1.7094" layer="1" roundness="25"/>
+<text x="0" y="2.085" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.085" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -299,18 +295,18 @@
 <packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
-<package3d name="DIOAD900W70L510D260A" urn="urn:adsk.eagle:package:12594994/1" type="model">
-<description>Axial Diode, 9.00 mm pitch, 5.10 mm body length, 2.60 mm body diameter
-&lt;p&gt;Axial Diode package with 9.00 mm pitch, 0.70 mm lead diameter, 5.10 mm body length and 2.60 mm body diameter&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="DIODE"/>
-</packageinstances>
-</package3d>
 <package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
 <description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
 &lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPACITOR-THT-13"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOM5326X274" urn="urn:adsk.eagle:package:12595764/1" type="model">
+<description>Molded Body, 5.36 X 2.65 X 2.74 mm body
+&lt;p&gt;Molded Body package with body size 5.36 X 2.65 X 2.74 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DO-214BA"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -569,9 +565,8 @@ THT
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR-0805" prefix="R">
-<description>Bitte hier mit dem Befehl Description eine passende Beschreibung angeben (kann kurz sein) und Datenblatt verlinken
-&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;</description>
+<deviceset name="R" prefix="R">
+<description>Resistor, SMD 0805, Value wird festgelegt</description>
 <gates>
 <gate name="G$1" symbol="R" x="0" y="0"/>
 </gates>
@@ -586,51 +581,52 @@ THT
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="BESTAND" value="" constant="no"/>
-<attribute name="HERSTELLER" value="" constant="no"/>
-<attribute name="HERSTELLER-NR" value="" constant="no"/>
-<attribute name="SUPPLIER" value="" constant="no"/>
-<attribute name="SUPPLIER-NR" value="" constant="no"/>
+<attribute name="BESTAND" value="-" constant="no"/>
+<attribute name="HERSTELLER" value="-" constant="no"/>
+<attribute name="HERSTELLER-NR" value="-" constant="no"/>
+<attribute name="SUPPLIER" value="-" constant="no"/>
+<attribute name="SUPPLIER-NR" value="-" constant="no"/>
+<attribute name="TOLERANZ" value="5%" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE">
-<description>Diotec Si-Gleichrichterdiode 1N4004 DO-204AL 400 V 1 A
-&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://produktinfo.conrad.com/datenblaetter/150000-174999/162248-da-01-ml-1N4004_Silizium_Diode_de_en.pdf"&gt;Link&lt;/a&gt;</description>
+<deviceset name="DIODE" prefix="D">
+<description>SMD-Gleichrichter-Diode, 50 V, 1 A, DO214BA
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h18/hbc/8865944993822/8865944993822.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIODE">
+<device name="" package="DO-214BA">
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12594994/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12595764/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="BESTAND" value="" constant="no"/>
-<attribute name="HERSTELLER" value="" constant="no"/>
-<attribute name="HERSTELLER-NR" value="" constant="no"/>
-<attribute name="SUPPLIER" value="" constant="no"/>
-<attribute name="SUPPLIER-NR" value="" constant="no"/>
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Vishay" constant="no"/>
+<attribute name="HERSTELLER-NR" value="9DRGF1A67A" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="26S9150" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAPACITOR-THT">
+<deviceset name="ELKO" prefix="C">
 <description>Elektrolytkondensator, 2,2 mF, 16 V, ±20 %
 &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h0b/h6c/8877433618462/8877433618462.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="C" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="CAPACITOR-THT-13">
+<device name="-THT-2200UF" package="CAPACITOR-THT-13">
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="2"/>
@@ -640,43 +636,18 @@ THT
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="BESTAND" value="?" constant="no"/>
 <attribute name="HERSTELLER" value="Teapo " constant="no"/>
-<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="KSY228M016S1A5L25K
+SY2200UF/16V" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
-<attribute name="SUPPLIER-NR" value="KSY228M016S1A5L25K SY2200UF/16V" constant="no"/>
+<attribute name="SUPPLIER-NR" value="11D5156" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="+12V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+12V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
+<deviceset name="FRAME" prefix="FRAME" uservalue="yes">
 <description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
 DIN A4, landscape with location and doc. field</description>
 <gates>
