@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16036,136 +16036,6 @@ THT
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit" urn="urn:adsk.eagle:library:420">
-<packages>
-<package name="1X2-3.5MM" urn="urn:adsk.eagle:footprint:6239989/1" library_version="2">
-<wire x1="-3.4" y1="3.4" x2="-3.4" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-3.6" x2="3.6" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-3.6" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-2.2" x2="3.6" y2="3.4" width="0.127" layer="21"/>
-<wire x1="3.6" y1="3.4" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<pad name="1" x="1.8" y="0" drill="1" diameter="2.1844"/>
-<pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
-<text x="3" y="5" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="1X2-3.5MM" urn="urn:adsk.eagle:package:6240635/1" type="box" library_version="2">
-<packageinstances>
-<packageinstance name="1X2-3.5MM"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="1X2" urn="urn:adsk.eagle:symbol:6239476/1" library_version="2">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
-<pin name="2" x="-5.08" y="0" visible="pin" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1X2" urn="urn:adsk.eagle:component:6240975/1" prefix="J" library_version="2">
-<description>3.5mm Terminal block
-&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="1X2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-3.5MM" package="1X2-3.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240635/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="Custom-Parts" urn="urn:adsk.eagle:library:10181880">
-<packages>
-<package name="100SP1T1B4M2QE" urn="urn:adsk.eagle:footprint:10181881/1" library_version="3" library_locally_modified="yes">
-<description>&lt;b&gt;100SP1T1B4M2QE&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="-4.7" y="0" drill="1.85" diameter="2.775"/>
-<pad name="2" x="0" y="0" drill="1.85" diameter="2.775"/>
-<pad name="3" x="4.7" y="0" drill="1.85" diameter="2.775"/>
-<text x="-7.62" y="6.35" size="1.27" layer="25" align="top-left">&gt;NAME</text>
-<text x="7.62" y="6.35" size="1.27" layer="27" align="top-right">&gt;VALUE</text>
-<wire x1="-6.35" y1="3.43" x2="6.35" y2="3.43" width="0.2" layer="51"/>
-<wire x1="6.35" y1="3.43" x2="6.35" y2="-3.43" width="0.2" layer="51"/>
-<wire x1="6.35" y1="-3.43" x2="-6.35" y2="-3.43" width="0.2" layer="51"/>
-<wire x1="-6.35" y1="-3.43" x2="-6.35" y2="3.43" width="0.2" layer="51"/>
-<wire x1="-6.35" y1="3.43" x2="6.35" y2="3.43" width="0.1" layer="21"/>
-<wire x1="6.35" y1="3.43" x2="6.35" y2="-3.43" width="0.1" layer="21"/>
-<wire x1="6.35" y1="-3.43" x2="-6.35" y2="-3.43" width="0.1" layer="21"/>
-<wire x1="-6.35" y1="-3.43" x2="-6.35" y2="3.43" width="0.1" layer="21"/>
-<wire x1="-7.35" y1="4.43" x2="7.35" y2="4.43" width="0.1" layer="51"/>
-<wire x1="7.35" y1="4.43" x2="7.35" y2="-4.43" width="0.1" layer="51"/>
-<wire x1="7.35" y1="-4.43" x2="-7.35" y2="-4.43" width="0.1" layer="51"/>
-<wire x1="-7.35" y1="-4.43" x2="-7.35" y2="4.43" width="0.1" layer="51"/>
-<wire x1="-6.9" y1="0" x2="-6.9" y2="0" width="0.2" layer="21"/>
-<wire x1="-6.9" y1="0" x2="-6.9" y2="-0.2" width="0.2" layer="21" curve="-180"/>
-<wire x1="-6.9" y1="-0.2" x2="-6.9" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="-6.9" y1="-0.2" x2="-6.9" y2="0" width="0.2" layer="21" curve="-180"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="100SP1T1B4M2QE" urn="urn:adsk.eagle:package:10181901/2" type="model" library_version="3" library_locally_modified="yes">
-<description>&lt;b&gt;100SP1T1B4M2QE&lt;/b&gt;&lt;br&gt;</description>
-<packageinstances>
-<packageinstance name="100SP1T1B4M2QE"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="U" urn="urn:adsk.eagle:symbol:10423546/1" library_version="3" library_locally_modified="yes">
-<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.905" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
-<text x="5.08" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="7.62" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SWITCH" urn="urn:adsk.eagle:component:10423554/1" prefix="S" library_version="3" library_locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="U" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="100SP1T1B4M2QE">
-<connects>
-<connect gate="G$1" pin="O" pad="1"/>
-<connect gate="G$1" pin="P" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10181901/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16780,8 +16650,6 @@ THT
 </variantdefs>
 <parts>
 <part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
-<part name="J1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X2" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1"/>
-<part name="S1" library="Custom-Parts" library_urn="urn:adsk.eagle:library:10181880" deviceset="SWITCH" device="" package3d_urn="urn:adsk.eagle:package:10181901/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -16793,37 +16661,10 @@ THT
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="J1" gate="G$1" x="86.36" y="99.06" smashed="yes" rot="R180"/>
-<instance part="S1" gate="G$1" x="101.6" y="99.06" smashed="yes" rot="R270">
-<attribute name="NAME" x="99.06" y="93.98" size="1.778" layer="95"/>
-<attribute name="VALUE" x="99.06" y="91.44" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="S1" gate="G$1" pin="P"/>
-<wire x1="91.44" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PWR+" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="O"/>
-<wire x1="106.68" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
-<label x="124.46" y="101.6" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="96.52" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
-<label x="124.46" y="88.9" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
