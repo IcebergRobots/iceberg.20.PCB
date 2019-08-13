@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -525,7 +525,7 @@ THT
 </device>
 </devices>
 </deviceset>
-<deviceset name="WANNENSTECKER-6">
+<deviceset name="WANNENSTECKER-6" prefix="X">
 <description>Wannenbuchse(Stiftleiste) 6-Polig, 2-reihig
 &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h7f/h1f/8866195406878/8866195406878.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
@@ -543,7 +543,7 @@ THT
 </connects>
 <technologies>
 <technology name="">
-<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="BESTAND" value="6" constant="no"/>
 <attribute name="HERSTELLER" value="Harting" constant="no"/>
 <attribute name="HERSTELLER-NR" value="09185066324" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
@@ -626,8 +626,7 @@ THT
 <technology name="">
 <attribute name="BESTAND" value="?" constant="no"/>
 <attribute name="HERSTELLER" value="Teapo " constant="no"/>
-<attribute name="HERSTELLER-NR" value="KSY228M016S1A5L25K
-SY2200UF/16V" constant="no"/>
+<attribute name="HERSTELLER-NR" value="KSY228M016S1A5L25K SY2200UF/16V" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="11D5156" constant="no"/>
 </technology>
