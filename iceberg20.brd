@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1568,66 +1568,6 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
-<library name="adafruit" urn="urn:adsk.eagle:library:420">
-<packages>
-<package name="1X2-3.5MM" urn="urn:adsk.eagle:footprint:6239989/1" library_version="2">
-<wire x1="-3.4" y1="3.4" x2="-3.4" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-3.6" x2="3.6" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-3.6" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-2.2" x2="3.6" y2="3.4" width="0.127" layer="21"/>
-<wire x1="3.6" y1="3.4" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<pad name="1" x="1.8" y="0" drill="1" diameter="2.1844"/>
-<pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
-<text x="3" y="5" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="1X2-3.5MM" urn="urn:adsk.eagle:package:6240635/1" type="box" library_version="2">
-<packageinstances>
-<packageinstance name="1X2-3.5MM"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
-<library name="Custom-Parts" urn="urn:adsk.eagle:library:10181880">
-<packages>
-<package name="100SP1T1B4M2QE" urn="urn:adsk.eagle:footprint:10181881/1" library_version="3" library_locally_modified="yes">
-<description>&lt;b&gt;100SP1T1B4M2QE&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="-4.7" y="0" drill="1.85" diameter="2.775"/>
-<pad name="2" x="0" y="0" drill="1.85" diameter="2.775"/>
-<pad name="3" x="4.7" y="0" drill="1.85" diameter="2.775"/>
-<text x="-7.62" y="6.35" size="1.27" layer="25" align="top-left">&gt;NAME</text>
-<text x="7.62" y="6.35" size="1.27" layer="27" align="top-right">&gt;VALUE</text>
-<wire x1="-6.35" y1="3.43" x2="6.35" y2="3.43" width="0.2" layer="51"/>
-<wire x1="6.35" y1="3.43" x2="6.35" y2="-3.43" width="0.2" layer="51"/>
-<wire x1="6.35" y1="-3.43" x2="-6.35" y2="-3.43" width="0.2" layer="51"/>
-<wire x1="-6.35" y1="-3.43" x2="-6.35" y2="3.43" width="0.2" layer="51"/>
-<wire x1="-6.35" y1="3.43" x2="6.35" y2="3.43" width="0.1" layer="21"/>
-<wire x1="6.35" y1="3.43" x2="6.35" y2="-3.43" width="0.1" layer="21"/>
-<wire x1="6.35" y1="-3.43" x2="-6.35" y2="-3.43" width="0.1" layer="21"/>
-<wire x1="-6.35" y1="-3.43" x2="-6.35" y2="3.43" width="0.1" layer="21"/>
-<wire x1="-7.35" y1="4.43" x2="7.35" y2="4.43" width="0.1" layer="51"/>
-<wire x1="7.35" y1="4.43" x2="7.35" y2="-4.43" width="0.1" layer="51"/>
-<wire x1="7.35" y1="-4.43" x2="-7.35" y2="-4.43" width="0.1" layer="51"/>
-<wire x1="-7.35" y1="-4.43" x2="-7.35" y2="4.43" width="0.1" layer="51"/>
-<wire x1="-6.9" y1="0" x2="-6.9" y2="0" width="0.2" layer="21"/>
-<wire x1="-6.9" y1="0" x2="-6.9" y2="-0.2" width="0.2" layer="21" curve="-180"/>
-<wire x1="-6.9" y1="-0.2" x2="-6.9" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="-6.9" y1="-0.2" x2="-6.9" y2="0" width="0.2" layer="21" curve="-180"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="100SP1T1B4M2QE" urn="urn:adsk.eagle:package:10181901/2" type="model" library_version="3" library_locally_modified="yes">
-<description>&lt;b&gt;100SP1T1B4M2QE&lt;/b&gt;&lt;br&gt;</description>
-<packageinstances>
-<packageinstance name="100SP1T1B4M2QE"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2255,13 +2195,6 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="-13.335" y="-329.565" size="1" layer="37"/>
 <attribute name="VALUE" x="-13.335" y="-328.422" size="0.0254" layer="27"/>
 </element>
-<element name="P1:J1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="1X2-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1" value="1X2-3.5MM" x="-17.78" y="-325.12" smashed="yes">
-<attribute name="NAME" x="-14.78" y="-320.12" size="1.27" layer="25" rot="R180"/>
-</element>
-<element name="P1:S1" library="Custom-Parts" library_urn="urn:adsk.eagle:library:10181880" package="100SP1T1B4M2QE" package3d_urn="urn:adsk.eagle:package:10181901/2" value="SWITCH" x="-12.7" y="-335.915" smashed="yes">
-<attribute name="NAME" x="-20.32" y="-329.565" size="1.27" layer="25" align="top-left"/>
-<attribute name="VALUE" x="-5.08" y="-329.565" size="1.27" layer="27" align="top-right"/>
-</element>
 </elements>
 <signals>
 <signal name="M0:N$4">
@@ -2389,7 +2322,6 @@ design rules under a new name.</description>
 <via x="179.07" y="-51.676303125" extent="1-16" drill="0.35"/>
 <wire x1="183.337703125" y1="-53.63306875" x2="183.337703125" y2="-55.245" width="0.1524" layer="1"/>
 <via x="183.337703125" y="-55.245" extent="1-16" drill="0.35"/>
-<contactref element="P1:J1" pad="1"/>
 <wire x1="-4.39274375" y1="-187.980509375" x2="-11.4" y2="-181.833709375" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.8082" y1="-169.413109375" x2="-11.4" y2="-181.833709375" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.3886" y1="-164.536309375" x2="-8.8082" y2="-169.413109375" width="0" layer="19" extent="1-1"/>
@@ -2426,7 +2358,6 @@ design rules under a new name.</description>
 <wire x1="-6.0937625" y1="-41.911075" x2="-0.947325" y2="-37.936475" width="0" layer="19" extent="1-1"/>
 <wire x1="0.9398" y1="-25.439675" x2="0.9398" y2="-33.059675" width="0" layer="19" extent="1-1"/>
 <wire x1="3.4798" y1="-25.439675" x2="0.9398" y2="-25.439675" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.98" y1="-325.12" x2="-4.39274375" y2="-187.980509375" width="0" layer="19" extent="1-1"/>
 <wire x1="161.645096875" y1="-47.9298" x2="9.42016875" y2="-47.95180625" width="0" layer="19" extent="1-1"/>
 <wire x1="161.645096875" y1="-53.0098" x2="161.645096875" y2="-47.9298" width="0" layer="19" extent="1-1"/>
 <wire x1="161.645096875" y1="-55.5498" x2="161.645096875" y2="-53.0098" width="0" layer="19" extent="1-1"/>
@@ -2777,8 +2708,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="+12V">
 <contactref element="F1:F1" pad="2"/>
-<contactref element="P1:S1" pad="1"/>
-<wire x1="11.844865625" y1="-66.79660625" x2="-17.4" y2="-335.915" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EN1">
 <contactref element="M1:R2" pad="1"/>
@@ -2813,11 +2742,6 @@ design rules under a new name.</description>
 <contactref element="M3:IC1" pad="7"/>
 <wire x1="-1.8486" y1="-164.536309375" x2="-7.62" y2="-205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="5.7714" y1="-164.536309375" x2="-1.8486" y2="-164.536309375" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="P1:N$1">
-<contactref element="P1:J1" pad="2"/>
-<contactref element="P1:S1" pad="2"/>
-<wire x1="-19.48" y1="-325.12" x2="-12.7" y2="-335.915" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

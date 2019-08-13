@@ -16820,9 +16820,6 @@ DIN A4, landscape with location and doc. field</description>
 <moduleinst name="P1" module="POWER" x="88.9" y="157.48">
 <attribute name="NAME" x="88.9" y="157.48" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="D1" module="PUI" x="50.8" y="83.82">
-<attribute name="NAME" x="50.8" y="83.82" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
 </moduleinsts>
 <instances>
 <instance part="GND1" gate="1" x="146.05" y="128.27" smashed="yes">
