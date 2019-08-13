@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1536,7 +1536,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <description>Generated from &lt;b&gt;iceberg20.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
-<package name="R0805">
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
@@ -1544,13 +1544,13 @@ by exp-lbrs.ulp</description>
 <wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
 <package name="SOD123">
 <description>&lt;b&gt;Diode&lt;/b&gt;</description>
@@ -1567,6 +1567,14 @@ by exp-lbrs.ulp</description>
 <text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
 <packages>
@@ -1855,16 +1863,34 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="-21.1885625" y="-43.8872" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-4.46434375" y="-50.49180625" size="1.27" layer="27"/>
 </element>
-<element name="M0:R2" library="iceberg20" package="R0805" value="100k" x="-3.19434375" y="-54.09860625" smashed="yes">
+<element name="M0:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-3.19434375" y="-54.09860625" smashed="yes">
+<attribute name="BESTAND" value="-" x="-3.19434375" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-3.19434375" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-3.19434375" y="-54.09860625" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-4.46434375" y="-52.82860625" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="-3.19434375" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-3.19434375" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-3.19434375" y="-54.09860625" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-4.46434375" y="-56.63860625" size="1.27" layer="27"/>
 </element>
-<element name="M0:R3" library="iceberg20" package="R0805" value="10k" x="3.8129125" y="-54.09860625" smashed="yes">
+<element name="M0:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="3.8129125" y="-54.09860625" smashed="yes">
+<attribute name="BESTAND" value="-" x="3.8129125" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="3.8129125" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="3.8129125" y="-54.09860625" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="2.5429125" y="-52.82860625" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="3.8129125" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="3.8129125" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="3.8129125" y="-54.09860625" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="2.5429125" y="-56.63860625" size="1.27" layer="27"/>
 </element>
-<element name="M0:R1" library="iceberg20" package="R0805" value="100R" x="-10.2016" y="-54.09860625" smashed="yes">
+<element name="M0:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R" x="-10.2016" y="-54.09860625" smashed="yes">
+<attribute name="BESTAND" value="-" x="-10.2016" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-10.2016" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-10.2016" y="-54.09860625" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-11.4716" y="-52.82860625" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="-10.2016" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-10.2016" y="-54.09860625" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-10.2016" y="-54.09860625" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-11.4716" y="-56.63860625" size="1.27" layer="27"/>
 </element>
 <element name="M0:C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="100nF" x="3.8129125" y="-47.95180625" smashed="yes">
@@ -1910,8 +1936,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-6.7564" y="-82.093628125" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-2.9464" y="-82.093628125" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="F1:R1" library="iceberg20" package="R0805" value="330R" x="-2.472" y="-76.584071875" smashed="yes">
+<element name="F1:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330R" x="-2.472" y="-76.584071875" smashed="yes">
+<attribute name="BESTAND" value="-" x="-2.472" y="-76.584071875" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-2.472" y="-76.584071875" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-2.472" y="-76.584071875" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-3.107" y="-75.314071875" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="-2.472" y="-76.584071875" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-2.472" y="-76.584071875" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-2.472" y="-76.584071875" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-3.107" y="-79.124071875" size="1.27" layer="27"/>
 </element>
 <element name="M1:C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="10nF" x="166.3284" y="-3.107034375" smashed="yes">
@@ -1969,16 +2001,34 @@ design rules under a new name.</description>
 <attribute name="NAME" x="177.7962375" y="-46.177703125" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="177.7962375" y="-52.924903125" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="M1:R1" library="iceberg20" package="R0805" value="100R" x="166.3284" y="-9.253834375" smashed="yes">
+<element name="M1:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R" x="166.3284" y="-9.253834375" smashed="yes">
+<attribute name="BESTAND" value="-" x="166.3284" y="-9.253834375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="166.3284" y="-9.253834375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="166.3284" y="-9.253834375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="165.0584" y="-7.983834375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="166.3284" y="-9.253834375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="166.3284" y="-9.253834375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="166.3284" y="-9.253834375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="165.0584" y="-11.793834375" size="1.27" layer="27"/>
 </element>
-<element name="M1:R2" library="iceberg20" package="R0805" value="100k" x="173.37434375" y="-42.816165625" smashed="yes" rot="R180">
+<element name="M1:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="173.37434375" y="-42.816165625" smashed="yes" rot="R180">
+<attribute name="BESTAND" value="-" x="173.37434375" y="-42.816165625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HERSTELLER" value="-" x="173.37434375" y="-42.816165625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="173.37434375" y="-42.816165625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="174.64434375" y="-44.086165625" size="1.27" layer="25" rot="R180"/>
+<attribute name="SUPPLIER" value="-" x="173.37434375" y="-42.816165625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="173.37434375" y="-42.816165625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="173.37434375" y="-42.816165625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="174.64434375" y="-40.276165625" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="M1:R3" library="iceberg20" package="R0805" value="10k" x="173.3579125" y="-40.368834375" smashed="yes">
+<element name="M1:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="173.3579125" y="-40.368834375" smashed="yes">
+<attribute name="BESTAND" value="-" x="173.3579125" y="-40.368834375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="173.3579125" y="-40.368834375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="173.3579125" y="-40.368834375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="172.0879125" y="-39.098834375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="173.3579125" y="-40.368834375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="173.3579125" y="-40.368834375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="173.3579125" y="-40.368834375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="172.0879125" y="-42.908834375" size="1.27" layer="27"/>
 </element>
 <element name="M2:C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="10nF" x="-10.45" y="-175.686909375" smashed="yes">
@@ -2036,16 +2086,34 @@ design rules under a new name.</description>
 <attribute name="NAME" x="18.5438375" y="-157.221109375" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="18.5438375" y="-163.968309375" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="M2:R1" library="iceberg20" package="R0805" value="100R" x="17.579025" y="-175.686909375" smashed="yes">
+<element name="M2:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R" x="17.579025" y="-175.686909375" smashed="yes">
+<attribute name="BESTAND" value="-" x="17.579025" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="17.579025" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="17.579025" y="-175.686909375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="16.309025" y="-174.416909375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="17.579025" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="17.579025" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="17.579025" y="-175.686909375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="16.309025" y="-178.226909375" size="1.27" layer="27"/>
 </element>
-<element name="M2:R2" library="iceberg20" package="R0805" value="100k" x="24.58628125" y="-175.686909375" smashed="yes">
+<element name="M2:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="24.58628125" y="-175.686909375" smashed="yes">
+<attribute name="BESTAND" value="-" x="24.58628125" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="24.58628125" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="24.58628125" y="-175.686909375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="23.31628125" y="-174.416909375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="24.58628125" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="24.58628125" y="-175.686909375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="24.58628125" y="-175.686909375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.31628125" y="-178.226909375" size="1.27" layer="27"/>
 </element>
-<element name="M2:R3" library="iceberg20" package="R0805" value="10k" x="-10.45" y="-181.833709375" smashed="yes">
+<element name="M2:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="-10.45" y="-181.833709375" smashed="yes">
+<attribute name="BESTAND" value="-" x="-10.45" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-10.45" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-10.45" y="-181.833709375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-11.72" y="-180.563709375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="-10.45" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-10.45" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-10.45" y="-181.833709375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-11.72" y="-184.373709375" size="1.27" layer="27"/>
 </element>
 <element name="M3:C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="10nF" x="-3.44274375" y="-181.833709375" smashed="yes">
@@ -2103,16 +2171,34 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.1563125" y="-157.221109375" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="26.1563125" y="-163.968309375" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="M3:R1" library="iceberg20" package="R0805" value="100R" x="24.58628125" y="-181.833709375" smashed="yes">
+<element name="M3:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100R" x="24.58628125" y="-181.833709375" smashed="yes">
+<attribute name="BESTAND" value="-" x="24.58628125" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="24.58628125" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="24.58628125" y="-181.833709375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="23.31628125" y="-180.563709375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="24.58628125" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="24.58628125" y="-181.833709375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="24.58628125" y="-181.833709375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.31628125" y="-184.373709375" size="1.27" layer="27"/>
 </element>
-<element name="M3:R2" library="iceberg20" package="R0805" value="100k" x="-10.45" y="-187.980509375" smashed="yes">
+<element name="M3:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-10.45" y="-187.980509375" smashed="yes">
+<attribute name="BESTAND" value="-" x="-10.45" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-10.45" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-10.45" y="-187.980509375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-11.72" y="-186.710509375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="-10.45" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-10.45" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-10.45" y="-187.980509375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-11.72" y="-190.520509375" size="1.27" layer="27"/>
 </element>
-<element name="M3:R3" library="iceberg20" package="R0805" value="10k" x="-3.44274375" y="-187.980509375" smashed="yes">
+<element name="M3:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="-3.44274375" y="-187.980509375" smashed="yes">
+<attribute name="BESTAND" value="-" x="-3.44274375" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-3.44274375" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-3.44274375" y="-187.980509375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-4.71274375" y="-186.710509375" size="1.27" layer="25"/>
+<attribute name="SUPPLIER" value="-" x="-3.44274375" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-3.44274375" y="-187.980509375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-3.44274375" y="-187.980509375" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-4.71274375" y="-190.520509375" size="1.27" layer="27"/>
 </element>
 <element name="M0:+" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27" x="-12.7" y="-200.66" smashed="yes">
