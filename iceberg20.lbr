@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -306,31 +306,32 @@
 <text x="-0.07786875" y="2.0193125" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.185" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="CAST">
-<wire x1="-5" y1="2" x2="5" y2="2" width="0.2" layer="21"/>
-<wire x1="5" y1="2" x2="5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="5" y1="-2" x2="-5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="-5" y1="-2" x2="-5" y2="2" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.7" shape="square"/>
-<pad name="2" x="-1.27" y="0" drill="0.7"/>
-<pad name="3" x="3.81" y="0" drill="0.7"/>
-<text x="-5.08" y="2.54" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="-5.08" y="-2.54" size="1" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
+<package name="TSOP312">
+<pad name="1" x="-3.81" y="0" drill="1" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="1"/>
+<pad name="3" x="3.81" y="0" drill="1"/>
+<text x="-5.08" y="2.08" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-2.08" y="-1.08" size="1" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
+<wire x1="-5" y1="1.6" x2="5" y2="1.6" width="0.1524" layer="21"/>
+<wire x1="5" y1="1.6" x2="5" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="5" y1="-2.4" x2="2.75" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="2.75" y1="-2.4" x2="-2.75" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="-2.75" y1="-2.4" x2="-5" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-2.4" x2="-5" y2="1.6" width="0.1524" layer="21"/>
+<wire x1="2.75" y1="-2.4" x2="-2.75" y2="-2.4" width="0.1524" layer="21" curve="-139.58"/>
 </package>
-<package name="T-1" urn="urn:adsk.eagle:footprint:12794981/1" locally_modified="yes">
-<description>Radial LED (Round), 2.54 mm pitch, 3.90 mm body diameter, 4.80 mm body height
-&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.40 mm lead thickness, 3.90 mm body diameter and 4.80 mm body height&lt;/p&gt;</description>
-<wire x1="1.8225" y1="0.8827" x2="-1.8758" y2="0.7629" width="0.12" layer="21" curve="132.0269"/>
-<wire x1="1.8225" y1="-0.8827" x2="-1.8758" y2="-0.7629" width="0.12" layer="21" curve="-132.0269"/>
-<wire x1="1.8225" y1="0.8827" x2="1.8225" y2="0.8023" width="0.12" layer="21"/>
-<wire x1="1.8225" y1="-0.8827" x2="1.8225" y2="-0.8023" width="0.12" layer="21"/>
-<wire x1="-2.0289" y1="2.0289" x2="-1.2789" y2="2.0289" width="0.12" layer="21"/>
-<wire x1="-1.6539" y1="2.4039" x2="-1.6539" y2="1.6539" width="0.12" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="0.8403" diameter="1.4403"/>
+<package name="LED-3MM" urn="urn:adsk.eagle:footprint:12825483/1" locally_modified="yes">
+<description>Radial LED (Round), 2.54 mm pitch, 3.20 mm body diameter, 4.70 mm body height
+&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.40 mm lead thickness, 3.20 mm body diameter and 4.70 mm body height&lt;/p&gt;</description>
+<wire x1="1.366" y1="0.9694" x2="-1.366" y2="0.9694" width="0.12" layer="21" curve="109.2738"/>
+<wire x1="1.366" y1="-0.9694" x2="-1.366" y2="-0.9694" width="0.12" layer="21" curve="-109.2738"/>
+<wire x1="-1.7814" y1="1.7814" x2="-1.0314" y2="1.7814" width="0.12" layer="21"/>
+<wire x1="-1.4064" y1="2.1564" x2="-1.4064" y2="1.4064" width="0.12" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="0.8403" diameter="1.4403" shape="square"/>
 <pad name="2" x="1.27" y="0" drill="0.8403" diameter="1.4403"/>
-<circle x="0" y="0" radius="2.025" width="0.12" layer="51"/>
-<text x="0" y="3.0389" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.6604" size="1" layer="27" font="vector" ratio="20" distance="51" align="top-center">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.675" width="0.12" layer="51"/>
+<text x="0" y="2.7914" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.31" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -367,11 +368,11 @@
 <packageinstance name="USOP-8"/>
 </packageinstances>
 </package3d>
-<package3d name="LEDRD254W50D390H480B" urn="urn:adsk.eagle:package:12794974/1" type="model">
-<description>Radial LED (Round), 2.54 mm pitch, 3.90 mm body diameter, 4.80 mm body height
-&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.40 mm lead thickness, 3.90 mm body diameter and 4.80 mm body height&lt;/p&gt;</description>
+<package3d name="LEDRD254W50D320H470B" urn="urn:adsk.eagle:package:12825476/1" type="model">
+<description>Radial LED (Round), 2.54 mm pitch, 3.20 mm body diameter, 4.70 mm body height
+&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.40 mm lead thickness, 3.20 mm body diameter and 4.70 mm body height&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="T-1"/>
+<packageinstance name="LED-3MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -550,7 +551,7 @@ Switches electronic signals</description>
 </symbol>
 <symbol name="WE_LPF_0805">
 </symbol>
-<symbol name="IR-EMITTER">
+<symbol name="IR-LED">
 <wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -560,8 +561,8 @@ Switches electronic signals</description>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="in" rot="R270"/>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 <polygon width="0.1524" layer="94">
 <vertex x="-3.429" y="-2.159"/>
 <vertex x="-3.048" y="-1.27"/>
@@ -809,25 +810,16 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IR-EMITTER" prefix="LED">
+<deviceset name="IR-LED" prefix="LED">
 <description>IR-Emitter, 950nm, 1,7V?
 &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://eu.mouser.com/datasheet/2/427/tsus4300-88704.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="IR-EMITTER" x="0" y="0"/>
+<gate name="G$1" symbol="IR-LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="T-1">
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12794974/1"/>
-</package3dinstances>
+<device name="">
 <technologies>
-<technology name="">
-<attribute name="BESTAND" value="?" constant="no"/>
-<attribute name="HERSTELLER" value="Vishay Semiconductors" constant="no"/>
-<attribute name="HERSTELLER-NR" value="TSUS4300" constant="no"/>
-<attribute name="SUPPLIER" value="Mouser" constant="no"/>
-<attribute name="SUPPLIER-NR" value="782-TSUS4300" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -839,7 +831,7 @@ DIN A4, landscape with location and doc. field</description>
 <gate name="G$1" symbol="IR-RECEIVER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CAST">
+<device name="" package="TSOP312">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
