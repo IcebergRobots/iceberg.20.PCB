@@ -809,7 +809,7 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IR-EMITTER">
+<deviceset name="IR-EMITTER" prefix="LED">
 <description>IR-Emitter, 950nm, 1,7V?
 &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://eu.mouser.com/datasheet/2/427/tsus4300-88704.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
@@ -832,7 +832,7 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TSOP31433" prefix="IR">
+<deviceset name="TSOP31433" prefix="IC">
 <description>IR-Receiver 33kHz
 &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://eu.mouser.com/datasheet/2/427/tsop312-537288.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
