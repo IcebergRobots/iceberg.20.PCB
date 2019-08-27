@@ -347,6 +347,24 @@
 <text x="0" y="1.7317" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.7317" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOT23" urn="urn:adsk.eagle:footprint:12867960/1" locally_modified="yes">
+<description>3-SOT23, 0.95 mm pitch, 2.45 mm span, 2.93 X 1.32 X 1.30 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.45 mm span with body size 2.93 X 1.32 X 1.30 mm&lt;/p&gt;</description>
+<circle x="-1.313496875" y="-1.75309375" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.75" y1="1.6036" x2="0.75" y2="1.6036" width="0.12" layer="21"/>
+<wire x1="0.75" y1="1.6036" x2="0.75" y2="0.5936" width="0.12" layer="21"/>
+<wire x1="-0.75" y1="-1.6036" x2="0.75" y2="-1.6036" width="0.12" layer="21"/>
+<wire x1="0.75" y1="-1.6036" x2="0.75" y2="-0.5936" width="0.12" layer="21"/>
+<wire x1="0.75" y1="-1.565" x2="-0.75" y2="-1.565" width="0.12" layer="51"/>
+<wire x1="-0.75" y1="-1.565" x2="-0.75" y2="1.565" width="0.12" layer="51"/>
+<wire x1="-0.75" y1="1.565" x2="0.75" y2="1.565" width="0.12" layer="51"/>
+<wire x1="0.75" y1="1.565" x2="0.75" y2="-1.565" width="0.12" layer="51"/>
+<smd name="2" x="-1.2161" y="0.95" dx="1.3802" dy="0.6791" layer="1" roundness="25"/>
+<smd name="1" x="-1.2161" y="-0.95" dx="1.3802" dy="0.6791" layer="1" roundness="25"/>
+<smd name="3" x="1.2161" y="0" dx="1.3802" dy="0.6791" layer="1" roundness="25"/>
+<text x="0" y="2.6786" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2386" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -394,6 +412,13 @@
 &lt;p&gt;Chip package with body size 2.00 X 1.25 X 1.30 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P245X130-3" urn="urn:adsk.eagle:package:12867907/1" type="model">
+<description>3-SOT23, 0.95 mm pitch, 2.45 mm span, 2.93 X 1.32 X 1.30 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.45 mm span with body size 2.93 X 1.32 X 1.30 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT23"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -611,7 +636,9 @@ Switches electronic signals</description>
 <devicesets>
 <deviceset name="_VORLAGE">
 <description>Bitte hier mit dem Befehl Description eine passende Beschreibung angeben (kann kurz sein) und Datenblatt verlinken
-&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;</description>
+&lt;p&gt;
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;
+&lt;/p&gt;</description>
 <gates>
 </gates>
 <devices>
@@ -910,6 +937,36 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="SUPPLIER-NR" value="-" constant="no"/>
 <attribute name="TOLERANZ" value="10%" constant="no"/>
 <attribute name="V-MAX" value="20V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KMA3D6N20SA" prefix="T">
+<description>N-Mosfef, 3.6A, SOT23
+&lt;p&gt;
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h59/hc5/8874949902366/8874949902366.pdf"&gt;Link&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12867907/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Korea Electronics" constant="no"/>
+<attribute name="HERSTELLER-NR" value="KMA3D6N20SA-RTK/P" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="24S8084" constant="no"/>
 </technology>
 </technologies>
 </device>
