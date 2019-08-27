@@ -887,10 +887,10 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C" prefix="R">
+<deviceset name="C" prefix="C">
 <description>Capacitor, SMD 0805, Value wird festgelegt</description>
 <gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
+<gate name="G$1" symbol="C" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="0805" package="C0805">
