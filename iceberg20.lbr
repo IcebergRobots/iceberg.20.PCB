@@ -365,6 +365,54 @@
 <text x="0" y="2.6786" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.2386" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="CON-01X02">
+<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<rectangle x1="3.506" y1="2.246" x2="4.014" y2="2.754" layer="51"/>
+<rectangle x1="0.966" y1="2.246" x2="1.474" y2="2.754" layer="51"/>
+<pad name="1" x="1.22" y="2.5" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="3.76" y="2.5" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="0" y="6" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="0" y="-1" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="1.25" y2="0" width="0.2" layer="21"/>
+<wire x1="1.25" y1="0" x2="3.75" y2="0" width="0.2" layer="21"/>
+<wire x1="3.75" y1="0" x2="5" y2="0" width="0.2" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="5.75" width="0.2" layer="21"/>
+<wire x1="5" y1="0" x2="5" y2="5.75" width="0.2" layer="21"/>
+<wire x1="5" y1="5.75" x2="0" y2="5.75" width="0.2" layer="21"/>
+<wire x1="1.25" y1="1" x2="3.75" y2="1" width="0.2" layer="21"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="0" width="0.2" layer="21"/>
+<wire x1="3.75" y1="1" x2="3.75" y2="0" width="0.2" layer="21"/>
+</package>
+<package name="JUMPER-SJ-3">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -631,6 +679,48 @@ Switches electronic signals</description>
 <rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="SPARKFUN-CONNECTORS_CONN_02:1">
+<description>&lt;h3&gt;2 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-2.54" y="-4.826" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="5.588" size="1.778" layer="95" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="CON-01X02">
+<description>&lt;h3&gt;2 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-2.54" y="-4.826" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="5.588" size="1.778" layer="95" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="JUMPER-SJ-3">
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -967,6 +1057,55 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="HERSTELLER-NR" value="KMA3D6N20SA-RTK/P" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="24S8084" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PS25/2G" prefix="X">
+<description>PS 25/2G WS Platinensteckverbinder gerade, weiß, 2-polig
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href=""&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CON-01X02" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="PS25/2GWS-1X02" package="CON-01X02">
+<connects>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="Reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="PS 25/2G WS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER" prefix="J">
+<description>Jumper, drei Pads
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href=""&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="JUMPER-SJ-3" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="JUMPER-SJ-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
