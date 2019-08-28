@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -15628,7 +15628,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <description>Generated from &lt;b&gt;iceberg20.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
-<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1">
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" locally_modified="yes">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
@@ -15636,8 +15636,8 @@ by exp-lbrs.ulp</description>
 <wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="25"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="25"/>
 <text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
@@ -15825,6 +15825,54 @@ by exp-lbrs.ulp</description>
 <text x="0" y="3.0213" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.635" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="1801.2106">
+<description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;</description>
+<wire x1="-7.5" y1="10.5" x2="7.5" y2="10.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="10.5" x2="7.5" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-10.5" x2="-7.5" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="10.5" x2="-7.5" y2="-10.5" width="0.127" layer="21"/>
+<pad name="1" x="0" y="-0.0762" drill="1.4" shape="long"/>
+<pad name="2" x="0" y="7.5" drill="1.4" shape="long" rot="R180"/>
+<text x="-6.985" y="11.43" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.715" y="-8.89" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TO252" urn="urn:adsk.eagle:footprint:12893213/1" locally_modified="yes">
+<description>3-TO, DPAK, 2.29 mm pitch, 9.95 mm span, 8.39 X 6.09 X 2.40 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.29 mm pitch, 9.95 mm span with body size 8.39 X 6.09 X 2.40 mm&lt;/p&gt;</description>
+<circle x="-4.3457" y="3.2959" radius="0.25" width="0" layer="21"/>
+<wire x1="4.13" y1="2.6449" x2="4.13" y2="4.26" width="0.12" layer="21"/>
+<wire x1="4.13" y1="4.26" x2="-2.09" y2="4.26" width="0.12" layer="21"/>
+<wire x1="-2.09" y1="4.26" x2="-2.09" y2="-4.26" width="0.12" layer="21"/>
+<wire x1="-2.09" y1="-4.26" x2="4.13" y2="-4.26" width="0.12" layer="21"/>
+<wire x1="4.13" y1="-4.26" x2="4.13" y2="-2.6449" width="0.12" layer="21"/>
+<wire x1="4.13" y1="-4.26" x2="-2.09" y2="-4.26" width="0.12" layer="51"/>
+<wire x1="-2.09" y1="-4.26" x2="-2.09" y2="4.26" width="0.12" layer="51"/>
+<wire x1="-2.09" y1="4.26" x2="4.13" y2="4.26" width="0.12" layer="51"/>
+<wire x1="4.13" y1="4.26" x2="4.13" y2="-4.26" width="0.12" layer="51"/>
+<smd name="1" x="-4.3457" y="2.29" dx="2.9143" dy="1.0039" layer="1" roundness="25"/>
+<smd name="2" x="-4.3457" y="-2.29" dx="2.9143" dy="1.0039" layer="1" roundness="25"/>
+<smd name="3" x="2.5743" y="0" dx="6.4571" dy="4.7818" layer="1" roundness="10"/>
+<text x="0" y="4.895" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.895" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="LIB_WECO121">
+<description>&lt;h3&gt;2 Pin Screw Terminal - 2.54mm&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="7.81" y1="3.8" x2="7.81" y2="-4.6" width="0.2032" layer="21"/>
+<wire x1="7.81" y1="-4.6" x2="-2.77" y2="-4.6" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="-4.6" x2="-2.77" y2="3.8" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="3.8" x2="7.81" y2="3.8" width="0.2032" layer="21"/>
+<pad name="P1" x="5.08" y="0" drill="1.4" shape="square"/>
+<pad name="P2" x="0" y="0" drill="1.4" shape="square"/>
+<text x="-2.5673625" y="4.1551375" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.496596875" y="-5.6483" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
@@ -15858,6 +15906,13 @@ by exp-lbrs.ulp</description>
 &lt;p&gt;Radial Polarized Capacitor package with 1.50 mm pitch, 0.60 mm lead diameter, 4.00 mm body diameter and 7.00 mm body height&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPACITOR-THT-4"/>
+</packageinstances>
+</package3d>
+<package3d name="TO229P995X240-3" urn="urn:adsk.eagle:package:12893169/1" type="model">
+<description>3-TO, DPAK, 2.29 mm pitch, 9.95 mm span, 8.39 X 6.09 X 2.40 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.29 mm pitch, 9.95 mm span with body size 8.39 X 6.09 X 2.40 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TO252"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -16052,6 +16107,53 @@ Switches electronic signals</description>
 <pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SWITCH">
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<pin name="P" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-3.81" y="-4.445" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-1.27" y="-4.445" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+</symbol>
+<symbol name="P-MOSFET">
+<description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
+Switches electrical signals</description>
+<text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0.6858" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0" x2="-1.9812" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.2954" x2="-1.9812" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="-1.9812" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="2.54" x2="-1.9812" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="-1.9812" y2="1.0922" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="1.6002" y2="-0.9398" width="0.1524" layer="94"/>
+<wire x1="3.4798" y1="-0.5842" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-0.7874" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.8034" x2="2.54" y2="0.5842" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.302" y="0.508"/>
+<vertex x="2.54" y="-0.762"/>
+<vertex x="1.778" y="0.508"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.1778" y="0"/>
+<vertex x="-0.9398" y="-0.254"/>
+<vertex x="-0.9398" y="0.254"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -16342,6 +16444,83 @@ THT
 <attribute name="HERSTELLER-NR" value="" constant="no"/>
 <attribute name="SUPPLIER" value="" constant="no"/>
 <attribute name="SUPPLIER-NR" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH" prefix="S">
+<description>Wippausschalter, schwarz, 1-polig, Ein-Aus
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h4c/ha7/8865562296350/8865562296350.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SWITCH" x="-2.54" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="1801.2106">
+<connects>
+<connect gate="G$1" pin="P" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="1" constant="no"/>
+<attribute name="HERSTELLER" value="Marquardt" constant="no"/>
+<attribute name="HERSTELLER-NR" value="1801.2106" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="11G2420" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AOD403" prefix="T">
+<description>AO D403 MOSFET, P-CH, 30V, 70A, 90W, DPAK
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A100/AOD403_SPEC.pdf"&gt;Link&lt;/a&gt;
+&lt;b&gt;Zeichnung: &lt;/b&gt; &lt;a href="http://www.aosmd.com/res/packaging_information/TO252.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="P-MOSFET" x="5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="TO252">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12893169/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Alpha &amp; Omega" constant="no"/>
+<attribute name="HERSTELLER-NR" value="AOD403" constant="no"/>
+<attribute name="SUPPLIER" value="Reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="AO D403" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TERMINAL-2">
+<description>Stiftleiste, Stift, 2-polig, 5 mm
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h54/h05/8866138259486/8866138259486.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CON-01X02" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="LIB_WECO121">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="HERSTELLER" value="Weco" constant="no"/>
+<attribute name="HERSTELLER-NR" value="20806102 121-M-121/02-K" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="47F1100" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -16963,10 +17142,17 @@ THT
 </variantdefs>
 <parts>
 <part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
+<part name="S1" library="iceberg20" deviceset="SWITCH" device=""/>
+<part name="T1" library="iceberg20" deviceset="AOD403" device="" package3d_urn="urn:adsk.eagle:package:12893169/1"/>
+<part name="U$1" library="iceberg20" deviceset="TERMINAL-2" device=""/>
+<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">Power</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -16974,10 +17160,74 @@ THT
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
+<instance part="S1" gate="G$1" x="124.46" y="104.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="120.015" y="107.95" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.015" y="105.41" size="1.778" layer="96"/>
+</instance>
+<instance part="T1" gate="G$1" x="144.78" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="144.78" y="104.14" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="147.32" y="104.14" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="U$1" gate="G$1" x="99.06" y="99.06" smashed="yes">
+<attribute name="VALUE" x="96.52" y="94.234" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="96.52" y="104.648" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="R1" gate="G$1" x="139.7" y="86.36" smashed="yes">
+<attribute name="NAME" x="135.89" y="87.8586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="83.058" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="132.08" y="73.66" smashed="yes">
+<attribute name="VALUE" x="129.54" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="P+1" gate="1" x="162.56" y="109.22" smashed="yes">
+<attribute name="VALUE" x="160.02" y="104.14" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="S1" gate="G$1" pin="P"/>
+<wire x1="106.68" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="S"/>
+<pinref part="T1" gate="G$1" pin="D"/>
+<wire x1="129.54" y1="101.6" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="T1" gate="G$1" pin="G"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="93.98" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="99.06" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="86.36" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<junction x="132.08" y="86.36"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="T1" gate="G$1" pin="S"/>
+<pinref part="P+1" gate="1" pin="+12V"/>
+<wire x1="149.86" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="101.6" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
