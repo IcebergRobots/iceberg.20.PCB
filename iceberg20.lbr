@@ -366,6 +366,17 @@
 <text x="0" y="3.0213" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.635" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="LIB_MARQUARDT_1801">
+<description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;</description>
+<wire x1="-7.5" y1="10.5" x2="7.5" y2="10.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="10.5" x2="7.5" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-10.5" x2="-7.5" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="10.5" x2="-7.5" y2="-10.5" width="0.127" layer="21"/>
+<pad name="1" x="0" y="-0.0762" drill="1.4" shape="long"/>
+<pad name="2" x="0" y="7.5" drill="1.4" shape="long" rot="R180"/>
+<text x="-6.985" y="11.43" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.715" y="-8.89" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -603,6 +614,25 @@ Switches electronic signals</description>
 <pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="LIB_KS">
+<wire x1="-3.81" y1="1.905" x2="-2.54" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.254" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0" x2="-0.254" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-0.762" x2="0.254" y2="0" width="0.1524" layer="94"/>
+<pin name="P" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-3.81" y="3.175" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-1.27" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -903,6 +933,23 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="SUPPLIER" value="" constant="no"/>
 <attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAIN-SWITCH" prefix="S" uservalue="yes">
+<description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="LIB_KS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LIB_MARQUARDT_1801">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
+<connect gate="1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
