@@ -1163,6 +1163,47 @@
 <text x="-21.59" y="-2.54" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-21.59" y="-3.81" size="1" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
+<package name="C0805" urn="urn:adsk.eagle:footprint:12867826/1" locally_modified="yes">
+<description>Chip, 2.00 X 1.25 X 1.30 mm body
+&lt;p&gt;Chip package with body size 2.00 X 1.25 X 1.30 mm&lt;/p&gt;</description>
+<wire x1="1.1" y1="1.0967" x2="-1.1" y2="1.0967" width="0.12" layer="21"/>
+<wire x1="1.1" y1="-1.0967" x2="-1.1" y2="-1.0967" width="0.12" layer="21"/>
+<wire x1="1.1" y1="-0.725" x2="-1.1" y2="-0.725" width="0.12" layer="51"/>
+<wire x1="-1.1" y1="-0.725" x2="-1.1" y2="0.725" width="0.12" layer="51"/>
+<wire x1="-1.1" y1="0.725" x2="1.1" y2="0.725" width="0.12" layer="51"/>
+<wire x1="1.1" y1="0.725" x2="1.1" y2="-0.725" width="0.12" layer="51"/>
+<smd name="1" x="-1.0717" y="0" dx="1.1719" dy="1.5653" layer="1" roundness="25"/>
+<smd name="2" x="1.0717" y="0" dx="1.1719" dy="1.5653" layer="1" roundness="25"/>
+<text x="0" y="1.7317" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.7317" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="TSOP312">
+<pad name="1" x="-3.81" y="0" drill="1" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="1"/>
+<pad name="3" x="3.81" y="0" drill="1"/>
+<text x="-5.08" y="2.08" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-2.08" y="-1.08" size="1" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
+<wire x1="-5" y1="1.6" x2="5" y2="1.6" width="0.1524" layer="21"/>
+<wire x1="5" y1="1.6" x2="5" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="5" y1="-2.4" x2="2.75" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="2.75" y1="-2.4" x2="-2.75" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="-2.75" y1="-2.4" x2="-5" y2="-2.4" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-2.4" x2="-5" y2="1.6" width="0.1524" layer="21"/>
+<wire x1="2.75" y1="-2.4" x2="-2.75" y2="-2.4" width="0.1524" layer="21" curve="-139.58"/>
+</package>
+<package name="LED-3MM" urn="urn:adsk.eagle:footprint:12825483/1" locally_modified="yes">
+<description>Radial LED (Round), 2.54 mm pitch, 3.20 mm body diameter, 4.70 mm body height
+&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.40 mm lead thickness, 3.20 mm body diameter and 4.70 mm body height&lt;/p&gt;</description>
+<wire x1="1.366" y1="0.9694" x2="-1.366" y2="0.9694" width="0.12" layer="21" curve="109.2738"/>
+<wire x1="1.366" y1="-0.9694" x2="-1.366" y2="-0.9694" width="0.12" layer="21" curve="-109.2738"/>
+<wire x1="-1.7814" y1="1.7814" x2="-1.0314" y2="1.7814" width="0.12" layer="21"/>
+<wire x1="-1.4064" y1="2.1564" x2="-1.4064" y2="1.4064" width="0.12" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="0.8403" diameter="1.4403" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="0.8403" diameter="1.4403"/>
+<circle x="0" y="0" radius="1.675" width="0.12" layer="51"/>
+<text x="0" y="2.7914" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.31" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1231,6 +1272,20 @@ Arduino Mega R3
 </description>
 <packageinstances>
 <packageinstance name="ARDUINO_MEGA"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPC2012X130" urn="urn:adsk.eagle:package:12867820/1" type="model">
+<description>Chip, 2.00 X 1.25 X 1.30 mm body
+&lt;p&gt;Chip package with body size 2.00 X 1.25 X 1.30 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="LEDRD254W50D320H470B" urn="urn:adsk.eagle:package:12825476/1" type="model">
+<description>Radial LED (Round), 2.54 mm pitch, 3.20 mm body diameter, 4.70 mm body height
+&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.40 mm lead thickness, 3.20 mm body diameter and 4.70 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="LED-3MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1567,6 +1622,61 @@ Switches electrical signals</description>
 <text x="-12.7" y="0" size="2.54" layer="94" rot="R90">SRF-08</text>
 <text x="-10.16" y="17.78" size="1.778" layer="95" rot="R180">&gt;Name</text>
 <text x="-17.78" y="-5.08" size="1.778" layer="95">&gt;Value</text>
+</symbol>
+<symbol name="C-1">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="IR-RECEIVER">
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="-12.7" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="0" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="7.62" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="OUT" x="7.62" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="V+" x="7.62" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<text x="-2.54" y="10.16" size="1.778" layer="95" align="top-left">&gt;Name</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="IR-LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
+<text x="-5.08" y="5.08" size="1.778" layer="95" align="top-left">&gt;Name</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1940,8 +2050,7 @@ DIN A4, landscape with location and doc. field</description>
 <technology name="">
 <attribute name="BESTAND" value="" constant="no"/>
 <attribute name="HERSTELLER" value="Weco" constant="no"/>
-<attribute name="HERSTELLER-NR" value="20806102
-121-M-121/02-K" constant="no"/>
+<attribute name="HERSTELLER-NR" value="20806102 121-M-121/02-K" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="47F1100" constant="no"/>
 </technology>
@@ -2074,6 +2183,110 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="HERSTELLER-NR" value="" constant="no"/>
 <attribute name="SUPPLIER" value="" constant="no"/>
 <attribute name="SUPPLIER-NR" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C" prefix="C">
+<description>Capacitor, SMD 0805, Value wird festgelegt</description>
+<gates>
+<gate name="G$1" symbol="C-1" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="0805" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12867820/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="-" constant="no"/>
+<attribute name="HERSTELLER" value="-" constant="no"/>
+<attribute name="HERSTELLER-NR" value="-" constant="no"/>
+<attribute name="SUPPLIER" value="-" constant="no"/>
+<attribute name="SUPPLIER-NR" value="-" constant="no"/>
+<attribute name="TOLERANZ" value="10%" constant="no"/>
+<attribute name="V-MAX" value="20V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSOP31433" prefix="IC">
+<description>IR-Receiver 33kHz
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://eu.mouser.com/datasheet/2/427/tsop312-537288.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="IR-RECEIVER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSOP312">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="V+" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="Vishay Semiconductors" constant="no"/>
+<attribute name="HERSTELLER-NR" value="TSOP31433" constant="no"/>
+<attribute name="SUPPLIER" value="Mouser" constant="no"/>
+<attribute name="SUPPLIER-NR" value="78-TSOP31433" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IR-LED" prefix="LED">
+<description>IR-Emitter, 950nm, 1,7V?
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://eu.mouser.com/datasheet/2/427/tsus4300-88704.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="IR-LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED-3MM">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12825476/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KMA3D6N20SA" prefix="T">
+<description>N-Mosfef, 3.6A, SOT23
+&lt;p&gt;
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h59/hc5/8874949902366/8874949902366.pdf"&gt;Link&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12867907/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Korea Electronics" constant="no"/>
+<attribute name="HERSTELLER-NR" value="KMA3D6N20SA-RTK/P" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="24S8084" constant="no"/>
 </technology>
 </technologies>
 </device>
