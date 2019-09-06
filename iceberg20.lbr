@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1217,6 +1217,15 @@
 <text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
 <text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
 </package>
+<package name="PLCC-2">
+<smd name="A" x="-1.45" y="0" dx="1.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="C" x="1.45" y="0" dx="1.4" dy="1.4" layer="1" rot="R90"/>
+<wire x1="-1.35" y1="-1" x2="1.35" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="1" x2="1.35" y2="1" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="1.27" layer="21" font="vector" rot="SR180" align="center">+</text>
+<text x="-2.54" y="-2.54" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-2.54" y="-3.81" size="1" layer="27" font="vector" ratio="20">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1688,6 +1697,27 @@ Switches electrical signals</description>
 <wire x1="7.62" y1="12.7" x2="7.62" y2="0" width="0.254" layer="94"/>
 <text x="0" y="15.24" size="1.778" layer="95" rot="R180">&gt;Name</text>
 <text x="0" y="-10.16" size="1.778" layer="96" rot="R180">&gt;Value</text>
+</symbol>
+<symbol name="PHOTOTRANSISTOR">
+<wire x1="-3.048" y1="-2.54" x2="-1.27" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="-2.413" y2="-1.143" width="0.1524" layer="94"/>
+<wire x1="-2.413" y1="-1.143" x2="-1.651" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.651" y1="-1.905" x2="-1.27" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-1.143" y1="1.143" x2="-2.286" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0.762" x2="-1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.143" y2="1.143" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="-0.635" x2="-1.143" y2="1.143" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.016" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.778" x2="1.778" y2="-1.016" width="0.1524" layer="94"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.381" y1="-2.54" x2="0.381" y2="2.54" layer="94"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2327,6 +2357,30 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="HERSTELLER-NR" value="MIKROE-912" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="74S4560" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SFH320" prefix="T">
+<description>SFH 320-Z, 5V, 450 - 1150 nm
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.osram.com/ecat/TOPLED%c2%ae%20SFH%20320/com/en/class_pim_web_catalog_103489/global/prd_pim_device_2219665/"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PLCC-2">
+<connects>
+<connect gate="G$1" pin="C" pad="A"/>
+<connect gate="G$1" pin="E" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="23" constant="no"/>
+<attribute name="HERSTELLER" value="Osram Opto Semi" constant="no"/>
+<attribute name="HESTELLER-NR" value="SFH320-Z" constant="no"/>
+<attribute name="SUPLLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="68S3158" constant="no"/>
 </technology>
 </technologies>
 </device>
