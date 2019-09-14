@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1398,6 +1398,10 @@
 <pad name="6" x="6.35" y="-8.89" drill="1.2"/>
 <text x="-2.54" y="-4.7288" size="1" layer="25" font="vector" ratio="20" align="top-left">&gt;NAME</text>
 <text x="-2.54" y="-5.9472" size="1" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+<wire x1="-8.05" y1="-10.16" x2="8.05" y2="-10.16" width="0.1524" layer="21"/>
+<wire x1="8.05" y1="-10.16" x2="8.05" y2="27.34" width="0.1524" layer="21"/>
+<wire x1="8.05" y1="27.34" x2="-8.05" y2="27.34" width="0.1524" layer="21"/>
+<wire x1="-8.05" y1="27.34" x2="-8.05" y2="-10.16" width="0.1524" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -2828,7 +2832,7 @@ DIN A4, landscape with location and doc. field</description>
 <description>Bluetooth Modul&lt;b&gt;
 Datenblatt1: &lt;/b&gt; &lt;a href="https://cdn.shopify.com/s/files/1/1509/1638/files/HC-05_Wireless_Bluetooth_Transceiver_Modul_fur_Arduino_Datenblatt.pdf?14386780967915088289"&gt;Link&lt;/a&gt;
 &lt;b&gt;
-Datenballt2: &lt;/b&gt; &lt;a href="https://howtomechatronics.com/tutorials/arduino/arduino-and-hc-05-bluetooth-module-tutorial/"&gt;Link&lt;/a&gt;</description>
+Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-bluetooth-module"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="HC-05" x="0" y="0"/>
 </gates>
