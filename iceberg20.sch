@@ -15662,8 +15662,8 @@ by exp-lbrs.ulp</description>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="25"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="25"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
@@ -21217,6 +21217,33 @@ Source: http://www.osram.convergy.de/</description>
 <label x="30.48" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="ANSCHLUESSE" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+<text x="217.258928125" y="20.404425" size="2.54" layer="94">Anschlüsse</text>
+</plain>
+<instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
