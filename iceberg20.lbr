@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1330,6 +1330,7 @@
 <wire x1="-1.35" y1="1" x2="1.35" y2="1" width="0.127" layer="21"/>
 <text x="-2.54" y="-1.27" size="1" layer="21" font="vector" ratio="20" rot="SR180" align="center">+</text>
 <text x="-2.54" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
 <package name="6X1" urn="urn:adsk.eagle:footprint:13144863/1" locally_modified="yes">
 <description>Single-row, 6-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 7.00 mm insulator length, 15.24 X 2.52 X 7.00 mm body
