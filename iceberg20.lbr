@@ -1326,11 +1326,10 @@
 <package name="PLCC-2">
 <smd name="A" x="-1.45" y="0" dx="1.4" dy="1.4" layer="1" roundness="25" rot="R90"/>
 <smd name="C" x="1.45" y="0" dx="1.4" dy="1.4" layer="1" roundness="25" rot="R90"/>
-<wire x1="-1.35" y1="-1" x2="1.35" y2="-1" width="0.2" layer="21"/>
-<wire x1="-1.35" y1="1" x2="1.35" y2="1" width="0.2" layer="21"/>
-<text x="-2.54" y="1.27" size="1" layer="21" font="vector" ratio="20" rot="SR180" align="center">+</text>
-<text x="-2.54" y="-2.54" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="-2.54" y="-3.81" size="1" layer="27" font="vector" ratio="20">&gt;Value</text>
+<wire x1="-1.35" y1="-1" x2="1.35" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="1" x2="1.35" y2="1" width="0.127" layer="21"/>
+<text x="-2.54" y="-1.27" size="1" layer="21" font="vector" ratio="20" rot="SR180" align="center">+</text>
+<text x="-2.54" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
 </package>
 <package name="6X1" urn="urn:adsk.eagle:footprint:13144863/1" locally_modified="yes">
 <description>Single-row, 6-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 7.00 mm insulator length, 15.24 X 2.52 X 7.00 mm body
@@ -2098,6 +2097,31 @@ Switches electrical signals</description>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -3012,10 +3036,32 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <technology name="">
 <attribute name="BESTAND" value="0" constant="no"/>
 <attribute name="HERSTELLER" value="Alcoswitch" constant="no"/>
-<attribute name="HERSTELLER-NR" value="4-1437565-1
-FSM4JSMA" constant="no"/>
+<attribute name="HERSTELLER-NR" value="4-1437565-1 FSM4JSMA" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="12G482" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED">
+<description>LED&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PLCC-2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
