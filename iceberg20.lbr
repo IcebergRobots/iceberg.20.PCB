@@ -1462,6 +1462,23 @@
 <text x="0" y="3.175" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
+<package name="1206" urn="urn:adsk.eagle:footprint:12172536/3" locally_modified="yes">
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="0.7" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="0.7" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-2.45" y1="1" x2="2.45" y2="1" width="0.05" layer="39"/>
+<wire x1="2.45" y1="1" x2="2.45" y2="-1" width="0.05" layer="39"/>
+<wire x1="2.45" y1="-1" x2="-2.45" y2="-1" width="0.05" layer="39"/>
+<wire x1="-2.45" y1="-1" x2="-2.45" y2="1" width="0.05" layer="39"/>
+<wire x1="-0.7" y1="0.8" x2="0.7" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-0.7" y1="-0.8" x2="0.7" y2="-0.8" width="0.2" layer="21"/>
+<smd name="A" x="-1.5" y="0" dx="1.4" dy="1.5" layer="1" roundness="25" rot="R180"/>
+<smd name="C" x="1.5" y="0" dx="1.4" dy="1.5" layer="1" roundness="25" rot="R180"/>
+<text x="-2.54" y="1.524" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1543,6 +1560,11 @@
 <description>Solder jumper</description>
 <packageinstances>
 <packageinstance name="SJ"/>
+</packageinstances>
+</package3d>
+<package3d name="150120RS75000" urn="urn:adsk.eagle:package:12172548/5" type="model">
+<packageinstances>
+<packageinstance name="1206"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3086,6 +3108,59 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <attribute name="HERSTELLER-NR" value="LPT675-N1P2-25-Z" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="66S9720" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-GREEN1" prefix="LED">
+<description>LED Green, 1206&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h40/hdf/8866310357022/8866310357022.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12172548/5"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" constant="no"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8
+Everlight" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="67S2004" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-WHITE1" prefix="LED">
+<description>LED White, 1206&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A500/SMD1206_ENG_TDS.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12172548/5"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="HERSTELLER" value="SLOAN" constant="no"/>
+<attribute name="HERSTELLER-NR" value="SMD-W1206-02" constant="no"/>
+<attribute name="SUPPLIER" value="reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="SLO SMD-W1206-0" constant="no"/>
 </technology>
 </technologies>
 </device>
