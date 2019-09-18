@@ -2160,16 +2160,16 @@ Switches electrical signals</description>
 </polygon>
 </symbol>
 <symbol name="WS2812B">
-<pin name="DOUT" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="VDD" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="DIN" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
-<text x="0" y="0" size="1.27" layer="94" align="center">WS2812B</text>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="DOUT" x="10.16" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="VDD" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="DIN" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="GND" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="10.16" size="1.27" layer="94" align="top-left">&gt;Name</text>
+<text x="-7.62" y="10.16" size="1.778" layer="95" align="top-left">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3156,8 +3156,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <technology name="">
 <attribute name="BESTAND" value="" constant="no"/>
 <attribute name="HERSTELLER" value="EVERLIGHT" constant="no"/>
-<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8
-Everlight" constant="no"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="67S2004" constant="no"/>
 </technology>
@@ -3192,7 +3191,7 @@ Everlight" constant="no"/>
 </devices>
 </deviceset>
 <deviceset name="WS2812B" prefix="LED">
-<description>RGB LED&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;</description>
+<description>SMD RGB LED&lt;b&gt;&lt;br&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="WS2812B" x="0" y="0"/>
 </gates>
@@ -3206,11 +3205,11 @@ Everlight" constant="no"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="BESTAND" value="" constant="no"/>
-<attribute name="HERSTELLER" value="" constant="no"/>
-<attribute name="HERSTELLER-NR" value="" constant="no"/>
-<attribute name="SUPPLIER" value="" constant="no"/>
-<attribute name="SUPPLIER-NR" value="" constant="no"/>
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="SparkFun Electronics" constant="no"/>
+<attribute name="HERSTELLER-NR" value="COM-13667" constant="no"/>
+<attribute name="SUPPLIER" value="Mouser" constant="no"/>
+<attribute name="SUPPLIER-NR" value="474-COM-13667" constant="no"/>
 </technology>
 </technologies>
 </device>
