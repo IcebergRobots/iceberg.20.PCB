@@ -16220,6 +16220,18 @@ by exp-lbrs.ulp</description>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
+<package name="SPEAKER">
+<pad name="1" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="6.5" y="0" drill="0.8"/>
+<wire x1="-6.05" y1="-7" x2="-6.05" y2="7" width="0.2" layer="21"/>
+<wire x1="12.55" y1="7" x2="12.55" y2="-7" width="0.2" layer="21"/>
+<text x="0" y="1.27" size="1.778" layer="21" font="vector" align="bottom-center">+</text>
+<text x="6.35" y="1.27" size="1.778" layer="21" font="vector" align="bottom-center">-</text>
+<wire x1="-6.05" y1="7" x2="12.55" y2="7" width="0.2" layer="21"/>
+<wire x1="-6.05" y1="-7" x2="12.55" y2="-7" width="0.2" layer="21"/>
+<text x="-6.35" y="7.62" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-6.35" y="-8.89" size="1" layer="27">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
@@ -16736,6 +16748,24 @@ Switches electrical signals</description>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SPEAKER">
+<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<text x="-2.54" y="2.54" size="1.778" layer="94" font="vector" rot="R90" align="bottom-center">+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17464,6 +17494,29 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <attribute name="HERSTELLER" value="n.z." constant="no"/>
 <attribute name="SUPPLIER" value="n.z." constant="no"/>
 <attribute name="SUPPLIER-NR" value="n.z." constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPEAKER">
+<description>Miniaturlautsprecher, 85 dB, 500 Hz - 6kHz &lt;br&gt;&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="http://www-neu.digisound.de//wp-content/uploads/2015/05/F-SWX06.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SPEAKER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPEAKER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="Digisound" constant="no"/>
+<attribute name="HERSTELLER-NR" value="F/SWX06" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="38M212" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -20120,6 +20173,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="S1" library="iceberg20" deviceset="SWITCH" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$1" library="iceberg20" deviceset="SPEAKER" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20140,6 +20195,13 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <instance part="GND1" gate="1" x="40.64" y="96.52" smashed="yes">
 <attribute name="VALUE" x="38.1" y="93.98" size="1.778" layer="96"/>
 </instance>
+<instance part="U$1" gate="G$1" x="96.52" y="127" smashed="yes">
+<attribute name="NAME" x="92.71" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="123.825" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="106.68" y="119.38" smashed="yes">
+<attribute name="VALUE" x="104.14" y="116.84" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20157,6 +20219,12 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <pinref part="GND1" gate="1" pin="GND"/>
 <label x="27.94" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="127" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="SWITCH-O" class="0">
 <segment>
@@ -20168,6 +20236,18 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <pinref part="S1" gate="G$1" pin="S"/>
 <wire x1="137.16" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <label x="149.86" y="104.14" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="SPEAKER-I" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
+<label x="78.74" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="119.38" x2="40.64" y2="119.38" width="0.1524" layer="91"/>
+<label x="40.64" y="119.38" size="1.778" layer="95" rot="R180" align="top-left"/>
+<label x="27.94" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
