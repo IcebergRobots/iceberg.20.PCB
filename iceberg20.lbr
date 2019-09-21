@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3231,7 +3231,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-WHITE">
+<deviceset name="LED-WHITE" prefix="LED">
 <description>LED, PLCC-2&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://datasheet.octopart.com/LWT67C-T2U2-5K8L-Z-Osram-datasheet-514127.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -3254,7 +3254,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-GREEN">
+<deviceset name="LED-GREEN" prefix="LED">
 <description>LED, PLCC-2&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.mouser.de/datasheet/2/311/LP%20T675%20-%20TOPLED-364758.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -3354,7 +3354,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPEAKER">
+<deviceset name="SPEAKER" prefix="M">
 <description>Miniaturlautsprecher, 85 dB, 500 Hz - 6kHz &lt;br&gt;&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="http://www-neu.digisound.de//wp-content/uploads/2015/05/F-SWX06.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="SPEAKER" x="0" y="0"/>
