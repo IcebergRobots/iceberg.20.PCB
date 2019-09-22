@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16257,6 +16257,25 @@ by exp-lbrs.ulp</description>
 <pad name="3" x="6.3" y="3.17" drill="1.1" rot="R90"/>
 <pad name="4" x="8.84" y="3.17" drill="1.1" rot="R90"/>
 </package>
+<package name="DPAK" urn="urn:adsk.eagle:footprint:13445407/1" locally_modified="yes">
+<description>3-TO, DPAK, 2.28 mm pitch, 9.72 mm span, 6.50 X 6.10 X 2.40 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.28 mm pitch, 9.72 mm span with body size 6.50 X 6.10 X 2.40 mm&lt;/p&gt;</description>
+<circle x="-4.253" y="2.1555" radius="0.25" width="0" layer="21"/>
+<wire x1="4.2275" y1="3.0186" x2="4.2275" y2="3.3" width="0.2" layer="21"/>
+<wire x1="4.2275" y1="3.3" x2="-1.9725" y2="3.3" width="0.2" layer="21"/>
+<wire x1="-1.9725" y1="3.3" x2="-1.9725" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="-1.9725" y1="-3.3" x2="4.2275" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="4.2275" y1="-3.3" x2="4.2275" y2="-3.0186" width="0.2" layer="21"/>
+<wire x1="4.2275" y1="-3.3" x2="-1.9725" y2="-3.3" width="0.12" layer="51"/>
+<wire x1="-1.9725" y1="-3.3" x2="-1.9725" y2="3.3" width="0.12" layer="51"/>
+<wire x1="-1.9725" y1="3.3" x2="4.2275" y2="3.3" width="0.12" layer="51"/>
+<wire x1="4.2275" y1="3.3" x2="4.2275" y2="-3.3" width="0.12" layer="51"/>
+<smd name="1" x="-4.253" y="1.14" dx="2.7024" dy="1.023" layer="1" roundness="25"/>
+<smd name="2" x="-4.253" y="-1.14" dx="2.7024" dy="1.023" layer="1" roundness="25"/>
+<smd name="3" x="2.5625" y="0" dx="6.0833" dy="5.5291" layer="1"/>
+<text x="0" y="3.935" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.935" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
@@ -16331,6 +16350,13 @@ by exp-lbrs.ulp</description>
 <description>Solder jumper</description>
 <packageinstances>
 <packageinstance name="SJ"/>
+</packageinstances>
+</package3d>
+<package3d name="TO228P972X240-3M" urn="urn:adsk.eagle:package:13445399/1" type="model">
+<description>3-TO, DPAK, 2.28 mm pitch, 9.72 mm span, 6.50 X 6.10 X 2.40 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.28 mm pitch, 9.72 mm span with body size 6.50 X 6.10 X 2.40 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DPAK"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -16833,6 +16859,17 @@ Switches electrical signals</description>
 <pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="L7805">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="V-I" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="V-O" x="10.16" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" length="short" direction="pwr" rot="R90"/>
+<text x="-7.62" y="10.16" size="1.27" layer="95" align="top-left">&gt;Name</text>
+<text x="-7.62" y="-5.08" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17656,6 +17693,33 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <attribute name="HERSTELLER-NR" value="3-641126-4" constant="no"/>
 <attribute name="SUPPLIER" value="Mouser" constant="no"/>
 <attribute name="SUPPLIER-NR" value="571-3-641126-4" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L7805CV" prefix="IC">
+<description>5V-Linearwandler  &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A200/L7805CV-STM.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L7805" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="V-I" pad="1"/>
+<connect gate="G$1" pin="V-O" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13445399/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="4" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -20828,6 +20892,99 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <wire x1="27.94" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
 <label x="38.1" y="68.58" size="1.778" layer="95" rot="R180" align="top-left"/>
 <label x="27.94" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="5V-WANDLER" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
+<part name="IC1" library="iceberg20" deviceset="L7805CV" device="" package3d_urn="urn:adsk.eagle:package:13445399/1"/>
+<part name="C1" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="0.1uF"/>
+<part name="C2" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="0.33uF"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">5V-Wandler</text>
+</plain>
+<instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="IC1" gate="G$1" x="124.46" y="93.98" smashed="yes">
+<attribute name="NAME" x="116.84" y="104.14" size="1.27" layer="95" align="top-left"/>
+<attribute name="VALUE" x="116.84" y="88.9" size="1.27" layer="96"/>
+</instance>
+<instance part="C1" gate="G$1" x="139.7" y="93.98" smashed="yes">
+<attribute name="NAME" x="141.224" y="94.361" size="1.778" layer="95"/>
+<attribute name="VALUE" x="141.224" y="89.281" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="109.22" y="93.98" smashed="yes">
+<attribute name="NAME" x="110.744" y="94.361" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.744" y="89.281" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="124.46" y="78.74" smashed="yes">
+<attribute name="VALUE" x="121.92" y="76.2" size="1.778" layer="96"/>
+</instance>
+<instance part="P+2" gate="1" x="104.14" y="106.68" smashed="yes">
+<attribute name="VALUE" x="101.6" y="101.6" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+3" gate="1" x="144.78" y="106.68" smashed="yes">
+<attribute name="VALUE" x="147.32" y="109.22" size="1.778" layer="96" rot="R180"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="88.9" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="124.46" y1="86.36" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="88.9" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="86.36" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
+<junction x="124.46" y="86.36"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="V-I"/>
+<wire x1="114.3" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="99.06" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+<junction x="109.22" y="99.06"/>
+<pinref part="P+2" gate="1" pin="+12V"/>
+<wire x1="104.14" y1="104.14" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="96.52" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="V-O"/>
+<wire x1="139.7" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
+<junction x="139.7" y="99.06"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="144.78" y1="104.14" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
