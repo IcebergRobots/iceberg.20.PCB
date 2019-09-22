@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1570,6 +1570,25 @@
 <pad name="3" x="6.3" y="3.17" drill="1.1" rot="R90"/>
 <pad name="4" x="8.84" y="3.17" drill="1.1" rot="R90"/>
 </package>
+<package name="DPAK" urn="urn:adsk.eagle:footprint:13445407/1" locally_modified="yes">
+<description>3-TO, DPAK, 2.28 mm pitch, 9.72 mm span, 6.50 X 6.10 X 2.40 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.28 mm pitch, 9.72 mm span with body size 6.50 X 6.10 X 2.40 mm&lt;/p&gt;</description>
+<circle x="-4.253" y="2.1555" radius="0.25" width="0" layer="21"/>
+<wire x1="4.2275" y1="3.0186" x2="4.2275" y2="3.3" width="0.2" layer="21"/>
+<wire x1="4.2275" y1="3.3" x2="-1.9725" y2="3.3" width="0.2" layer="21"/>
+<wire x1="-1.9725" y1="3.3" x2="-1.9725" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="-1.9725" y1="-3.3" x2="4.2275" y2="-3.3" width="0.2" layer="21"/>
+<wire x1="4.2275" y1="-3.3" x2="4.2275" y2="-3.0186" width="0.2" layer="21"/>
+<wire x1="4.2275" y1="-3.3" x2="-1.9725" y2="-3.3" width="0.12" layer="51"/>
+<wire x1="-1.9725" y1="-3.3" x2="-1.9725" y2="3.3" width="0.12" layer="51"/>
+<wire x1="-1.9725" y1="3.3" x2="4.2275" y2="3.3" width="0.12" layer="51"/>
+<wire x1="4.2275" y1="3.3" x2="4.2275" y2="-3.3" width="0.12" layer="51"/>
+<smd name="1" x="-4.253" y="1.14" dx="2.7024" dy="1.023" layer="1" roundness="25"/>
+<smd name="2" x="-4.253" y="-1.14" dx="2.7024" dy="1.023" layer="1" roundness="25"/>
+<smd name="3" x="2.5625" y="0" dx="6.0833" dy="5.5291" layer="1"/>
+<text x="0" y="3.935" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.935" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1663,6 +1682,13 @@
 &lt;p&gt;24-pin SOIC package with 1.27 mm pitch, 10.32 mm span with body size 15.40 X 7.50 X 2.65 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SO24"/>
+</packageinstances>
+</package3d>
+<package3d name="TO228P972X240-3M" urn="urn:adsk.eagle:package:13445399/1" type="model">
+<description>3-TO, DPAK, 2.28 mm pitch, 9.72 mm span, 6.50 X 6.10 X 2.40 mm body
+&lt;p&gt;3-pin TO, DPAK package with 2.28 mm pitch, 9.72 mm span with body size 6.50 X 6.10 X 2.40 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DPAK"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2334,6 +2360,17 @@ Switches electrical signals</description>
 <pin name="Y9" x="29" y="42" length="middle" rot="R180"/>
 <pin name="Y8" x="29" y="45" length="middle" rot="R180"/>
 <pin name="VCC" x="29" y="48" length="middle" rot="R180"/>
+</symbol>
+<symbol name="L7805">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="V-I" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="V-O" x="10.16" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" length="short" direction="pwr" rot="R90"/>
+<text x="-7.62" y="10.16" size="1.27" layer="95" align="top-left">&gt;Name</text>
+<text x="-7.62" y="-5.08" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3473,6 +3510,33 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="HERSTELLER-NR" value="3-641126-4" constant="no"/>
 <attribute name="SUPPLIER" value="Mouser" constant="no"/>
 <attribute name="SUPPLIER-NR" value="571-3-641126-4" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L7805CV" prefix="IC">
+<description>5V-Linearwandler  &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A200/L7805CV-STM.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L7805" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="V-I" pad="1"/>
+<connect gate="G$1" pin="V-O" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13445399/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="4" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
