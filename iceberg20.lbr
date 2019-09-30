@@ -1622,6 +1622,23 @@
 <text x="0" y="5.635" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="DO-201AD" urn="urn:adsk.eagle:footprint:14090036/1" locally_modified="yes">
+<description>Axial Diode, 20.30 mm pitch, 9.00 mm body length, 2.35 mm body diameter
+&lt;p&gt;Axial Diode package with 20.30 mm pitch (lead spacing), 1.30 mm lead diameter, 9.00 mm body length and 2.35 mm body diameter&lt;/p&gt;</description>
+<wire x1="-4.75" y1="1.35" x2="-4.75" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="-4.75" y1="-1.35" x2="4.75" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="4.75" y1="-1.35" x2="4.75" y2="1.35" width="0.2" layer="21"/>
+<wire x1="4.75" y1="1.35" x2="-4.75" y2="1.35" width="0.2" layer="21"/>
+<wire x1="-3.5625" y1="1.35" x2="-3.5625" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="4.75" y1="-1.35" x2="-4.75" y2="-1.35" width="0.12" layer="51"/>
+<wire x1="-4.75" y1="-1.35" x2="-4.75" y2="1.35" width="0.12" layer="51"/>
+<wire x1="-4.75" y1="1.35" x2="4.75" y2="1.35" width="0.12" layer="51"/>
+<wire x1="4.75" y1="1.35" x2="4.75" y2="-1.35" width="0.12" layer="51"/>
+<pad name="1" x="-7.61" y="0" drill="1.55" diameter="2.325"/>
+<pad name="2" x="7.61" y="0" drill="1.55" diameter="2.325"/>
+<text x="0" y="1.985" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.985" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1729,6 +1746,13 @@
 &lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPACITOR-THT-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOAD2030W130L900D235A" urn="urn:adsk.eagle:package:14090028/1" type="model">
+<description>Axial Diode, 20.30 mm pitch, 9.00 mm body length, 2.35 mm body diameter
+&lt;p&gt;Axial Diode package with 20.30 mm pitch (lead spacing), 1.30 mm lead diameter, 9.00 mm body length and 2.35 mm body diameter&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DO-201AD"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2419,9 +2443,9 @@ Switches electrical signals</description>
 <wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
 <pin name="VCC" x="-10.16" y="5.08" length="short" direction="pwr"/>
 <pin name="GND" x="-10.16" y="-2.54" length="short" direction="pwr"/>
-<pin name="FB" x="12.7" y="5.08" length="short" direction="in" rot="R180"/>
-<pin name="OUT" x="12.7" y="0" length="short" direction="out" rot="R180"/>
-<pin name="EN" x="12.7" y="-2.54" length="short" direction="in" rot="R180"/>
+<pin name="FB" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="OUT" x="12.7" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="EN" x="12.7" y="5.08" length="short" direction="in" rot="R180"/>
 <text x="-7.62" y="10.16" size="1.778" layer="95" align="top-left">&gt;Name</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;Value</text>
 </symbol>
@@ -2431,6 +2455,24 @@ Switches electrical signals</description>
 <rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3666,6 +3708,34 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="HERSTELLER-NR" value="PISR-101M-04" constant="no"/>
 <attribute name="SUPPLIER" value="reichelt" constant="no"/>
 <attribute name="SUPPLIER-NR" value="L-PISR 100µ" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1N5822" prefix="D">
+<description>Schottkydiode, 40 V, 3 A
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A400/1N5820_1N5821_1N5822_CDIL.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-201AD">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14090028/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="LUNSURE
+" constant="no"/>
+<attribute name="HERSTELLER-NR" value="1N5822" constant="no"/>
+<attribute name="SUPPLIER" value="reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="1N 5822" constant="no"/>
 </technology>
 </technologies>
 </device>
