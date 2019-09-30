@@ -1610,6 +1610,18 @@
 <text x="2.54" y="-8.89" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="0" y="0" size="1" layer="27" font="vector" ratio="20" align="bottom-center">&gt;Value</text>
 </package>
+<package name="CAPACITOR-THT-10" urn="urn:adsk.eagle:footprint:14089933/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="5" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="5" width="0.12" layer="51"/>
+<wire x1="-4.1325" y1="4.1326" x2="-3.3825" y2="4.1326" width="0.2" layer="21"/>
+<wire x1="-3.7575" y1="4.5076" x2="-3.7575" y2="3.7576" width="0.2" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="1.15" diameter="1.85"/>
+<pad name="2" x="2.5" y="0" drill="1.15" diameter="1.85"/>
+<text x="0" y="5.635" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1710,6 +1722,13 @@
 &lt;p&gt;3-pin TO, DPAK package with 2.28 mm pitch, 9.72 mm span with body size 6.50 X 6.10 X 2.40 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="DPAK"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD500W90D1000H1150A" urn="urn:adsk.eagle:package:14089895/1" type="model">
+<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-10"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2615,6 +2634,24 @@ THT
 <attribute name="SUPPLIER" value="" constant="no"/>
 <attribute name="SUPPLIER-NR" value="" constant="no"/>
 <attribute name="VALUE" value="1 uF, 50 V, ±20 %" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="CAPACITOR-THT-10">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14089895/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Yageo" constant="no"/>
+<attribute name="HERSTELLER-NR" value="SK025M 1000B 5S-1019" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="11D5310" constant="no"/>
 </technology>
 </technologies>
 </device>
