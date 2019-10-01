@@ -21092,7 +21092,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L1" library="iceberg20" deviceset="L-100U" device=""/>
-<part name="C4" library="iceberg20" deviceset="ELKO" device="" package3d_urn="urn:adsk.eagle:package:14089895/1"/>
 <part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
 <part name="IC2" library="iceberg20" deviceset="LM2576" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -21147,10 +21146,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <attribute name="NAME" x="105.41" y="92.9386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="102.87" y="88.138" size="1.778" layer="96"/>
 </instance>
-<instance part="C4" gate="G$1" x="114.3" y="88.9" smashed="yes">
-<attribute name="NAME" x="115.443" y="89.3826" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.443" y="84.3026" size="1.778" layer="96"/>
-</instance>
 <instance part="R1" gate="G$1" x="99.06" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="100.33" y="108.1786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="105.918" size="1.778" layer="96"/>
@@ -21203,7 +21198,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="114.3" y1="81.28" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -21250,7 +21244,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="111.76" y1="91.44" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <junction x="114.3" y="91.44"/>

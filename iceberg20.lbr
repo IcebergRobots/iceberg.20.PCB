@@ -2679,7 +2679,7 @@ THT
 </technology>
 </technologies>
 </device>
-<device name="" package="CAPACITOR-THT-10">
+<device name="-THT-1000UF" package="CAPACITOR-THT-10">
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="2"/>
@@ -2694,6 +2694,7 @@ THT
 <attribute name="HERSTELLER-NR" value="SK025M 1000B 5S-1019" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="11D5310" constant="no"/>
+<attribute name="VALUE" value="1000uF, 25V, ±20 %" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3731,8 +3732,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <technologies>
 <technology name="">
 <attribute name="BESTAND" value="0" constant="no"/>
-<attribute name="HERSTELLER" value="LUNSURE
-" constant="no"/>
+<attribute name="HERSTELLER" value="LUNSURE " constant="no"/>
 <attribute name="HERSTELLER-NR" value="1N5822" constant="no"/>
 <attribute name="SUPPLIER" value="reichelt" constant="no"/>
 <attribute name="SUPPLIER-NR" value="1N 5822" constant="no"/>
