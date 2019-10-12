@@ -7630,11 +7630,11 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <sheets>
 <sheet>
 <plain>
-<text x="181.61" y="41.91" size="2.54" layer="97" rot="R90">Stromsensor</text>
-<text x="107.95" y="74.93" size="2.54" layer="97" rot="R180">Motortreiber</text>
+<text x="176.53" y="38.1" size="3.81" layer="97" rot="R90">Stromsensor</text>
+<text x="111.76" y="76.2" size="3.81" layer="97" rot="R180">Motortreiber</text>
 <text x="74.93" y="36.83" size="2.54" layer="97">EN-Pin</text>
 <text x="29.21" y="67.31" size="1.27" layer="97">DIR-Pins</text>
-<text x="171.45" y="85.09" size="2.54" layer="97">Motor-Anschluss</text>
+<text x="177.8" y="81.28" size="3.81" layer="97">Motor-Anschluss</text>
 <text x="217.17" y="-7.62" size="2.54" layer="94">Motor</text>
 </plain>
 <instances>
@@ -8464,6 +8464,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <sheet>
 <plain>
 <text x="217.17" y="20.32" size="2.54" layer="94">PUI</text>
+<text x="119.38" y="111.76" size="3.81" layer="97">Display</text>
+<text x="157.48" y="111.76" size="3.81" layer="97">Knöpfe...</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -8872,6 +8874,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <sheet>
 <plain>
 <text x="216.9851625" y="20.32" size="2.54" layer="94">IR-Sender</text>
+<text x="68.58" y="58.42" size="3.81" layer="97">Oscillator</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -9582,6 +9585,12 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <sheet>
 <plain>
 <text x="217.12224375" y="20.515271875" size="2.54" layer="94">Sensoren</text>
+<text x="127" y="152.4" size="3.81" layer="97">Real Time Clock</text>
+<text x="69.85" y="152.4" size="3.81" layer="97">Temperatur</text>
+<text x="139.7" y="101.6" size="3.81" layer="97">Ultraschall</text>
+<text x="218.44" y="81.28" size="3.81" layer="97">Phototransistor</text>
+<text x="199.39" y="118.11" size="3.81" layer="97">Kompass</text>
+<text x="203.2" y="165.1" size="3.81" layer="97">Reflektion</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -9727,21 +9736,21 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <instance part="GND10" gate="1" x="187.96" y="91.44" smashed="yes">
 <attribute name="VALUE" x="185.42" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="G$1" x="193.04" y="149.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="190.5" y="152.908" size="1.778" layer="95" font="vector"/>
+<instance part="X1" gate="G$1" x="200.66" y="156.21" smashed="yes" rot="R270">
+<attribute name="NAME" x="198.12" y="159.258" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="X2" gate="G$1" x="208.28" y="149.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="205.74" y="152.908" size="1.778" layer="95" font="vector"/>
+<instance part="X2" gate="G$1" x="215.9" y="156.21" smashed="yes" rot="R270">
+<attribute name="NAME" x="213.36" y="159.258" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND12" gate="1" x="195.58" y="124.46" smashed="yes">
-<attribute name="VALUE" x="193.04" y="121.92" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="203.2" y="130.81" smashed="yes">
+<attribute name="VALUE" x="200.66" y="128.27" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="208.28" y="137.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="207.01" y="135.6614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="207.01" y="137.922" size="1.778" layer="96" rot="R180"/>
+<instance part="R2" gate="G$1" x="215.9" y="143.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="214.63" y="142.0114" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="214.63" y="144.272" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND13" gate="1" x="210.82" y="124.46" smashed="yes">
-<attribute name="VALUE" x="208.28" y="121.92" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="218.44" y="130.81" smashed="yes">
+<attribute name="VALUE" x="215.9" y="128.27" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10007,7 +10016,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="142.24" x2="210.82" y2="127" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="148.59" x2="218.44" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -10048,8 +10057,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <net name="BR-O" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="142.24" x2="193.04" y2="127" width="0.1524" layer="91"/>
-<label x="190.5" y="127" size="1.778" layer="95" rot="R90" align="top-left"/>
+<wire x1="200.66" y1="148.59" x2="200.66" y2="133.35" width="0.1524" layer="91"/>
+<label x="198.12" y="133.35" size="1.778" layer="95" rot="R90" align="top-left"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
@@ -10066,8 +10075,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <net name="BR-I" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="132.08" x2="208.28" y2="127" width="0.1524" layer="91"/>
-<label x="205.74" y="127" size="1.778" layer="95" rot="R90" align="top-left"/>
+<wire x1="215.9" y1="138.43" x2="215.9" y2="133.35" width="0.1524" layer="91"/>
+<label x="213.36" y="133.35" size="1.778" layer="95" rot="R90" align="top-left"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
@@ -10078,7 +10087,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <net name="N$3" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="142.24" x2="195.58" y2="127" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="148.59" x2="203.2" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -10257,6 +10266,10 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <sheet>
 <plain>
 <text x="217.17" y="20.32" size="2.54" layer="94">Ein/Ausgabe</text>
+<text x="109.22" y="156.21" size="3.81" layer="97">Heartbeat</text>
+<text x="165.1" y="134.62" size="3.81" layer="97">Speaker</text>
+<text x="208.28" y="135.89" size="3.81" layer="97">Switch</text>
+<text x="161.29" y="85.09" size="3.81" layer="97">LEDs</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -10537,6 +10550,11 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <sheet>
 <plain>
 <text x="217.17" y="20.32" size="2.54" layer="94">Anschlüsse</text>
+<text x="115.57" y="137.16" size="3.81" layer="97">I2C</text>
+<text x="66.04" y="115.57" size="3.81" layer="97">Analog</text>
+<text x="66.04" y="85.09" size="3.81" layer="97">Digital</text>
+<text x="123.19" y="88.9" size="3.81" layer="97">5V</text>
+<text x="121.92" y="58.42" size="3.81" layer="97">12V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
