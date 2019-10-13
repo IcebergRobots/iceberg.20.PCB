@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1542,8 +1542,8 @@
 <smd name="22" x="4.7718" y="4.445" dx="2.216" dy="0.6315" layer="1" roundness="25"/>
 <smd name="23" x="4.7718" y="5.715" dx="2.216" dy="0.6315" layer="1" roundness="25"/>
 <smd name="24" x="4.7718" y="6.985" dx="2.216" dy="0.6315" layer="1" roundness="25"/>
-<text x="0" y="8.6897" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-8.435" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="8.6897" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-8.435" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="CON-01X04">
 <description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
@@ -2384,65 +2384,41 @@ Switches electrical signals</description>
 <text x="-2.54" y="2.54" size="1.778" layer="94" font="vector" rot="R90" align="bottom-center">+</text>
 </symbol>
 <symbol name="MULTIPLEXER">
-<wire x1="24" y1="13" x2="24" y2="15" width="0.254" layer="94"/>
-<wire x1="24" y1="15" x2="24" y2="18" width="0.254" layer="94"/>
-<wire x1="24" y1="18" x2="24" y2="21" width="0.254" layer="94"/>
-<wire x1="24" y1="21" x2="24" y2="24" width="0.254" layer="94"/>
-<wire x1="24" y1="24" x2="24" y2="27" width="0.254" layer="94"/>
-<wire x1="24" y1="27" x2="24" y2="30" width="0.254" layer="94"/>
-<wire x1="24" y1="30" x2="24" y2="33" width="0.254" layer="94"/>
-<wire x1="24" y1="33" x2="24" y2="36" width="0.254" layer="94"/>
-<wire x1="24" y1="36" x2="24" y2="39" width="0.254" layer="94"/>
-<wire x1="24" y1="39" x2="24" y2="42" width="0.254" layer="94"/>
-<wire x1="24" y1="42" x2="24" y2="45" width="0.254" layer="94"/>
-<wire x1="24" y1="45" x2="24" y2="48" width="0.254" layer="94"/>
-<wire x1="24" y1="48" x2="24" y2="50" width="0.254" layer="94"/>
-<wire x1="24" y1="50" x2="13" y2="50" width="0.254" layer="94"/>
-<wire x1="13" y1="50" x2="11" y2="50" width="0.254" layer="94"/>
-<wire x1="11" y1="50" x2="0" y2="50" width="0.254" layer="94"/>
-<wire x1="0" y1="50" x2="0" y2="48" width="0.254" layer="94"/>
-<wire x1="0" y1="48" x2="0" y2="45" width="0.254" layer="94"/>
-<wire x1="0" y1="45" x2="0" y2="42" width="0.254" layer="94"/>
-<wire x1="0" y1="36" x2="0" y2="33" width="0.254" layer="94"/>
-<wire x1="0" y1="33" x2="0" y2="30" width="0.254" layer="94"/>
-<wire x1="0" y1="30" x2="0" y2="27" width="0.254" layer="94"/>
-<wire x1="0" y1="27" x2="0" y2="24" width="0.254" layer="94"/>
-<wire x1="0" y1="24" x2="0" y2="21" width="0.254" layer="94"/>
-<wire x1="0" y1="21" x2="0" y2="18" width="0.254" layer="94"/>
-<wire x1="0" y1="15" x2="0" y2="13" width="0.254" layer="94"/>
-<wire x1="0" y1="15" x2="0" y2="18" width="0.254" layer="94"/>
-<wire x1="0" y1="36" x2="0" y2="39" width="0.254" layer="94"/>
-<wire x1="0" y1="39" x2="0" y2="42" width="0.254" layer="94"/>
-<wire x1="0" y1="13" x2="24" y2="13" width="0.254" layer="94"/>
-<wire x1="11" y1="50" x2="11" y2="46" width="0.254" layer="94"/>
-<wire x1="11" y1="46" x2="13" y2="46" width="0.254" layer="94"/>
-<wire x1="13" y1="46" x2="13" y2="50" width="0.254" layer="94"/>
-<text x="2" y="53" size="1.778" layer="95" align="top-left">&gt;Name</text>
-<text x="2" y="12" size="1.778" layer="96" align="top-left">&gt;Value</text>
-<pin name="Z" x="-5" y="48" length="middle"/>
-<pin name="Y7" x="-5" y="45" length="middle"/>
-<pin name="Y6" x="-5" y="42" length="middle"/>
-<pin name="Y5" x="-5" y="39" length="middle"/>
-<pin name="Y4" x="-5" y="36" length="middle"/>
-<pin name="Y3" x="-5" y="33" length="middle"/>
-<pin name="Y2" x="-5" y="30" length="middle"/>
-<pin name="Y1" x="-5" y="27" length="middle"/>
-<pin name="Y0" x="-5" y="24" length="middle"/>
-<pin name="S1" x="-5" y="21" length="middle"/>
-<pin name="S0" x="-5" y="18" length="middle"/>
-<pin name="GND" x="-5" y="15" length="middle"/>
-<pin name="S3" x="29" y="15" length="middle" rot="R180"/>
-<pin name="S2" x="29" y="18" length="middle" rot="R180"/>
-<pin name="È" x="29" y="21" length="middle" rot="R180"/>
-<pin name="Y15" x="29" y="24" length="middle" rot="R180"/>
-<pin name="Y14" x="29" y="27" length="middle" rot="R180"/>
-<pin name="Y13" x="29" y="30" length="middle" rot="R180"/>
-<pin name="Y12" x="29" y="33" length="middle" rot="R180"/>
-<pin name="Y11" x="29" y="36" length="middle" rot="R180"/>
-<pin name="Y10" x="29" y="39" length="middle" rot="R180"/>
-<pin name="Y9" x="29" y="42" length="middle" rot="R180"/>
-<pin name="Y8" x="29" y="45" length="middle" rot="R180"/>
-<pin name="VCC" x="29" y="48" length="middle" rot="R180"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="33.02" width="0.254" layer="94"/>
+<wire x1="22.86" y1="33.02" x2="12.7" y2="33.02" width="0.254" layer="94"/>
+<wire x1="12.7" y1="33.02" x2="10.16" y2="33.02" width="0.254" layer="94"/>
+<wire x1="10.16" y1="33.02" x2="0" y2="33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="12.7" y2="27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="27.94" x2="12.7" y2="33.02" width="0.254" layer="94"/>
+<text x="2.54" y="35.56" size="1.778" layer="95" align="top-left">&gt;Name</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="Z" x="-5.08" y="30.48" length="middle"/>
+<pin name="Y7" x="-5.08" y="27.94" length="middle"/>
+<pin name="Y6" x="-5.08" y="25.4" length="middle"/>
+<pin name="Y5" x="-5.08" y="22.86" length="middle"/>
+<pin name="Y4" x="-5.08" y="20.32" length="middle"/>
+<pin name="Y3" x="-5.08" y="17.78" length="middle"/>
+<pin name="Y2" x="-5.08" y="15.24" length="middle"/>
+<pin name="Y1" x="-5.08" y="12.7" length="middle"/>
+<pin name="Y0" x="-5.08" y="10.16" length="middle"/>
+<pin name="S1" x="-5.08" y="7.62" length="middle"/>
+<pin name="S0" x="-5.08" y="5.08" length="middle"/>
+<pin name="GND" x="-5.08" y="2.54" length="middle"/>
+<pin name="S3" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="S2" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="È" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="Y15" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="Y14" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="Y13" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="Y12" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="Y11" x="27.94" y="20.32" length="middle" rot="R180"/>
+<pin name="Y10" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="Y9" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="Y8" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="VCC" x="27.94" y="30.48" length="middle" rot="R180"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="27.94" width="0.254" layer="94"/>
 </symbol>
 <symbol name="L7805">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
@@ -2492,6 +2468,48 @@ Switches electrical signals</description>
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="ATMEGAXX8-32PIN">
+<description>Symbol for Atmega328/168/88/48 chips, 32-pin version</description>
+<wire x1="-17.78" y1="27.94" x2="20.32" y2="27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<text x="-17.78" y="28.702" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-38.1" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="PB5(SCK)" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="PB7(XTAL2/TOSC2)" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PB6(XTAL1/TOSC1)" x="-22.86" y="0" length="middle"/>
+<pin name="GND@3" x="-22.86" y="-27.94" length="middle"/>
+<pin name="GND@5" x="-22.86" y="-30.48" length="middle"/>
+<pin name="VCC@4" x="-22.86" y="17.78" length="middle"/>
+<pin name="VCC@6" x="-22.86" y="15.24" length="middle"/>
+<pin name="AGND" x="-22.86" y="-25.4" length="middle"/>
+<pin name="AREF" x="-22.86" y="10.16" length="middle"/>
+<pin name="AVCC" x="-22.86" y="20.32" length="middle"/>
+<pin name="PB4(MISO)" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="PB3(MOSI/OC2)" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB2(SS/OC1B)" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB1(OC1A)" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB0(ICP)" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="PD7(AIN1)" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="PD6(AIN0)" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PD5(T1)" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PD4(XCK/T0)" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PD3(INT1)" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PD2(INT0)" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PD1(TXD)" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PD0(RXD)" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="ADC7" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="ADC6" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PC5(ADC5/SCL)" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PC4(ADC4/SDA)" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PC3(ADC3)" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PC2(ADC2)" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="PC1(ADC1)" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PC0(ADC0)" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="PC6(/RESET)" x="-22.86" y="25.4" length="middle" function="dot"/>
+<pin name="GND@PAD" x="-22.86" y="-33.02" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3774,6 +3792,25 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="HERSTELLER-NR" value="1N5822" constant="no"/>
 <attribute name="SUPPLIER" value="reichelt" constant="no"/>
 <attribute name="SUPPLIER-NR" value="1N 5822" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA328P-AU">
+<description>8bit MCU ATMEGA328P-AU
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/hfb/h24/8879331508254/8879331508254.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Microchip" constant="no"/>
+<attribute name="HERSTELLER-NR" value="ATMEGA328PAU" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="64S4010" constant="no"/>
 </technology>
 </technologies>
 </device>
