@@ -95,7 +95,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -105,15 +108,32 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -239,6 +259,143 @@
 <text x="-2.54" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
+<package name="ATMEGA328P-AU" urn="urn:adsk.eagle:footprint:14414739/1" locally_modified="yes">
+<description>32-QFP, 0.80 mm pitch, 9.00 mm span, 6.95 X 6.95 X 1.20 mm body
+&lt;p&gt;32-pin QFP package with 0.80 mm pitch, 9.00 mm lead span1 X 9.00 mm lead span2 with body size 6.95 X 6.95 X 1.20 mm&lt;/p&gt;</description>
+<circle x="-4.3406" y="3.5975" radius="0.25" width="0" layer="21"/>
+<wire x1="-3.5" y1="3.3475" x2="-3.5" y2="3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.3475" y2="3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="3.3475" x2="3.5" y2="3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.3475" y2="3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="-3.3475" x2="3.5" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.3475" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="-3.3475" x2="-3.5" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.3475" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.12" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.12" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.12" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.12" layer="51"/>
+<smd name="1" x="-4.2313" y="2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="2" x="-4.2313" y="2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="3" x="-4.2313" y="1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="4" x="-4.2313" y="0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="5" x="-4.2313" y="-0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="6" x="-4.2313" y="-1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="7" x="-4.2313" y="-2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="8" x="-4.2313" y="-2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="9" x="-2.8" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="-2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="-1.2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="12" x="-0.4" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="0.4" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="1.2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="15" x="2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="16" x="2.8" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="17" x="4.2313" y="-2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="18" x="4.2313" y="-2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="19" x="4.2313" y="-1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="20" x="4.2313" y="-0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="21" x="4.2313" y="0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="22" x="4.2313" y="1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="23" x="4.2313" y="2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="24" x="4.2313" y="2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="25" x="2.8" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="26" x="2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="27" x="1.2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="28" x="0.4" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="29" x="-0.4" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="30" x="-1.2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="31" x="-2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="32" x="-2.8" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<text x="0" y="5.8162" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.8162" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPACITOR-THT-13" urn="urn:adsk.eagle:footprint:12595022/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="6.75" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="6.75" width="0.12" layer="51"/>
+<wire x1="-5.37" y1="5.37" x2="-4.62" y2="5.37" width="0.2" layer="21"/>
+<wire x1="-4.995" y1="5.745" x2="-4.995" y2="4.995" width="0.2" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.85" diameter="1.55"/>
+<pad name="2" x="2.54" y="0" drill="0.85" diameter="1.55"/>
+<text x="0" y="7.385" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-7.385" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPACITOR-THT-4" urn="urn:adsk.eagle:footprint:12868259/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 1.50 mm pitch, 4.00 mm body diameter, 7.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 1.50 mm pitch, 0.60 mm lead diameter, 4.00 mm body diameter and 7.00 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="2" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="2" width="0.12" layer="51"/>
+<wire x1="-2.0112" y1="2.0113" x2="-1.2612" y2="2.0113" width="0.2" layer="21"/>
+<wire x1="-1.6362" y1="2.3863" x2="-1.6362" y2="1.6363" width="0.2" layer="21"/>
+<pad name="1" x="-0.75" y="0" drill="0.6"/>
+<pad name="2" x="0.75" y="0" drill="0.6"/>
+<text x="0" y="3.0213" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPACITOR-THT-10" urn="urn:adsk.eagle:footprint:14089933/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="5" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="5" width="0.12" layer="51"/>
+<wire x1="-4.1325" y1="4.1326" x2="-3.3825" y2="4.1326" width="0.2" layer="21"/>
+<wire x1="-3.7575" y1="4.5076" x2="-3.7575" y2="3.7576" width="0.2" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="1.15" diameter="1.85"/>
+<pad name="2" x="2.5" y="0" drill="1.15" diameter="1.85"/>
+<text x="0" y="5.635" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPACITOR-THT-6.3" urn="urn:adsk.eagle:footprint:14142678/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 2.50 mm pitch, 6.55 mm body diameter, 11.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="3.4" width="0.12" layer="21"/>
+<circle x="0" y="0" radius="3.4" width="0.12" layer="51"/>
+<wire x1="-3.0012" y1="3.0012" x2="-2.2512" y2="3.0012" width="0.12" layer="21"/>
+<wire x1="-2.6262" y1="3.3762" x2="-2.6262" y2="2.6262" width="0.12" layer="21"/>
+<pad name="1" x="-1.25" y="0" drill="0.75" diameter="1.45"/>
+<pad name="2" x="1.25" y="0" drill="0.75" diameter="1.45"/>
+<text x="0" y="4.035" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.035" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="PISR">
+<smd name="1" x="0" y="7.8" dx="3" dy="3" layer="1" roundness="25"/>
+<smd name="2" x="0" y="-7.8" dx="3" dy="3" layer="1" roundness="25"/>
+<circle x="0" y="0" radius="7.6" width="0.2" layer="21"/>
+<text x="2.54" y="-8.89" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="0" y="0" size="1" layer="27" font="vector" ratio="20" align="bottom-center">&gt;Value</text>
+</package>
+<package name="TO220-5PIN">
+<description>&lt;b&gt;TO 200 vertical&lt;/b&gt;</description>
+<text x="-5.08" y="-7.3152" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-5.08" y="-8.89" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<pad name="1" x="-3.4" y="-3.4" drill="0.9" shape="square"/>
+<pad name="2" x="-1.7" y="-3.4" drill="0.9"/>
+<pad name="3" x="0" y="-3.4" drill="0.9"/>
+<pad name="4" x="1.7" y="-3.4" drill="0.9"/>
+<pad name="5" x="3.4" y="-3.4" drill="0.9"/>
+<wire x1="-5.22" y1="-1.15" x2="-5.22" y2="-5.65" width="0.1524" layer="21"/>
+<wire x1="-5.22" y1="-5.65" x2="5.22" y2="-5.65" width="0.1524" layer="21"/>
+<wire x1="-5.22" y1="-1.15" x2="5.22" y2="-1.15" width="0.1524" layer="21"/>
+<wire x1="5.22" y1="-1.15" x2="5.22" y2="-5.65" width="0.1524" layer="21"/>
+</package>
+<package name="DO-201AD" urn="urn:adsk.eagle:footprint:14090036/1" locally_modified="yes">
+<description>Axial Diode, 20.30 mm pitch, 9.00 mm body length, 2.35 mm body diameter
+&lt;p&gt;Axial Diode package with 20.30 mm pitch (lead spacing), 1.30 mm lead diameter, 9.00 mm body length and 2.35 mm body diameter&lt;/p&gt;</description>
+<wire x1="-4.75" y1="1.35" x2="-4.75" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="-4.75" y1="-1.35" x2="4.75" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="4.75" y1="-1.35" x2="4.75" y2="1.35" width="0.2" layer="21"/>
+<wire x1="4.75" y1="1.35" x2="-4.75" y2="1.35" width="0.2" layer="21"/>
+<wire x1="-3.5625" y1="1.35" x2="-3.5625" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="4.75" y1="-1.35" x2="-4.75" y2="-1.35" width="0.12" layer="51"/>
+<wire x1="-4.75" y1="-1.35" x2="-4.75" y2="1.35" width="0.12" layer="51"/>
+<wire x1="-4.75" y1="1.35" x2="4.75" y2="1.35" width="0.12" layer="51"/>
+<wire x1="4.75" y1="1.35" x2="4.75" y2="-1.35" width="0.12" layer="51"/>
+<pad name="1" x="-7.61" y="0" drill="1.55" diameter="2.325"/>
+<pad name="2" x="7.61" y="0" drill="1.55" diameter="2.325"/>
+<text x="0" y="1.985" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.985" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOIC127P1032X265-24M" urn="urn:adsk.eagle:package:13361986/1" type="model">
@@ -252,6 +409,48 @@
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
+<package3d name="QFP80P900X900X120-32M" urn="urn:adsk.eagle:package:14414719/1" type="model">
+<description>32-QFP, 0.80 mm pitch, 9.00 mm span, 6.95 X 6.95 X 1.20 mm body
+&lt;p&gt;32-pin QFP package with 0.80 mm pitch, 9.00 mm lead span1 X 9.00 mm lead span2 with body size 6.95 X 6.95 X 1.20 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="ATMEGA328P-AU"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
+<description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-13"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD150W60D400H700A" urn="urn:adsk.eagle:package:12868066/1" type="model">
+<description>Radial Polarized Capacitor, 1.50 mm pitch, 4.00 mm body diameter, 7.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 1.50 mm pitch, 0.60 mm lead diameter, 4.00 mm body diameter and 7.00 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-4"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD500W90D1000H1150A" urn="urn:adsk.eagle:package:14089895/1" type="model">
+<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-10"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD250W50D655H1100A" urn="urn:adsk.eagle:package:14142613/1" type="model">
+<description>Radial Polarized Capacitor, 2.50 mm pitch, 6.55 mm body diameter, 11.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-6.3"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOAD2030W130L900D235A" urn="urn:adsk.eagle:package:14090028/1" type="model">
+<description>Axial Diode, 20.30 mm pitch, 9.00 mm body length, 2.35 mm body diameter
+&lt;p&gt;Axial Diode package with 20.30 mm pitch (lead spacing), 1.30 mm lead diameter, 9.00 mm body length and 2.35 mm body diameter&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DO-201AD"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -359,6 +558,96 @@
 <rectangle x1="-0.381" y1="-2.54" x2="0.381" y2="2.54" layer="94"/>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="ATMEGAXX8-32PIN_NOPAD">
+<wire x1="-20.32" y1="33.02" x2="17.78" y2="33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="33.02" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-30.48" x2="-20.32" y2="33.02" width="0.254" layer="94"/>
+<text x="-20.32" y="33.782" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="PB5(SCK)" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB7(XTAL2/TOSC2)" x="-25.4" y="0" length="middle"/>
+<pin name="PB6(XTAL1/TOSC1)" x="-25.4" y="5.08" length="middle"/>
+<pin name="GND@3" x="-25.4" y="-22.86" length="middle"/>
+<pin name="GND@5" x="-25.4" y="-25.4" length="middle"/>
+<pin name="VCC@4" x="-25.4" y="22.86" length="middle"/>
+<pin name="VCC@6" x="-25.4" y="20.32" length="middle"/>
+<pin name="AGND" x="-25.4" y="-20.32" length="middle"/>
+<pin name="AREF" x="-25.4" y="15.24" length="middle"/>
+<pin name="AVCC" x="-25.4" y="25.4" length="middle"/>
+<pin name="PB4(MISO)" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB3(MOSI/OC2)" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB2(SS/OC1B)" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB1(OC1A)" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB0(ICP)" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="PD7(AIN1)" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="PD6(AIN0)" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="PD5(T1)" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="PD4(XCK/T0)" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="PD3(INT1)" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="PD2(INT0)" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="PD1(TXD)" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="PD0(RXD)" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="ADC7" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="ADC6" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="PC5(ADC5/SCL)" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="PC4(ADC4/SDA)" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="PC3(ADC3)" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="PC2(ADC2)" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="PC1(ADC1)" x="22.86" y="27.94" length="middle" rot="R180"/>
+<pin name="PC0(ADC0)" x="22.86" y="30.48" length="middle" rot="R180"/>
+<pin name="PC6(/RESET)" x="-25.4" y="30.48" length="middle" function="dot"/>
+</symbol>
+<symbol name="C">
+<wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<text x="1.143" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.5842" y="0.4064" size="1.27" layer="94" rot="R90">+</text>
+<text x="1.143" y="-4.5974" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-2.54" x2="1.651" y2="-1.651" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="L-EU">
+<text x="1.27" y="-1.0414" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="LM2576">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
+<pin name="VCC" x="-10.16" y="5.08" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<pin name="FB" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="OUT" x="12.7" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="EN" x="12.7" y="5.08" length="short" direction="in" rot="R180"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95" align="top-left">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;Value</text>
+</symbol>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -502,6 +791,226 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </device>
 </devices>
 </deviceset>
+<deviceset name="ATMEGA328P-AU" prefix="IC">
+<description>8bit MCU ATMEGA328P-AU
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/hfb/h24/8879331508254/8879331508254.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ATMEGAXX8-32PIN_NOPAD" x="20.32" y="30.48"/>
+</gates>
+<devices>
+<device name="" package="ATMEGA328P-AU">
+<connects>
+<connect gate="G$1" pin="ADC6" pad="19"/>
+<connect gate="G$1" pin="ADC7" pad="22"/>
+<connect gate="G$1" pin="AGND" pad="21"/>
+<connect gate="G$1" pin="AREF" pad="20"/>
+<connect gate="G$1" pin="AVCC" pad="18"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="PB0(ICP)" pad="12"/>
+<connect gate="G$1" pin="PB1(OC1A)" pad="13"/>
+<connect gate="G$1" pin="PB2(SS/OC1B)" pad="14"/>
+<connect gate="G$1" pin="PB3(MOSI/OC2)" pad="15"/>
+<connect gate="G$1" pin="PB4(MISO)" pad="16"/>
+<connect gate="G$1" pin="PB5(SCK)" pad="17"/>
+<connect gate="G$1" pin="PB6(XTAL1/TOSC1)" pad="7"/>
+<connect gate="G$1" pin="PB7(XTAL2/TOSC2)" pad="8"/>
+<connect gate="G$1" pin="PC0(ADC0)" pad="23"/>
+<connect gate="G$1" pin="PC1(ADC1)" pad="24"/>
+<connect gate="G$1" pin="PC2(ADC2)" pad="25"/>
+<connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
+<connect gate="G$1" pin="PC4(ADC4/SDA)" pad="27"/>
+<connect gate="G$1" pin="PC5(ADC5/SCL)" pad="28"/>
+<connect gate="G$1" pin="PC6(/RESET)" pad="29"/>
+<connect gate="G$1" pin="PD0(RXD)" pad="30"/>
+<connect gate="G$1" pin="PD1(TXD)" pad="31"/>
+<connect gate="G$1" pin="PD2(INT0)" pad="32"/>
+<connect gate="G$1" pin="PD3(INT1)" pad="1"/>
+<connect gate="G$1" pin="PD4(XCK/T0)" pad="2"/>
+<connect gate="G$1" pin="PD5(T1)" pad="9"/>
+<connect gate="G$1" pin="PD6(AIN0)" pad="10"/>
+<connect gate="G$1" pin="PD7(AIN1)" pad="11"/>
+<connect gate="G$1" pin="VCC@4" pad="4"/>
+<connect gate="G$1" pin="VCC@6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14414719/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Microchip" constant="no"/>
+<attribute name="HERSTELLER-NR" value="ATMEGA328PAU" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="64S4010" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELKO" prefix="C">
+<description>Elektrolytkondensator
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h0b/h6c/8877433618462/8877433618462.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="C" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="-THT-2200UF" package="CAPACITOR-THT-13">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12595008/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="Teapo " constant="no"/>
+<attribute name="HERSTELLER-NR" value="KSY228M016S1A5L25K SY2200UF/16V" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="11D5156" constant="no"/>
+<attribute name="VALUE" value=" 2,2 mF, 16 V, ±20 %" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-THT-1UF" package="CAPACITOR-THT-4">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12868066/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="10" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
+<attribute name="VALUE" value="1 uF, 50 V, ±20 %" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-THT-1000UF" package="CAPACITOR-THT-10">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14089895/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="Yageo" constant="no"/>
+<attribute name="HERSTELLER-NR" value="SK025M 1000B 5S-1019" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="11D5310" constant="no"/>
+<attribute name="VALUE" value="1000uF, 25V, ±20 %" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-THT-100UF" package="CAPACITOR-THT-6.3">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14142613/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="10" constant="no"/>
+<attribute name="HERSTELLER" value="Teapo" constant="no"/>
+<attribute name="HERSTELLER-NR" value="KSE107M016S1ABE11K" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="11D5002" constant="no"/>
+<attribute name="VALUE" value="100uF, 16V, ±20 %" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L-100U" prefix="L">
+<description>SMD-Power-Induktivität, PISR, Ferrit, 100µ
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/B400/PISR.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PISR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="FASTRON" constant="no"/>
+<attribute name="HERSTELLER-NR" value="PISR-101M-04" constant="no"/>
+<attribute name="SUPPLIER" value="reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="L-PISR 100µ" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2576" prefix="IC">
+<description>Step-Down, Buck, 5V, 3A, 4.75-40 VIn
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A200/LM2576T_005G.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LM2576" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TO220-5PIN">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="ON-SEMICONDUCTOR" constant="no"/>
+<attribute name="HERSTELLER-NR" value="LM2576T-5G" constant="no"/>
+<attribute name="SUPPLIER" value="reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="LM2576T-005" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1N5822" prefix="D">
+<description>Schottkydiode, 40 V, 3 A
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/A400/1N5820_1N5821_1N5822_CDIL.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-201AD">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14090028/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="LUNSURE " constant="no"/>
+<attribute name="HERSTELLER-NR" value="1N5822" constant="no"/>
+<attribute name="SUPPLIER" value="reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="1N 5822" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -526,6 +1035,14 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+12V" urn="urn:adsk.eagle:symbol:26931/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
@@ -545,6 +1062,19 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" urn="urn:adsk.eagle:component:26959/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2075,6 +2605,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </variantdefs>
 <parts>
 <part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
+<part name="IC1" library="iceberg20" deviceset="ATMEGA328P-AU" device="" package3d_urn="urn:adsk.eagle:package:14414719/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -2086,6 +2617,10 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="IC1" gate="G$1" x="124.46" y="96.52" smashed="yes">
+<attribute name="NAME" x="104.14" y="130.302" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="63.5" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2122,14 +2657,170 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </sheet>
 </sheets>
 </module>
-</modules>
+<module name="5V-SCHALTREGLER" prefix="" dx="30.48" dy="20.32">
+<ports>
+</ports>
+<variantdefs>
+</variantdefs>
 <parts>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="L1" library="iceberg20" deviceset="L-100U" device=""/>
+<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
+<part name="IC2" library="iceberg20" deviceset="LM2576" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="D1" library="iceberg20" deviceset="1N5822" device="" package3d_urn="urn:adsk.eagle:package:14090028/1"/>
+<part name="C4" library="iceberg20" deviceset="ELKO" device="-THT-1000UF" package3d_urn="urn:adsk.eagle:package:14089895/1" value="1000uF, 25V, ±20 %"/>
+<part name="C3" library="iceberg20" deviceset="ELKO" device="-THT-100UF" package3d_urn="urn:adsk.eagle:package:14142613/1" value="100uF, 16V, ±20 %"/>
+<part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">5V-Schaltregler</text>
 </plain>
 <instances>
+<instance part="P+7" gate="1" x="96.52" y="109.22" smashed="yes">
+<attribute name="VALUE" x="93.98" y="111.76" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="96.52" y="86.36" smashed="yes">
+<attribute name="VALUE" x="93.98" y="83.82" size="1.778" layer="96"/>
+</instance>
+<instance part="L1" gate="G$1" x="137.16" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="135.89" y="95.4786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.35" y="90.678" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="129.54" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="130.81" y="108.458" size="1.778" layer="96"/>
+</instance>
+<instance part="IC2" gate="G$1" x="114.3" y="96.52" smashed="yes">
+<attribute name="NAME" x="106.68" y="106.68" size="1.778" layer="95" align="top-left"/>
+<attribute name="VALUE" x="106.68" y="88.9" size="1.778" layer="95"/>
+</instance>
+<instance part="P+1" gate="1" x="129.54" y="119.38" smashed="yes">
+<attribute name="VALUE" x="129.54" y="121.92" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND1" gate="1" x="144.78" y="81.28" smashed="yes">
+<attribute name="VALUE" x="142.24" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="129.54" y="81.28" smashed="yes">
+<attribute name="VALUE" x="127" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="P+4" gate="1" x="149.86" y="109.22" smashed="yes">
+<attribute name="VALUE" x="149.86" y="111.76" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D1" gate="G$1" x="129.54" y="88.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="124.714" y="88.265" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.634" y="85.471" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="144.78" y="91.44" smashed="yes">
+<attribute name="NAME" x="145.923" y="91.9226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="145.923" y="86.8426" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="96.52" y="99.06" smashed="yes">
+<attribute name="NAME" x="97.663" y="99.5426" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.9574" y="90.043" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<wire x1="104.14" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<junction x="96.52" y="93.98"/>
+<wire x1="96.52" y1="93.98" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<pinref part="C3" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="144.78" y1="83.82" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="83.82" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<wire x1="104.14" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<junction x="96.52" y="101.6"/>
+<wire x1="96.52" y1="101.6" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="1" pin="+12V"/>
+<pinref part="IC2" gate="G$1" pin="VCC"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="114.3" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="93.98" x2="144.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
+<junction x="144.78" y="93.98"/>
+<wire x1="149.86" y1="93.98" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<pinref part="IC2" gate="G$1" pin="FB"/>
+<wire x1="127" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="99.06" x2="144.78" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="129.54" y1="101.6" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="G$1" pin="EN"/>
+<wire x1="127" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="127" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="129.54" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="91.44" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<junction x="129.54" y="93.98"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
+</modules>
+<parts>
+<part name="FRAME1" library="iceberg20" deviceset="FRAME" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">5V-Schaltregler</text>
+</plain>
+<instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
