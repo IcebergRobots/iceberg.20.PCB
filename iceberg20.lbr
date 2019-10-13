@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1651,6 +1651,57 @@
 <text x="0" y="4.035" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.035" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="ATMEGA328P-AU" urn="urn:adsk.eagle:footprint:14414739/1" locally_modified="yes">
+<description>32-QFP, 0.80 mm pitch, 9.00 mm span, 6.95 X 6.95 X 1.20 mm body
+&lt;p&gt;32-pin QFP package with 0.80 mm pitch, 9.00 mm lead span1 X 9.00 mm lead span2 with body size 6.95 X 6.95 X 1.20 mm&lt;/p&gt;</description>
+<circle x="-4.3406" y="3.5975" radius="0.25" width="0" layer="21"/>
+<wire x1="-3.5" y1="3.3475" x2="-3.5" y2="3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.3475" y2="3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="3.3475" x2="3.5" y2="3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.3475" y2="3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="-3.3475" x2="3.5" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.3475" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="-3.3475" x2="-3.5" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.3475" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.12" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.12" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.12" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.12" layer="51"/>
+<smd name="1" x="-4.2313" y="2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="2" x="-4.2313" y="2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="3" x="-4.2313" y="1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="4" x="-4.2313" y="0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="5" x="-4.2313" y="-0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="6" x="-4.2313" y="-1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="7" x="-4.2313" y="-2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="8" x="-4.2313" y="-2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="9" x="-2.8" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="-2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="-1.2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="12" x="-0.4" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="0.4" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="1.2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="15" x="2" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="16" x="2.8" y="-4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="17" x="4.2313" y="-2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="18" x="4.2313" y="-2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="19" x="4.2313" y="-1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="20" x="4.2313" y="-0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="21" x="4.2313" y="0.4" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="22" x="4.2313" y="1.2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="23" x="4.2313" y="2" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="24" x="4.2313" y="2.8" dx="1.8998" dy="0.5871" layer="1" roundness="25"/>
+<smd name="25" x="2.8" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="26" x="2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="27" x="1.2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="28" x="0.4" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="29" x="-0.4" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="30" x="-1.2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="31" x="-2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<smd name="32" x="-2.8" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
+<text x="0" y="5.8162" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.8162" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO220V" urn="urn:adsk.eagle:package:16417/2" type="model">
@@ -1772,6 +1823,13 @@
 &lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPACITOR-THT-6.3"/>
+</packageinstances>
+</package3d>
+<package3d name="QFP80P900X900X120-32M" urn="urn:adsk.eagle:package:14414719/1" type="model">
+<description>32-QFP, 0.80 mm pitch, 9.00 mm span, 6.95 X 6.95 X 1.20 mm body
+&lt;p&gt;32-pin QFP package with 0.80 mm pitch, 9.00 mm lead span1 X 9.00 mm lead span2 with body size 6.95 X 6.95 X 1.20 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="ATMEGA328P-AU"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2469,47 +2527,45 @@ Switches electrical signals</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="ATMEGAXX8-32PIN">
-<description>Symbol for Atmega328/168/88/48 chips, 32-pin version</description>
-<wire x1="-17.78" y1="27.94" x2="20.32" y2="27.94" width="0.254" layer="94"/>
-<wire x1="20.32" y1="27.94" x2="20.32" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
-<text x="-17.78" y="28.702" size="1.778" layer="95">&gt;NAME</text>
-<text x="-17.78" y="-38.1" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="PB5(SCK)" x="25.4" y="-33.02" length="middle" rot="R180"/>
-<pin name="PB7(XTAL2/TOSC2)" x="-22.86" y="-5.08" length="middle"/>
-<pin name="PB6(XTAL1/TOSC1)" x="-22.86" y="0" length="middle"/>
-<pin name="GND@3" x="-22.86" y="-27.94" length="middle"/>
-<pin name="GND@5" x="-22.86" y="-30.48" length="middle"/>
-<pin name="VCC@4" x="-22.86" y="17.78" length="middle"/>
-<pin name="VCC@6" x="-22.86" y="15.24" length="middle"/>
-<pin name="AGND" x="-22.86" y="-25.4" length="middle"/>
-<pin name="AREF" x="-22.86" y="10.16" length="middle"/>
-<pin name="AVCC" x="-22.86" y="20.32" length="middle"/>
-<pin name="PB4(MISO)" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="PB3(MOSI/OC2)" x="25.4" y="-27.94" length="middle" rot="R180"/>
-<pin name="PB2(SS/OC1B)" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="PB1(OC1A)" x="25.4" y="-22.86" length="middle" rot="R180"/>
-<pin name="PB0(ICP)" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="PD7(AIN1)" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="PD6(AIN0)" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="PD5(T1)" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="PD4(XCK/T0)" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="PD3(INT1)" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="PD2(INT0)" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="PD1(TXD)" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="PD0(RXD)" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="ADC7" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="ADC6" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="PC5(ADC5/SCL)" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="PC4(ADC4/SDA)" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="PC3(ADC3)" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="PC2(ADC2)" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="PC1(ADC1)" x="25.4" y="22.86" length="middle" rot="R180"/>
-<pin name="PC0(ADC0)" x="25.4" y="25.4" length="middle" rot="R180"/>
-<pin name="PC6(/RESET)" x="-22.86" y="25.4" length="middle" function="dot"/>
-<pin name="GND@PAD" x="-22.86" y="-33.02" length="middle"/>
+<symbol name="ATMEGAXX8-32PIN_NOPAD">
+<wire x1="-20.32" y1="33.02" x2="17.78" y2="33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="33.02" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-30.48" x2="-20.32" y2="33.02" width="0.254" layer="94"/>
+<text x="-20.32" y="33.782" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="PB5(SCK)" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB7(XTAL2/TOSC2)" x="-25.4" y="0" length="middle"/>
+<pin name="PB6(XTAL1/TOSC1)" x="-25.4" y="5.08" length="middle"/>
+<pin name="GND@3" x="-25.4" y="-22.86" length="middle"/>
+<pin name="GND@5" x="-25.4" y="-25.4" length="middle"/>
+<pin name="VCC@4" x="-25.4" y="22.86" length="middle"/>
+<pin name="VCC@6" x="-25.4" y="20.32" length="middle"/>
+<pin name="AGND" x="-25.4" y="-20.32" length="middle"/>
+<pin name="AREF" x="-25.4" y="15.24" length="middle"/>
+<pin name="AVCC" x="-25.4" y="25.4" length="middle"/>
+<pin name="PB4(MISO)" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB3(MOSI/OC2)" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB2(SS/OC1B)" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB1(OC1A)" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB0(ICP)" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="PD7(AIN1)" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="PD6(AIN0)" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="PD5(T1)" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="PD4(XCK/T0)" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="PD3(INT1)" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="PD2(INT0)" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="PD1(TXD)" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="PD0(RXD)" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="ADC7" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="ADC6" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="PC5(ADC5/SCL)" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="PC4(ADC4/SDA)" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="PC3(ADC3)" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="PC2(ADC2)" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="PC1(ADC1)" x="22.86" y="27.94" length="middle" rot="R180"/>
+<pin name="PC0(ADC0)" x="22.86" y="30.48" length="middle" rot="R180"/>
+<pin name="PC6(/RESET)" x="-25.4" y="30.48" length="middle" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3797,13 +3853,51 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA328P-AU">
+<deviceset name="ATMEGA328P-AU" prefix="IC">
 <description>8bit MCU ATMEGA328P-AU
 &lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/hfb/h24/8879331508254/8879331508254.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
+<gate name="G$1" symbol="ATMEGAXX8-32PIN_NOPAD" x="20.32" y="30.48"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="ATMEGA328P-AU">
+<connects>
+<connect gate="G$1" pin="ADC6" pad="19"/>
+<connect gate="G$1" pin="ADC7" pad="22"/>
+<connect gate="G$1" pin="AGND" pad="21"/>
+<connect gate="G$1" pin="AREF" pad="20"/>
+<connect gate="G$1" pin="AVCC" pad="18"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="PB0(ICP)" pad="12"/>
+<connect gate="G$1" pin="PB1(OC1A)" pad="13"/>
+<connect gate="G$1" pin="PB2(SS/OC1B)" pad="14"/>
+<connect gate="G$1" pin="PB3(MOSI/OC2)" pad="15"/>
+<connect gate="G$1" pin="PB4(MISO)" pad="16"/>
+<connect gate="G$1" pin="PB5(SCK)" pad="17"/>
+<connect gate="G$1" pin="PB6(XTAL1/TOSC1)" pad="7"/>
+<connect gate="G$1" pin="PB7(XTAL2/TOSC2)" pad="8"/>
+<connect gate="G$1" pin="PC0(ADC0)" pad="23"/>
+<connect gate="G$1" pin="PC1(ADC1)" pad="24"/>
+<connect gate="G$1" pin="PC2(ADC2)" pad="25"/>
+<connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
+<connect gate="G$1" pin="PC4(ADC4/SDA)" pad="27"/>
+<connect gate="G$1" pin="PC5(ADC5/SCL)" pad="28"/>
+<connect gate="G$1" pin="PC6(/RESET)" pad="29"/>
+<connect gate="G$1" pin="PD0(RXD)" pad="30"/>
+<connect gate="G$1" pin="PD1(TXD)" pad="31"/>
+<connect gate="G$1" pin="PD2(INT0)" pad="32"/>
+<connect gate="G$1" pin="PD3(INT1)" pad="1"/>
+<connect gate="G$1" pin="PD4(XCK/T0)" pad="2"/>
+<connect gate="G$1" pin="PD5(T1)" pad="9"/>
+<connect gate="G$1" pin="PD6(AIN0)" pad="10"/>
+<connect gate="G$1" pin="PD7(AIN1)" pad="11"/>
+<connect gate="G$1" pin="VCC@4" pad="4"/>
+<connect gate="G$1" pin="VCC@6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14414719/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="BESTAND" value="0" constant="no"/>
