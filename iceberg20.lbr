@@ -6,13 +6,13 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="yes"/>
 <layer number="6" name="Route6" color="25" fill="1" visible="no" active="yes"/>
 <layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
 <layer number="8" name="Route8" color="27" fill="1" visible="no" active="yes"/>
@@ -1426,7 +1426,7 @@
 <text x="-1.651" y="-2.54" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="2.921" y="-2.54" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
 </package>
-<package name="SJ" urn="urn:adsk.eagle:footprint:15432/1">
+<package name="SJ" urn="urn:adsk.eagle:footprint:15432/1" locally_modified="yes">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
@@ -1442,7 +1442,7 @@
 <wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
 <smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
 <smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.651" y="1.143" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
@@ -1648,8 +1648,8 @@
 <wire x1="-2.6262" y1="3.3762" x2="-2.6262" y2="2.6262" width="0.12" layer="21"/>
 <pad name="1" x="-1.25" y="0" drill="0.75" diameter="1.45"/>
 <pad name="2" x="1.25" y="0" drill="0.75" diameter="1.45"/>
-<text x="0" y="4.035" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-4.035" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="4.035" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.035" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="ATMEGA328P-AU" urn="urn:adsk.eagle:footprint:14414739/1" locally_modified="yes">
 <description>32-QFP, 0.80 mm pitch, 9.00 mm span, 6.95 X 6.95 X 1.20 mm body
@@ -1699,8 +1699,8 @@
 <smd name="30" x="-1.2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
 <smd name="31" x="-2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
 <smd name="32" x="-2.8" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
-<text x="0" y="5.8162" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.8162" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="5.8162" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.8162" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="TESTPAD_B2,54">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
@@ -1721,8 +1721,8 @@
 <wire x1="-1.4595" y1="2.2095" x2="-1.4595" y2="1.4595" width="0.12" layer="21"/>
 <pad name="1" x="-0.65" y="0" drill="0.55" diameter="1.05"/>
 <pad name="2" x="0.65" y="0" drill="0.55" diameter="1.05"/>
-<text x="0" y="2.8445" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.385" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="2.8445" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.385" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="CRYSTAL_HC49U-V">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
@@ -1755,8 +1755,19 @@
 <rectangle x1="5.334" y1="-1.016" x2="5.588" y2="1.016" layer="43"/>
 <pad name="1" x="-2.413" y="0" drill="0.8128"/>
 <pad name="2" x="2.413" y="0" drill="0.8128"/>
-<text x="-5.08" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.08" y="2.921" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-5.08" y="-4.191" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="PIN-HEADER-ANGLED-6">
+<pad name="P$1" x="1.75" y="0.25" drill="0.8"/>
+<pad name="P$2" x="4.29" y="0.25" drill="0.8"/>
+<pad name="P$3" x="6.83" y="0.25" drill="0.8"/>
+<pad name="P$4" x="9.37" y="0.25" drill="0.8"/>
+<pad name="P$5" x="11.91" y="0.25" drill="0.8"/>
+<pad name="P$6" x="14.45" y="0.25" drill="0.8"/>
+<rectangle x1="0" y1="0" x2="16.2" y2="4.3" layer="41"/>
+<text x="0" y="5" size="1.27" layer="21" font="vector" ratio="20">&gt;NAME</text>
+<text x="0" y="-1" size="1.27" layer="21" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -4058,6 +4069,34 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="HERSTELLER-NR" value="HUS-16.000-18-30/50/4085" constant="no"/>
 <attribute name="SUPPLIER" value="Bürklin" constant="no"/>
 <attribute name="SUPPLIER-NR" value="78D428" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIN-HEADER" prefix="X">
+<description>6-pin socket terminal strip, angled, RM 2.00
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://cdn-reichelt.de/documents/datenblatt/C140/BL12-43AGG-020U.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CON-01X06" x="5.08" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="PIN-HEADER-ANGLED-6">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="Reichelt" constant="no"/>
+<attribute name="SUPPLIER-NR" value="BL 1X20W 2,00" constant="no"/>
 </technology>
 </technologies>
 </device>
