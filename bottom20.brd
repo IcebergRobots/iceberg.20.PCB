@@ -2447,6 +2447,7 @@ design rules under a new name.
 <contactref element="PHOTOTRANSISTOR2:R14" pad="2"/>
 <contactref element="PHOTOTRANSISTOR2:R15" pad="2"/>
 <contactref element="PHOTOTRANSISTOR2:R16" pad="2"/>
+<contactref element="ANSCHLUSS1:X1" pad="P$3"/>
 <wire x1="-980.35" y1="-282.88" x2="-987.97" y2="-282.88" width="0" layer="19" extent="1-1"/>
 <wire x1="-972.73" y1="-282.88" x2="-980.35" y2="-282.88" width="0" layer="19" extent="1-1"/>
 <wire x1="-965.11" y1="-282.88" x2="-972.73" y2="-282.88" width="0" layer="19" extent="1-1"/>
@@ -2495,7 +2496,8 @@ design rules under a new name.
 <wire x1="-1160.5817" y1="-462.28" x2="-1166.9317" y2="-462.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-1159.3117" y1="-468.63" x2="-1160.5817" y2="-462.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-1159.3117" y1="-474.98" x2="-1159.3117" y2="-468.63" width="0" layer="19" extent="1-1"/>
-<wire x1="-1247.4482" y1="-564.515" x2="-1166.9317" y2="-481.33" width="0" layer="19" extent="1-1"/>
+<wire x1="-1237.77" y1="-568.71" x2="-1166.9317" y2="-481.33" width="0" layer="19" extent="1-1"/>
+<wire x1="-1247.4482" y1="-564.515" x2="-1237.77" y2="-568.71" width="0" layer="19" extent="1-1"/>
 <wire x1="-1258.89" y1="-585.47" x2="-1247.4482" y2="-564.515" width="0" layer="19" extent="1-1"/>
 <wire x1="-1258.89" y1="-591.82" x2="-1258.89" y2="-585.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-1258.89" y1="-598.17" x2="-1258.89" y2="-591.82" width="0" layer="19" extent="1-1"/>
@@ -2632,6 +2634,10 @@ design rules under a new name.
 <contactref element="ARDUINO1:S1" pad="B1"/>
 <contactref element="ARDUINO1:R4" pad="1"/>
 <contactref element="ARDUINO1:R4" pad="2"/>
+<contactref element="5V-SCHALTREGLER1:IC2" pad="3"/>
+<contactref element="5V-SCHALTREGLER1:C3" pad="2"/>
+<contactref element="5V-SCHALTREGLER1:C4" pad="2"/>
+<contactref element="5V-SCHALTREGLER1:D1" pad="2"/>
 <wire x1="-975.45" y1="-286.08" x2="-983.07" y2="-286.08" width="0" layer="19" extent="1-1"/>
 <wire x1="-967.83" y1="-286.08" x2="-975.45" y2="-286.08" width="0" layer="19" extent="1-1"/>
 <wire x1="-960.21" y1="-286.08" x2="-967.83" y2="-286.08" width="0" layer="19" extent="1-1"/>
@@ -2728,6 +2734,10 @@ design rules under a new name.
 <wire x1="-1438.59" y1="-716.28" x2="-1436.69" y2="-716.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-1439.075" y1="-722.92" x2="-1438.59" y2="-716.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-1431.125" y1="-722.92" x2="-1439.075" y2="-722.92" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.13" y1="-9.75" x2="-609.2918" y2="-80.645" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.71" y1="-3.81" x2="-24.13" y2="-9.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.09" y1="7.62" x2="-12.71" y2="-3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.83" y1="6.35" x2="-12.71" y2="-3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED-IN">
 <contactref element="LED1:LED1" pad="IN"/>
@@ -2769,15 +2779,6 @@ design rules under a new name.
 </signal>
 <signal name="N$1">
 <contactref element="ANSCHLUSS1:X2" pad="P$6"/>
-</signal>
-<signal name="5V-SCHALTREGLER1:GND">
-<contactref element="5V-SCHALTREGLER1:IC2" pad="3"/>
-<contactref element="5V-SCHALTREGLER1:C3" pad="2"/>
-<contactref element="5V-SCHALTREGLER1:C4" pad="2"/>
-<contactref element="5V-SCHALTREGLER1:D1" pad="2"/>
-<wire x1="-12.71" y1="-3.81" x2="-24.13" y2="-9.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.09" y1="7.62" x2="-12.71" y2="-3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.83" y1="6.35" x2="-12.71" y2="-3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTOTRANSISTOR2:N$1">
 <contactref element="PHOTOTRANSISTOR2:R1" pad="1"/>
@@ -3048,9 +3049,6 @@ design rules under a new name.
 <contactref element="PHOTOTRANSISTOR1:IC1" pad="1"/>
 <contactref element="ARDUINO1:IC1" pad="22"/>
 <wire x1="-1428.3287" y1="-674.44" x2="-609.2918" y2="-66.675" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="ANSCHLUSS1:VID">
-<contactref element="ANSCHLUSS1:X1" pad="P$3"/>
 </signal>
 <signal name="N$10">
 <contactref element="ANSCHLUSS1:X1" pad="P$2"/>

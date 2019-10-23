@@ -3748,7 +3748,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </sheet>
 </sheets>
 </module>
-<module name="5V-SCHALTREGLER" prefix="" dx="35.56" dy="17.78">
+<module name="5V-SCHALTREGLER" prefix="" dx="38.1" dy="25.4">
 <ports>
 <port name="+12V" side="top" coord="2.54" direction="pwr"/>
 <port name="+5V" side="top" coord="10.16" direction="pwr"/>
@@ -3915,14 +3915,16 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="5V-SCHALTREGLER1" module="5V-SCHALTREGLER" x="33.02" y="142.24">
-<attribute name="NAME" x="33.02" y="142.24" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="5V-SCHALTREGLER1" module="5V-SCHALTREGLER" x="35.56" y="142.24">
+<attribute name="NAME" x="35.56" y="142.24" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="PHOTOTRANSISTOR1" module="PHOTOTRANSISTOR" x="223.52" y="101.6" rot="R180">
 <attribute name="NAME" x="223.52" y="101.6" size="2.032" layer="95" rot="R180" align="bottom-center"/>
@@ -3930,8 +3932,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <moduleinst name="LED1" module="LED" x="35.56" y="91.44">
 <attribute name="NAME" x="35.56" y="91.44" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="ANSCHLUSS1" module="ANSCHLUSS" x="50.8" y="38.1">
-<attribute name="NAME" x="50.8" y="38.1" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="ANSCHLUSS1" module="ANSCHLUSS" x="40.64" y="40.64">
+<attribute name="NAME" x="40.64" y="40.64" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="PHOTOTRANSISTOR2" module="PHOTOTRANSISTOR" x="101.6" y="119.38">
 <attribute name="NAME" x="101.6" y="119.38" size="2.032" layer="95" align="bottom-center"/>
@@ -3946,11 +3948,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="P+1" gate="1" x="35.56" y="162.56" smashed="yes">
-<attribute name="VALUE" x="33.02" y="157.48" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="1" x="38.1" y="165.1" smashed="yes">
+<attribute name="VALUE" x="35.56" y="160.02" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+2" gate="1" x="43.18" y="162.56" smashed="yes">
-<attribute name="VALUE" x="40.64" y="157.48" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="1" x="45.72" y="165.1" smashed="yes">
+<attribute name="VALUE" x="43.18" y="160.02" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+4" gate="1" x="210.82" y="86.36" smashed="yes">
 <attribute name="VALUE" x="208.28" y="83.82" size="1.778" layer="96" rot="R90"/>
@@ -3964,11 +3966,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <instance part="GND2" gate="1" x="238.76" y="119.38" smashed="yes">
 <attribute name="VALUE" x="236.22" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="P+6" gate="1" x="50.8" y="63.5" smashed="yes">
-<attribute name="VALUE" x="48.26" y="58.42" size="1.778" layer="96" rot="R90"/>
+<instance part="P+6" gate="1" x="40.64" y="66.04" smashed="yes">
+<attribute name="VALUE" x="38.1" y="60.96" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND6" gate="1" x="66.04" y="15.24" smashed="yes">
-<attribute name="VALUE" x="63.5" y="12.7" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="55.88" y="17.78" smashed="yes">
+<attribute name="VALUE" x="53.34" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="1" x="109.22" y="142.24" smashed="yes">
 <attribute name="VALUE" x="106.68" y="137.16" size="1.778" layer="96" rot="R90"/>
@@ -3981,6 +3983,12 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </instance>
 <instance part="GND3" gate="1" x="165.1" y="76.2" smashed="yes">
 <attribute name="VALUE" x="162.56" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="45.72" y="119.38" smashed="yes">
+<attribute name="VALUE" x="43.18" y="116.84" size="1.778" layer="96"/>
+</instance>
+<instance part="P+8" gate="1" x="73.66" y="40.64" smashed="yes">
+<attribute name="VALUE" x="71.12" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -4001,15 +4009,15 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <net name="+12V" class="0">
 <segment>
 <portref moduleinst="5V-SCHALTREGLER1" port="+12V"/>
-<wire x1="35.56" y1="156.21" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
+<wire x1="38.1" y1="162.56" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <portref moduleinst="5V-SCHALTREGLER1" port="+5V"/>
-<wire x1="43.18" y1="156.21" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="45.72" y1="162.56" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="LED1" port="+5V"/>
@@ -4028,6 +4036,12 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <wire x1="109.22" y1="137.16" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<portref moduleinst="ANSCHLUSS1" port="VID"/>
+<wire x1="66.04" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="35.56" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="P+8" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -4044,7 +4058,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </segment>
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="GND"/>
-<wire x1="66.04" y1="20.32" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="22.86" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4057,6 +4071,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <wire x1="165.1" y1="81.28" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<portref moduleinst="5V-SCHALTREGLER1" port="GND"/>
+<wire x1="45.72" y1="124.46" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="LED-IN" class="0">
 <segment>
@@ -4066,8 +4085,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </segment>
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="LED-IN"/>
-<wire x1="25.4" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<label x="22.86" y="45.72" size="1.778" layer="95" align="center-right"/>
+<wire x1="15.24" y1="48.26" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
+<label x="12.7" y="48.26" size="1.778" layer="95" align="center-right"/>
 </segment>
 </net>
 <net name="ARD-RST" class="0">
@@ -4079,8 +4098,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </segment>
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="DTR"/>
-<wire x1="76.2" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<label x="78.74" y="45.72" size="1.778" layer="95"/>
+<wire x1="66.04" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<label x="68.58" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -4091,8 +4110,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </segment>
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="TX"/>
-<wire x1="76.2" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
-<label x="78.74" y="40.64" size="1.778" layer="95"/>
+<wire x1="66.04" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
+<label x="68.58" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -4103,15 +4122,15 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </segment>
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="RX"/>
-<wire x1="76.2" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
-<label x="78.74" y="43.18" size="1.778" layer="95"/>
+<wire x1="66.04" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
+<label x="68.58" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="SCL"/>
-<wire x1="25.4" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
-<label x="22.86" y="43.18" size="1.778" layer="95" align="center-right"/>
+<wire x1="15.24" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<label x="12.7" y="45.72" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
 <portref moduleinst="ARDUINO1" port="SCL"/>
@@ -4122,8 +4141,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <net name="SDA" class="0">
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="SDA"/>
-<wire x1="25.4" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
-<label x="22.86" y="40.64" size="1.778" layer="95" align="center-right"/>
+<wire x1="15.24" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<label x="12.7" y="43.18" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
 <portref moduleinst="ARDUINO1" port="SDA"/>
@@ -4134,8 +4153,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <net name="ARD-IN" class="0">
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="ARD-IN"/>
-<wire x1="25.4" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
-<label x="22.86" y="48.26" size="1.778" layer="95" align="center-right"/>
+<wire x1="15.24" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<label x="12.7" y="50.8" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
 <portref moduleinst="ARDUINO1" port="AIN0"/>
@@ -4146,7 +4165,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <net name="N$1" class="0">
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="+12V"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="58.42" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+12V"/>
 </segment>
 </net>
@@ -4244,8 +4263,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <net name="N$10" class="0">
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="CTS"/>
-<wire x1="76.2" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<label x="78.74" y="48.26" size="1.778" layer="95"/>
+<wire x1="66.04" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<label x="68.58" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
