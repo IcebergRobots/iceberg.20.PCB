@@ -2285,7 +2285,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-321.31" y="-288.29" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-323.215" y="-290.83" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="C1:C1" library="iceberg20" package="CAPACITOR-THT-4" package3d_urn="urn:adsk.eagle:package:12868066/1" value="1 uF, 50 V, ±20 %" x="-327.66" y="-287.02" smashed="yes">
+<element name="CAMERA1:C1" library="iceberg20" package="CAPACITOR-THT-4" package3d_urn="urn:adsk.eagle:package:12868066/1" value="1 uF, 50 V, ±20 %" x="-327.66" y="-287.02" smashed="yes">
 <attribute name="BESTAND" value="10" x="-327.66" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="" x="-327.66" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="" x="-327.66" y="-287.02" size="1.778" layer="27" display="off"/>
@@ -2294,7 +2294,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="" x="-327.66" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-327.66" y="-289.655" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C1:J1" library="iceberg20" package="JUMPER-SJ-3" value="JUMPER" x="-330.2" y="-294.64" smashed="yes">
+<element name="CAMERA1:J1" library="iceberg20" package="JUMPER-SJ-3" value="JUMPER" x="-330.2" y="-294.64" smashed="yes">
 <attribute name="BESTAND" value="" x="-330.2" y="-294.64" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="" x="-330.2" y="-294.64" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="" x="-330.2" y="-294.64" size="1.778" layer="27" display="off"/>
@@ -2303,7 +2303,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="" x="-330.2" y="-294.64" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-330.3001" y="-294.64" size="0.02" layer="27"/>
 </element>
-<element name="C1:X1" library="iceberg20" package="2X3" value="WANNENSTECKER-6" x="-339.09" y="-287.02" smashed="yes">
+<element name="CAMERA1:X1" library="iceberg20" package="2X3" value="WANNENSTECKER-6" x="-339.09" y="-287.02" smashed="yes">
 <attribute name="BESTAND" value="6" x="-339.09" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Harting" x="-339.09" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="09185066324" x="-339.09" y="-287.02" size="1.778" layer="27" display="off"/>
@@ -2312,7 +2312,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="53F4200" x="-339.09" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-341.63" y="-291.592" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="C1:X2" library="iceberg20" package="2X3" value="WANNENSTECKER-6" x="-349.25" y="-287.02" smashed="yes">
+<element name="CAMERA1:X2" library="iceberg20" package="2X3" value="WANNENSTECKER-6" x="-349.25" y="-287.02" smashed="yes">
 <attribute name="BESTAND" value="6" x="-349.25" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Harting" x="-349.25" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="09185066324" x="-349.25" y="-287.02" size="1.778" layer="27" display="off"/>
@@ -2321,7 +2321,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="53F4200" x="-349.25" y="-287.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-351.79" y="-291.592" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="C1:X3" library="iceberg20" package="CON-01X02" value="PS25/2GPS25/2GWS-1X02" x="-359.41" y="-293.37" smashed="yes">
+<element name="CAMERA1:X3" library="iceberg20" package="CON-01X02" value="PS25/2GPS25/2GWS-1X02" x="-359.41" y="-293.37" smashed="yes">
 <attribute name="BESTAND" value="" x="-359.41" y="-293.37" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="" x="-359.41" y="-293.37" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="" x="-359.41" y="-293.37" size="1.778" layer="27" display="off"/>
@@ -2330,7 +2330,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="PS 25/2G WS" x="-359.41" y="-293.37" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-359.3731375" y="-294.703196875" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:C1" library="iceberg20" package="C0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n" x="-386.08" y="-292.1" smashed="yes">
+<element name="IR_SENDER1:C1" library="iceberg20" package="C0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n" x="-386.08" y="-292.1" smashed="yes">
 <attribute name="BESTAND" value="-" x="-386.08" y="-292.1" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-386.08" y="-292.1" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-386.08" y="-292.1" size="1.778" layer="27" display="off"/>
@@ -2341,7 +2341,7 @@ design rules under a new name.</description>
 <attribute name="V-MAX" value="20V" x="-386.08" y="-292.1" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-386.08" y="-293.8317" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="X1:IC1" library="iceberg20" package="USOP-8" package3d_urn="urn:adsk.eagle:package:12699617/1" value="DS1099" x="-392.43" y="-292.1" smashed="yes">
+<element name="IR_SENDER1:IC1" library="iceberg20" package="USOP-8" package3d_urn="urn:adsk.eagle:package:12699617/1" value="DS1099" x="-392.43" y="-292.1" smashed="yes">
 <attribute name="BESTAND" value="0" x="-392.43" y="-292.1" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Maxim Integrated" x="-392.43" y="-292.1" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="DS1099U-FF+" x="-392.43" y="-292.1" size="1.778" layer="27" display="off"/>
@@ -2350,63 +2350,63 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="700-DS1099U-FF" x="-392.43" y="-292.1" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-392.43" y="-294.285" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="X1:LED1" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-400.05" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED1" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-400.05" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-400.05" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-400.05" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED10" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-408.94" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED10" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-408.94" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-408.94" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-408.94" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED11" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-417.83" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED11" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-417.83" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-417.83" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-417.83" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED12" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-426.72" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED12" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-426.72" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-426.72" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-426.72" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED13" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-435.61" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED13" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-435.61" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-435.61" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-435.61" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED14" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-444.5" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED14" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-444.5" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-444.5" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-444.5" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED2" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-453.39" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED2" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-453.39" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-453.39" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-453.39" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED3" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-462.28" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED3" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-462.28" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-462.28" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-462.28" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED4" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-471.17" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED4" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-471.17" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-471.17" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-471.17" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED5" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-480.06" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED5" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-480.06" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-480.06" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-480.06" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED6" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-488.95" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED6" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-488.95" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-488.95" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-488.95" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED7" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-497.84" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED7" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-497.84" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-497.84" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-497.84" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED8" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-506.73" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED8" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-506.73" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-506.73" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-506.73" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:LED9" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-515.62" y="-290.83" smashed="yes">
+<element name="IR_SENDER1:LED9" library="iceberg20" package="LED-3MM" package3d_urn="urn:adsk.eagle:package:12825476/1" value="IR-LED" x="-515.62" y="-290.83" smashed="yes">
 <attribute name="NAME" x="-515.62" y="-288.0386" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-515.62" y="-293.14" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-299.72" smashed="yes">
+<element name="IR_SENDER1:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-299.72" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-299.72" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-299.72" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-299.72" size="1.778" layer="27" display="off"/>
@@ -2416,7 +2416,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-299.72" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-302.26" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-306.07" smashed="yes">
+<element name="IR_SENDER1:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-306.07" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-306.07" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-306.07" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-306.07" size="1.778" layer="27" display="off"/>
@@ -2426,7 +2426,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-306.07" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-308.61" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100" x="-516.89" y="-312.42" smashed="yes">
+<element name="IR_SENDER1:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100" x="-516.89" y="-312.42" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-312.42" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-312.42" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-312.42" size="1.778" layer="27" display="off"/>
@@ -2436,7 +2436,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-312.42" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-314.96" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R4" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-318.77" smashed="yes">
+<element name="IR_SENDER1:R4" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-318.77" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-318.77" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-318.77" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-318.77" size="1.778" layer="27" display="off"/>
@@ -2446,7 +2446,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-318.77" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-321.31" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R5" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100" x="-516.89" y="-325.12" smashed="yes">
+<element name="IR_SENDER1:R5" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100" x="-516.89" y="-325.12" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-325.12" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-325.12" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-325.12" size="1.778" layer="27" display="off"/>
@@ -2456,7 +2456,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-325.12" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-327.66" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R6" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-331.47" smashed="yes">
+<element name="IR_SENDER1:R6" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k" x="-516.89" y="-331.47" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-331.47" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-331.47" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-331.47" size="1.778" layer="27" display="off"/>
@@ -2466,7 +2466,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-331.47" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-334.01" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R7" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="15" x="-516.89" y="-337.82" smashed="yes">
+<element name="IR_SENDER1:R7" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="15" x="-516.89" y="-337.82" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-337.82" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-337.82" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-337.82" size="1.778" layer="27" display="off"/>
@@ -2476,7 +2476,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-337.82" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-340.36" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:R8" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="15" x="-516.89" y="-344.17" smashed="yes">
+<element name="IR_SENDER1:R8" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="15" x="-516.89" y="-344.17" smashed="yes">
 <attribute name="BESTAND" value="-" x="-516.89" y="-344.17" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-516.89" y="-344.17" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-516.89" y="-344.17" size="1.778" layer="27" display="off"/>
@@ -2486,7 +2486,7 @@ design rules under a new name.</description>
 <attribute name="TOLERANZ" value="5%" x="-516.89" y="-344.17" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-518.795" y="-346.71" size="1" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1:T1" library="iceberg20" package="SOT23" package3d_urn="urn:adsk.eagle:package:12867907/1" value="KMA3D6N20SA" x="-524.51" y="-342.9" smashed="yes">
+<element name="IR_SENDER1:T1" library="iceberg20" package="SOT23" package3d_urn="urn:adsk.eagle:package:12867907/1" value="KMA3D6N20SA" x="-524.51" y="-342.9" smashed="yes">
 <attribute name="BESTAND" value="0" x="-524.51" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Korea Electronics" x="-524.51" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="KMA3D6N20SA-RTK/P" x="-524.51" y="-342.9" size="1.778" layer="27" display="off"/>
@@ -2495,7 +2495,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="24S8084" x="-524.51" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-524.51" y="-345.1386" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="X1:T2" library="iceberg20" package="SOT23" package3d_urn="urn:adsk.eagle:package:12867907/1" value="KMA3D6N20SA" x="-535.94" y="-342.9" smashed="yes">
+<element name="IR_SENDER1:T2" library="iceberg20" package="SOT23" package3d_urn="urn:adsk.eagle:package:12867907/1" value="KMA3D6N20SA" x="-535.94" y="-342.9" smashed="yes">
 <attribute name="BESTAND" value="0" x="-535.94" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Korea Electronics" x="-535.94" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="KMA3D6N20SA-RTK/P" x="-535.94" y="-342.9" size="1.778" layer="27" display="off"/>
@@ -2513,7 +2513,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="TEENSY 3.2" x="-553.72" y="-326.39" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-553.72" y="-345.694" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="Y1:C1" library="iceberg20" package="C0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n" x="-567.69" y="-342.9" smashed="yes">
+<element name="IR-EMPFAENGER1:C1" library="iceberg20" package="C0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n" x="-567.69" y="-342.9" smashed="yes">
 <attribute name="BESTAND" value="-" x="-567.69" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="-" x="-567.69" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="-" x="-567.69" y="-342.9" size="1.778" layer="27" display="off"/>
@@ -2524,7 +2524,7 @@ design rules under a new name.</description>
 <attribute name="V-MAX" value="20V" x="-567.69" y="-342.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-567.69" y="-344.6317" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="Y1:IC1" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-351.79" smashed="yes">
+<element name="IR-EMPFAENGER1:IC1" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-351.79" smashed="yes">
 <attribute name="BESTAND" value="?" x="-563.88" y="-351.79" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Vishay Semiconductors" x="-563.88" y="-351.79" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="TSOP31433" x="-563.88" y="-351.79" size="1.778" layer="27" display="off"/>
@@ -2533,7 +2533,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="78-TSOP31433" x="-563.88" y="-351.79" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-565.96" y="-352.87" size="1" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="Y1:IC2" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-360.68" smashed="yes">
+<element name="IR-EMPFAENGER1:IC2" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-360.68" smashed="yes">
 <attribute name="BESTAND" value="?" x="-563.88" y="-360.68" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Vishay Semiconductors" x="-563.88" y="-360.68" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="TSOP31433" x="-563.88" y="-360.68" size="1.778" layer="27" display="off"/>
@@ -2542,7 +2542,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="78-TSOP31433" x="-563.88" y="-360.68" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-565.96" y="-361.76" size="1" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="Y1:IC3" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-369.57" smashed="yes">
+<element name="IR-EMPFAENGER1:IC3" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-369.57" smashed="yes">
 <attribute name="BESTAND" value="?" x="-563.88" y="-369.57" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Vishay Semiconductors" x="-563.88" y="-369.57" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="TSOP31433" x="-563.88" y="-369.57" size="1.778" layer="27" display="off"/>
@@ -2551,7 +2551,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="78-TSOP31433" x="-563.88" y="-369.57" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-565.96" y="-370.65" size="1" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="Y1:IC4" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-378.46" smashed="yes">
+<element name="IR-EMPFAENGER1:IC4" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-378.46" smashed="yes">
 <attribute name="BESTAND" value="?" x="-563.88" y="-378.46" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Vishay Semiconductors" x="-563.88" y="-378.46" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="TSOP31433" x="-563.88" y="-378.46" size="1.778" layer="27" display="off"/>
@@ -2560,7 +2560,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="78-TSOP31433" x="-563.88" y="-378.46" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-565.96" y="-379.54" size="1" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="Y1:IC5" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-387.35" smashed="yes">
+<element name="IR-EMPFAENGER1:IC5" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-387.35" smashed="yes">
 <attribute name="BESTAND" value="?" x="-563.88" y="-387.35" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Vishay Semiconductors" x="-563.88" y="-387.35" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="TSOP31433" x="-563.88" y="-387.35" size="1.778" layer="27" display="off"/>
@@ -2569,7 +2569,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER-NR" value="78-TSOP31433" x="-563.88" y="-387.35" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-565.96" y="-388.43" size="1" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="Y1:IC6" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-396.24" smashed="yes">
+<element name="IR-EMPFAENGER1:IC6" library="iceberg20" package="TSOP312" value="TSOP31433" x="-563.88" y="-396.24" smashed="yes">
 <attribute name="BESTAND" value="?" x="-563.88" y="-396.24" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER" value="Vishay Semiconductors" x="-563.88" y="-396.24" size="1.778" layer="27" display="off"/>
 <attribute name="HERSTELLER-NR" value="TSOP31433" x="-563.88" y="-396.24" size="1.778" layer="27" display="off"/>
@@ -3394,54 +3394,6 @@ design rules under a new name.</description>
 <contactref element="M3:IC2" pad="6"/>
 <wire x1="-105.2117" y1="-35.56" x2="-201.67" y2="-229.235" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="M0:M-OUT">
-<contactref element="M0:-" pad="TP"/>
-<contactref element="M0:IC2" pad="2"/>
-<contactref element="M0:IC2" pad="1"/>
-<wire x1="-169.17" y1="-226.695" x2="-169.17" y2="-227.965" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.21" y1="46.99" x2="-169.17" y2="-226.695" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M1:M-OUT">
-<contactref element="M1:-" pad="TP"/>
-<contactref element="M1:IC2" pad="2"/>
-<contactref element="M1:IC2" pad="1"/>
-<wire x1="-181.87" y1="-226.695" x2="-181.87" y2="-227.965" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.21" y1="71.12" x2="-181.87" y2="-226.695" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M2:M-OUT">
-<contactref element="M2:-" pad="TP"/>
-<contactref element="M2:IC2" pad="2"/>
-<contactref element="M2:IC2" pad="1"/>
-<wire x1="-194.57" y1="-226.695" x2="-194.57" y2="-227.965" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.21" y1="95.25" x2="-194.57" y2="-226.695" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M3:M-OUT">
-<contactref element="M3:-" pad="TP"/>
-<contactref element="M3:IC2" pad="2"/>
-<contactref element="M3:IC2" pad="1"/>
-<wire x1="-207.27" y1="-226.695" x2="-207.27" y2="-227.965" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.21" y1="119.38" x2="-207.27" y2="-226.695" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M0:M+OUT">
-<contactref element="M0:+" pad="TP"/>
-<contactref element="M0:IC1" pad="4"/>
-<wire x1="-24.13" y1="46.99" x2="-149.86" y2="-198.12" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M1:M+OUT">
-<contactref element="M1:+" pad="TP"/>
-<contactref element="M1:IC1" pad="4"/>
-<wire x1="-24.13" y1="71.12" x2="-149.86" y2="-209.55" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M2:M+OUT">
-<contactref element="M2:+" pad="TP"/>
-<contactref element="M2:IC1" pad="4"/>
-<wire x1="-24.13" y1="95.25" x2="-149.86" y2="-220.98" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="M3:M+OUT">
-<contactref element="M3:+" pad="TP"/>
-<contactref element="M3:IC1" pad="4"/>
-<wire x1="-24.13" y1="119.38" x2="-149.86" y2="-232.41" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="P1:N$1">
 <contactref element="P1:U$1" pad="P2"/>
 <contactref element="P1:S1" pad="1"/>
@@ -3503,23 +3455,14 @@ design rules under a new name.</description>
 <contactref element="M0:C6" pad="1"/>
 <contactref element="M3:IC2" pad="8"/>
 <contactref element="M3:C6" pad="1"/>
-<contactref element="PUI1:X3" pad="P$1"/>
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="1"/>
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="5"/>
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="9"/>
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="13"/>
 <contactref element="EIN/AUSGABE1:R1" pad="2"/>
-<contactref element="Y1:IC1" pad="2"/>
-<contactref element="Y1:C1" pad="1"/>
-<contactref element="Y1:IC2" pad="2"/>
-<contactref element="Y1:IC3" pad="2"/>
-<contactref element="Y1:IC4" pad="2"/>
-<contactref element="Y1:IC5" pad="2"/>
-<contactref element="Y1:IC6" pad="2"/>
-<contactref element="X1:IC1" pad="3"/>
-<contactref element="X1:C1" pad="1"/>
-<contactref element="X1:R2" pad="2"/>
-<contactref element="X1:R1" pad="2"/>
+<contactref element="IR-EMPFAENGER1:IC1" pad="2"/>
+<contactref element="IR-EMPFAENGER1:C1" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC2" pad="2"/>
+<contactref element="IR-EMPFAENGER1:IC3" pad="2"/>
+<contactref element="IR-EMPFAENGER1:IC4" pad="2"/>
+<contactref element="IR-EMPFAENGER1:IC5" pad="2"/>
+<contactref element="IR-EMPFAENGER1:IC6" pad="2"/>
 <contactref element="ENC1:IC1" pad="VIN"/>
 <contactref element="BLUETOOTH1:C1" pad="1"/>
 <contactref element="BLUETOOTH1:IC1" pad="5"/>
@@ -3529,9 +3472,9 @@ design rules under a new name.</description>
 <contactref element="5V-SCHALTREGLER1:C4" pad="1"/>
 <contactref element="5V-LINEARWANDLER1:C1" pad="1"/>
 <contactref element="5V-LINEARWANDLER1:IC1" pad="2"/>
-<contactref element="C1:J1" pad="1"/>
-<contactref element="C1:X2" pad="2"/>
-<contactref element="C1:X2" pad="5"/>
+<contactref element="CAMERA1:J1" pad="1"/>
+<contactref element="CAMERA1:X2" pad="2"/>
+<contactref element="CAMERA1:X2" pad="5"/>
 <contactref element="SENSOREN1:IC4" pad="1"/>
 <contactref element="SENSOREN1:C1" pad="1"/>
 <contactref element="SENSOREN1:IC2" pad="1"/>
@@ -3552,6 +3495,15 @@ design rules under a new name.</description>
 <contactref element="ANSCHLUESSE1:X1" pad="1"/>
 <contactref element="ANSCHLUESSE1:X5" pad="4"/>
 <contactref element="ANSCHLUESSE1:C1" pad="1"/>
+<contactref element="IR_SENDER1:IC1" pad="3"/>
+<contactref element="IR_SENDER1:C1" pad="1"/>
+<contactref element="IR_SENDER1:R2" pad="2"/>
+<contactref element="IR_SENDER1:R1" pad="2"/>
+<contactref element="PUI1:X3" pad="P$1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="5"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="9"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="13"/>
 <wire x1="-726.44" y1="-535.94" x2="-726.44" y2="-541.02" width="0" layer="19" extent="1-1"/>
 <wire x1="-726.44" y1="-546.1" x2="-726.44" y2="-541.02" width="0" layer="19" extent="1-1"/>
 <wire x1="-726.44" y1="-551.18" x2="-726.44" y2="-546.1" width="0" layer="19" extent="1-1"/>
@@ -3649,18 +3601,6 @@ design rules under a new name.</description>
 <contactref element="M3:IC1" pad="8"/>
 <contactref element="M3:IC1" pad="3"/>
 <contactref element="M3:IC2" pad="5"/>
-<contactref element="M0:C3" pad="2"/>
-<contactref element="M0:C5" pad="2"/>
-<contactref element="M0:C6" pad="2"/>
-<contactref element="M0:C4" pad="2"/>
-<contactref element="M0:R3" pad="1"/>
-<contactref element="M0:IC1" pad="5"/>
-<contactref element="M0:IC1" pad="6"/>
-<contactref element="M0:IC1" pad="15"/>
-<contactref element="M0:IC1" pad="16"/>
-<contactref element="M0:IC1" pad="8"/>
-<contactref element="M0:IC1" pad="3"/>
-<contactref element="M0:IC2" pad="5"/>
 <contactref element="5V-SCHALTREGLER1:IC2" pad="3"/>
 <contactref element="5V-SCHALTREGLER1:C3" pad="2"/>
 <contactref element="5V-SCHALTREGLER1:C4" pad="2"/>
@@ -3716,30 +3656,42 @@ design rules under a new name.</description>
 <contactref element="5V-LINEARWANDLER1:IC1" pad="3"/>
 <contactref element="5V-LINEARWANDLER1:C2" pad="2"/>
 <contactref element="5V-LINEARWANDLER1:C1" pad="2"/>
-<contactref element="Y1:IC1" pad="1"/>
-<contactref element="Y1:IC2" pad="1"/>
-<contactref element="Y1:IC3" pad="1"/>
-<contactref element="Y1:IC4" pad="1"/>
-<contactref element="Y1:IC5" pad="1"/>
-<contactref element="Y1:IC6" pad="1"/>
-<contactref element="Y1:C1" pad="2"/>
-<contactref element="X1:IC1" pad="4"/>
-<contactref element="X1:C1" pad="2"/>
-<contactref element="X1:R4" pad="1"/>
-<contactref element="X1:T1" pad="1"/>
-<contactref element="X1:R6" pad="1"/>
-<contactref element="X1:T2" pad="1"/>
-<contactref element="C1:X1" pad="6"/>
-<contactref element="C1:X3" pad="1"/>
-<contactref element="C1:C1" pad="2"/>
-<contactref element="C1:X2" pad="6"/>
-<contactref element="C1:X2" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC1" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC2" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC3" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC4" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC5" pad="1"/>
+<contactref element="IR-EMPFAENGER1:IC6" pad="1"/>
+<contactref element="IR-EMPFAENGER1:C1" pad="2"/>
+<contactref element="IR_SENDER1:IC1" pad="4"/>
+<contactref element="IR_SENDER1:C1" pad="2"/>
+<contactref element="IR_SENDER1:R4" pad="1"/>
+<contactref element="IR_SENDER1:T1" pad="1"/>
+<contactref element="IR_SENDER1:R6" pad="1"/>
+<contactref element="IR_SENDER1:T2" pad="1"/>
+<contactref element="CAMERA1:X1" pad="6"/>
+<contactref element="CAMERA1:X3" pad="1"/>
+<contactref element="CAMERA1:C1" pad="2"/>
+<contactref element="CAMERA1:X2" pad="6"/>
+<contactref element="CAMERA1:X2" pad="1"/>
 <contactref element="ENC1:IC1" pad="GND"/>
 <contactref element="ENC1:IC1" pad="AGND"/>
 <contactref element="ENC1:IC1" pad="GND1"/>
 <contactref element="BLUETOOTH1:IC1" pad="4"/>
 <contactref element="BLUETOOTH1:C1" pad="2"/>
 <contactref element="BLUETOOTH1:R2" pad="2"/>
+<contactref element="M0:IC1" pad="5"/>
+<contactref element="M0:IC1" pad="6"/>
+<contactref element="M0:IC1" pad="15"/>
+<contactref element="M0:IC1" pad="16"/>
+<contactref element="M0:C3" pad="2"/>
+<contactref element="M0:C4" pad="2"/>
+<contactref element="M0:IC1" pad="8"/>
+<contactref element="M0:IC1" pad="3"/>
+<contactref element="M0:IC2" pad="5"/>
+<contactref element="M0:C5" pad="2"/>
+<contactref element="M0:C6" pad="2"/>
+<contactref element="M0:R3" pad="1"/>
 <wire x1="-723.9" y1="-538.48" x2="-723.9" y2="-543.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-723.9" y1="-548.64" x2="-723.9" y2="-543.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-723.9" y1="-553.72" x2="-723.9" y2="-548.64" width="0" layer="19" extent="1-1"/>
@@ -3872,8 +3824,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="+12V">
 <contactref element="F1:F1" pad="1"/>
-<contactref element="X1:R8" pad="2"/>
-<contactref element="X1:R7" pad="2"/>
 <contactref element="ANSCHLUESSE-UNTEN1:X2" pad="19"/>
 <contactref element="ANSCHLUESSE-UNTEN1:X2" pad="27"/>
 <contactref element="ANSCHLUESSE-UNTEN1:X2" pad="28"/>
@@ -3883,10 +3833,12 @@ design rules under a new name.</description>
 <contactref element="5V-SCHALTREGLER1:C3" pad="1"/>
 <contactref element="5V-LINEARWANDLER1:IC1" pad="1"/>
 <contactref element="5V-LINEARWANDLER1:C2" pad="1"/>
+<contactref element="CAMERA1:J1" pad="3"/>
+<contactref element="CAMERA1:X3" pad="2"/>
+<contactref element="CAMERA1:C1" pad="1"/>
+<contactref element="IR_SENDER1:R8" pad="2"/>
+<contactref element="IR_SENDER1:R7" pad="2"/>
 <contactref element="PUI1:X4" pad="6"/>
-<contactref element="C1:J1" pad="3"/>
-<contactref element="C1:X3" pad="2"/>
-<contactref element="C1:C1" pad="1"/>
 <wire x1="-242.3717" y1="-247.65" x2="-248.093" y2="-256.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-259.06" y1="-256.54" x2="-248.093" y2="-256.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.0722" y1="-245.11" x2="-242.3717" y2="-247.65" width="0" layer="19" extent="1-1"/>
@@ -3915,155 +3867,113 @@ design rules under a new name.</description>
 <wire x1="-280.66" y1="-266.7" x2="-278.56" y2="-272.64" width="0" layer="19" extent="1-1"/>
 <wire x1="-290.83" y1="-260.17" x2="-280.66" y2="-266.7" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="BLUETOOTH1:RX">
-<contactref element="BLUETOOTH1:IC1" pad="2"/>
-</signal>
-<signal name="BLUETOOTH1:TX">
-<contactref element="BLUETOOTH1:IC1" pad="3"/>
-</signal>
-<signal name="BLUETOOTH1:OUT">
-<contactref element="BLUETOOTH1:IC1" pad="1"/>
-</signal>
-<signal name="BLUETOOTH1:IN">
-<contactref element="BLUETOOTH1:R2" pad="1"/>
-<contactref element="BLUETOOTH1:IC1" pad="6"/>
-<wire x1="-309.88" y1="-283.21" x2="-322.26" y2="-288.29" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="C1:5V-CAMERA">
-<contactref element="C1:X1" pad="2"/>
-<contactref element="C1:J1" pad="2"/>
+<signal name="CAMERA1:5V-CAMERA">
+<contactref element="CAMERA1:X1" pad="2"/>
+<contactref element="CAMERA1:J1" pad="2"/>
 <wire x1="-337.82" y1="-284.48" x2="-330.2" y2="-294.64" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="C1:MOSI">
-<contactref element="C1:X1" pad="4"/>
-</signal>
-<signal name="C1:MISO">
-<contactref element="C1:X1" pad="1"/>
-</signal>
-<signal name="C1:CLK">
-<contactref element="C1:X1" pad="3"/>
-</signal>
-<signal name="C1:CS">
-<contactref element="C1:X1" pad="5"/>
-</signal>
-<signal name="C1:RX-C">
-<contactref element="C1:X2" pad="3"/>
-</signal>
-<signal name="C1:TX-C">
-<contactref element="C1:X2" pad="4"/>
-</signal>
-<signal name="X1:IN1">
-<contactref element="X1:IC1" pad="5"/>
-<contactref element="X1:R1" pad="1"/>
-<wire x1="-517.84" y1="-299.72" x2="-390.2155" y2="-293.075" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="X1:IN2">
-<contactref element="X1:IC1" pad="6"/>
-<contactref element="X1:R2" pad="1"/>
-<wire x1="-517.84" y1="-306.07" x2="-390.2155" y2="-292.425" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="X1:N$1">
-<contactref element="X1:T1" pad="2"/>
-<contactref element="X1:R3" pad="2"/>
-<contactref element="X1:R4" pad="2"/>
+<signal name="IR_SENDER1:N$1">
+<contactref element="IR_SENDER1:T1" pad="2"/>
+<contactref element="IR_SENDER1:R3" pad="2"/>
+<contactref element="IR_SENDER1:R4" pad="2"/>
 <wire x1="-515.94" y1="-318.77" x2="-525.7261" y2="-341.95" width="0" layer="19" extent="1-1"/>
 <wire x1="-515.94" y1="-312.42" x2="-515.94" y2="-318.77" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$3">
-<contactref element="X1:T1" pad="3"/>
-<contactref element="X1:LED1" pad="2"/>
+<signal name="IR_SENDER1:N$3">
+<contactref element="IR_SENDER1:T1" pad="3"/>
+<contactref element="IR_SENDER1:LED1" pad="2"/>
 <wire x1="-523.2939" y1="-342.9" x2="-398.78" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$4">
-<contactref element="X1:LED1" pad="1"/>
-<contactref element="X1:LED2" pad="2"/>
+<signal name="IR_SENDER1:N$4">
+<contactref element="IR_SENDER1:LED1" pad="1"/>
+<contactref element="IR_SENDER1:LED2" pad="2"/>
 <wire x1="-401.32" y1="-290.83" x2="-452.12" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$5">
-<contactref element="X1:LED2" pad="1"/>
-<contactref element="X1:LED3" pad="2"/>
+<signal name="IR_SENDER1:N$5">
+<contactref element="IR_SENDER1:LED2" pad="1"/>
+<contactref element="IR_SENDER1:LED3" pad="2"/>
 <wire x1="-454.66" y1="-290.83" x2="-461.01" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$6">
-<contactref element="X1:LED3" pad="1"/>
-<contactref element="X1:LED4" pad="2"/>
+<signal name="IR_SENDER1:N$6">
+<contactref element="IR_SENDER1:LED3" pad="1"/>
+<contactref element="IR_SENDER1:LED4" pad="2"/>
 <wire x1="-463.55" y1="-290.83" x2="-469.9" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$7">
-<contactref element="X1:LED4" pad="1"/>
-<contactref element="X1:LED5" pad="2"/>
+<signal name="IR_SENDER1:N$7">
+<contactref element="IR_SENDER1:LED4" pad="1"/>
+<contactref element="IR_SENDER1:LED5" pad="2"/>
 <wire x1="-472.44" y1="-290.83" x2="-478.79" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$8">
-<contactref element="X1:LED5" pad="1"/>
-<contactref element="X1:LED6" pad="2"/>
+<signal name="IR_SENDER1:N$8">
+<contactref element="IR_SENDER1:LED5" pad="1"/>
+<contactref element="IR_SENDER1:LED6" pad="2"/>
 <wire x1="-481.33" y1="-290.83" x2="-487.68" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$9">
-<contactref element="X1:LED6" pad="1"/>
-<contactref element="X1:LED7" pad="2"/>
+<signal name="IR_SENDER1:N$9">
+<contactref element="IR_SENDER1:LED6" pad="1"/>
+<contactref element="IR_SENDER1:LED7" pad="2"/>
 <wire x1="-490.22" y1="-290.83" x2="-496.57" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$10">
-<contactref element="X1:T2" pad="2"/>
-<contactref element="X1:R5" pad="2"/>
-<contactref element="X1:R6" pad="2"/>
+<signal name="IR_SENDER1:N$10">
+<contactref element="IR_SENDER1:T2" pad="2"/>
+<contactref element="IR_SENDER1:R5" pad="2"/>
+<contactref element="IR_SENDER1:R6" pad="2"/>
 <wire x1="-515.94" y1="-331.47" x2="-537.1561" y2="-341.95" width="0" layer="19" extent="1-1"/>
 <wire x1="-515.94" y1="-325.12" x2="-515.94" y2="-331.47" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$12">
-<contactref element="X1:T2" pad="3"/>
-<contactref element="X1:LED8" pad="2"/>
+<signal name="IR_SENDER1:N$12">
+<contactref element="IR_SENDER1:T2" pad="3"/>
+<contactref element="IR_SENDER1:LED8" pad="2"/>
 <wire x1="-505.46" y1="-290.83" x2="-534.7239" y2="-342.9" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$13">
-<contactref element="X1:LED8" pad="1"/>
-<contactref element="X1:LED9" pad="2"/>
+<signal name="IR_SENDER1:N$13">
+<contactref element="IR_SENDER1:LED8" pad="1"/>
+<contactref element="IR_SENDER1:LED9" pad="2"/>
 <wire x1="-508" y1="-290.83" x2="-514.35" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$14">
-<contactref element="X1:LED9" pad="1"/>
-<contactref element="X1:LED10" pad="2"/>
+<signal name="IR_SENDER1:N$14">
+<contactref element="IR_SENDER1:LED9" pad="1"/>
+<contactref element="IR_SENDER1:LED10" pad="2"/>
 <wire x1="-516.89" y1="-290.83" x2="-407.67" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$15">
-<contactref element="X1:LED10" pad="1"/>
-<contactref element="X1:LED11" pad="2"/>
+<signal name="IR_SENDER1:N$15">
+<contactref element="IR_SENDER1:LED10" pad="1"/>
+<contactref element="IR_SENDER1:LED11" pad="2"/>
 <wire x1="-410.21" y1="-290.83" x2="-416.56" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$16">
-<contactref element="X1:LED11" pad="1"/>
-<contactref element="X1:LED12" pad="2"/>
+<signal name="IR_SENDER1:N$16">
+<contactref element="IR_SENDER1:LED11" pad="1"/>
+<contactref element="IR_SENDER1:LED12" pad="2"/>
 <wire x1="-419.1" y1="-290.83" x2="-425.45" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$17">
-<contactref element="X1:LED12" pad="1"/>
-<contactref element="X1:LED13" pad="2"/>
+<signal name="IR_SENDER1:N$17">
+<contactref element="IR_SENDER1:LED12" pad="1"/>
+<contactref element="IR_SENDER1:LED13" pad="2"/>
 <wire x1="-427.99" y1="-290.83" x2="-434.34" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$18">
-<contactref element="X1:LED13" pad="1"/>
-<contactref element="X1:LED14" pad="2"/>
+<signal name="IR_SENDER1:N$18">
+<contactref element="IR_SENDER1:LED13" pad="1"/>
+<contactref element="IR_SENDER1:LED14" pad="2"/>
 <wire x1="-436.88" y1="-290.83" x2="-443.23" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$19">
-<contactref element="X1:LED14" pad="1"/>
-<contactref element="X1:R8" pad="1"/>
+<signal name="IR_SENDER1:N$19">
+<contactref element="IR_SENDER1:LED14" pad="1"/>
+<contactref element="IR_SENDER1:R8" pad="1"/>
 <wire x1="-517.84" y1="-344.17" x2="-445.77" y2="-290.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$20">
-<contactref element="X1:R7" pad="1"/>
-<contactref element="X1:LED7" pad="1"/>
+<signal name="IR_SENDER1:N$20">
+<contactref element="IR_SENDER1:R7" pad="1"/>
+<contactref element="IR_SENDER1:LED7" pad="1"/>
 <wire x1="-499.11" y1="-290.83" x2="-517.84" y2="-337.82" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$11">
-<contactref element="X1:IC1" pad="2"/>
-<contactref element="X1:R3" pad="1"/>
+<signal name="IR_SENDER1:N$11">
+<contactref element="IR_SENDER1:IC1" pad="2"/>
+<contactref element="IR_SENDER1:R3" pad="1"/>
 <wire x1="-517.84" y1="-312.42" x2="-394.6445" y2="-291.775" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="X1:N$2">
-<contactref element="X1:IC1" pad="1"/>
-<contactref element="X1:R5" pad="1"/>
+<signal name="IR_SENDER1:N$2">
+<contactref element="IR_SENDER1:IC1" pad="1"/>
+<contactref element="IR_SENDER1:R5" pad="1"/>
 <wire x1="-517.84" y1="-325.12" x2="-394.6445" y2="-291.125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC1:VBAT">
@@ -4078,54 +3988,6 @@ design rules under a new name.</description>
 <signal name="ENC1:VUSB">
 <contactref element="ENC1:IC1" pad="VUSB"/>
 </signal>
-<signal name="ENC1:SCL">
-<contactref element="ENC1:IC1" pad="19"/>
-</signal>
-<signal name="ENC1:SDA">
-<contactref element="ENC1:IC1" pad="18"/>
-</signal>
-<signal name="ENC1:ENA0">
-<contactref element="ENC1:IC1" pad="2"/>
-</signal>
-<signal name="ENC1:ENB0">
-<contactref element="ENC1:IC1" pad="3"/>
-</signal>
-<signal name="ENC1:ENA1">
-<contactref element="ENC1:IC1" pad="4"/>
-</signal>
-<signal name="ENC1:ENB1">
-<contactref element="ENC1:IC1" pad="5"/>
-</signal>
-<signal name="ENC1:ENA3">
-<contactref element="ENC1:IC1" pad="16"/>
-</signal>
-<signal name="ENC1:ENB3">
-<contactref element="ENC1:IC1" pad="17"/>
-</signal>
-<signal name="ENC1:ENB2">
-<contactref element="ENC1:IC1" pad="15"/>
-</signal>
-<signal name="ENC1:ENA2">
-<contactref element="ENC1:IC1" pad="14"/>
-</signal>
-<signal name="Y1:OUT1">
-<contactref element="Y1:IC1" pad="3"/>
-</signal>
-<signal name="Y1:OUT2">
-<contactref element="Y1:IC2" pad="3"/>
-</signal>
-<signal name="Y1:OUT3">
-<contactref element="Y1:IC3" pad="3"/>
-</signal>
-<signal name="Y1:OUT4">
-<contactref element="Y1:IC4" pad="3"/>
-</signal>
-<signal name="Y1:OUT5">
-<contactref element="Y1:IC5" pad="3"/>
-</signal>
-<signal name="Y1:OUT6">
-<contactref element="Y1:IC6" pad="3"/>
-</signal>
 <signal name="K1:N$1">
 <contactref element="K1:T1" pad="1"/>
 <contactref element="K1:R1" pad="2"/>
@@ -4133,181 +3995,18 @@ design rules under a new name.</description>
 <wire x1="-580.71" y1="-417.83" x2="-581.66" y2="-424.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-580.71" y1="-411.48" x2="-580.71" y2="-417.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="K1:KICK_EN">
-<contactref element="K1:R1" pad="1"/>
-</signal>
-<signal name="K1:KICK-OUTA">
-<contactref element="K1:T1" pad="2"/>
-<contactref element="K1:D1" pad="2"/>
-<wire x1="-578.0737" y1="-405.13" x2="-579.12" y2="-424.18" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="K1:KICK-OUTB">
-<contactref element="K1:D1" pad="1"/>
-<contactref element="K1:C1" pad="1"/>
-<wire x1="-580.39" y1="-391.16" x2="-582.7063" y2="-405.13" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PUI1:TX">
-<contactref element="PUI1:X3" pad="P$2"/>
-</signal>
-<signal name="PUI1:RX">
-<contactref element="PUI1:X3" pad="P$3"/>
-</signal>
-<signal name="PUI1:SDA">
-<contactref element="PUI1:X4" pad="2"/>
-</signal>
-<signal name="PUI1:SCL">
-<contactref element="PUI1:X4" pad="5"/>
-</signal>
-<signal name="PUI1:RST">
-<contactref element="PUI1:X4" pad="4"/>
-</signal>
-<signal name="SENSOREN1:SDA">
-<contactref element="SENSOREN1:IC4" pad="2"/>
-<contactref element="SENSOREN1:IC2" pad="2"/>
-<contactref element="SENSOREN1:IC5" pad="2"/>
-<contactref element="SENSOREN1:IC6" pad="2"/>
-<contactref element="SENSOREN1:IC7" pad="2"/>
-<contactref element="SENSOREN1:IC8" pad="2"/>
-<contactref element="SENSOREN1:IC3" pad="D"/>
-<wire x1="-670.56" y1="-534.67" x2="-670.56" y2="-556.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-670.56" y1="-513.08" x2="-670.56" y2="-534.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-670.56" y1="-491.49" x2="-670.56" y2="-513.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-670.56" y1="-469.9" x2="-670.56" y2="-491.49" width="0" layer="19" extent="1-1"/>
-<wire x1="-681.99" y1="-450.85" x2="-670.56" y2="-469.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-685.8" y1="-435.61" x2="-681.99" y2="-450.85" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SENSOREN1:SCL">
-<contactref element="SENSOREN1:IC4" pad="3"/>
-<contactref element="SENSOREN1:IC2" pad="3"/>
-<contactref element="SENSOREN1:IC5" pad="3"/>
-<contactref element="SENSOREN1:IC6" pad="3"/>
-<contactref element="SENSOREN1:IC7" pad="3"/>
-<contactref element="SENSOREN1:IC8" pad="3"/>
-<contactref element="SENSOREN1:IC3" pad="C"/>
-<wire x1="-668.02" y1="-534.67" x2="-668.02" y2="-556.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-668.02" y1="-513.08" x2="-668.02" y2="-534.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-668.02" y1="-491.49" x2="-668.02" y2="-513.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-668.02" y1="-469.9" x2="-668.02" y2="-491.49" width="0" layer="19" extent="1-1"/>
-<wire x1="-684.53" y1="-450.85" x2="-668.02" y2="-469.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-683.26" y1="-435.61" x2="-684.53" y2="-450.85" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SENSOREN1:TEMP-O">
-<contactref element="SENSOREN1:IC1" pad="2"/>
-</signal>
-<signal name="SENSOREN1:PHOTO-O">
-<contactref element="SENSOREN1:T1" pad="C"/>
-<contactref element="SENSOREN1:R1" pad="2"/>
-<wire x1="-687.39" y1="-568.96" x2="-693.24" y2="-575.31" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="SENSOREN1:N$1">
 <contactref element="SENSOREN1:IC2" pad="4"/>
 <contactref element="SENSOREN1:J1" pad="2"/>
 <wire x1="-680.72" y1="-435.61" x2="-687.578" y2="-563.88" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SENSOREN1:BR-O">
-<contactref element="SENSOREN1:X1" pad="2"/>
 </signal>
 <signal name="SENSOREN1:N$2">
 <contactref element="SENSOREN1:X2" pad="2"/>
 <contactref element="SENSOREN1:R2" pad="1"/>
 <wire x1="-707.44" y1="-572.81" x2="-689.29" y2="-575.31" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SENSOREN1:BR-I">
-<contactref element="SENSOREN1:R2" pad="2"/>
-</signal>
 <signal name="SENSOREN1:N$3">
 <contactref element="SENSOREN1:X1" pad="1"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MA0">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="1"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MB0">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="2"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MA1">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="3"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MB1">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="4"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MA2">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="5"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MA3">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="7"/>
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="8"/>
-<wire x1="-715.01" y1="-569.88" x2="-718.01" y2="-569.88" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:KICKA">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="9"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:KICKB">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="10"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENA0">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="2"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENB0">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="3"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENB1">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="6"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENA1">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="7"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENA2">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="10"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENB2">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="11"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENA3">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="14"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:ENB3">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="15"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:INTERRUPT-O">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="18"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:LED-I">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="21"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:SDA">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="23"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:SCL">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="26"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:RST">
-<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="29"/>
-</signal>
-<signal name="ANSCHLUESSE-UNTEN1:MB2">
-<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="6"/>
-</signal>
-<signal name="ANSCHLUESSE1:SDA">
-<contactref element="ANSCHLUESSE1:X5" pad="3"/>
-</signal>
-<signal name="ANSCHLUESSE1:SCL">
-<contactref element="ANSCHLUESSE1:X5" pad="1"/>
-</signal>
-<signal name="ANSCHLUESSE1:A1">
-<contactref element="ANSCHLUESSE1:X3" pad="1"/>
-</signal>
-<signal name="ANSCHLUESSE1:D1">
-<contactref element="ANSCHLUESSE1:X4" pad="1"/>
-</signal>
-<signal name="EIN/AUSGABE1:SWITCH-O">
-<contactref element="EIN/AUSGABE1:S1" pad="2"/>
-</signal>
-<signal name="EIN/AUSGABE1:SPEAKER-I">
-<contactref element="EIN/AUSGABE1:M1" pad="1"/>
-</signal>
-<signal name="EIN/AUSGABE1:HB-I">
-<contactref element="EIN/AUSGABE1:LED1" pad="C"/>
-<contactref element="EIN/AUSGABE1:R2" pad="2"/>
-<wire x1="-780.87" y1="-585.47" x2="-806.77" y2="-617.22" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EIN/AUSGABE1:N$1">
 <contactref element="EIN/AUSGABE1:LED1" pad="A"/>
@@ -4334,14 +4033,290 @@ design rules under a new name.</description>
 <contactref element="EIN/AUSGABE1:R4" pad="1"/>
 <wire x1="-802.82" y1="-585.47" x2="-808.67" y2="-629.92" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="EIN/AUSGABE1:LED1-I">
+<signal name="A1">
+<contactref element="ANSCHLUESSE1:X3" pad="1"/>
+</signal>
+<signal name="D1">
+<contactref element="ANSCHLUESSE1:X4" pad="1"/>
+</signal>
+<signal name="PHOTO-O">
+<contactref element="SENSOREN1:T1" pad="C"/>
+<contactref element="SENSOREN1:R1" pad="2"/>
+<wire x1="-687.39" y1="-568.96" x2="-693.24" y2="-575.31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="TEMP-O">
+<contactref element="SENSOREN1:IC1" pad="2"/>
+</signal>
+<signal name="BR-I">
+<contactref element="SENSOREN1:R2" pad="2"/>
+</signal>
+<signal name="BR-O">
+<contactref element="SENSOREN1:X1" pad="2"/>
+</signal>
+<signal name="RST1">
+<contactref element="PUI1:X4" pad="4"/>
+</signal>
+<signal name="SPEAKER-I">
+<contactref element="EIN/AUSGABE1:M1" pad="1"/>
+</signal>
+<signal name="SWITCH-O">
+<contactref element="EIN/AUSGABE1:S1" pad="2"/>
+</signal>
+<signal name="HB-I">
+<contactref element="EIN/AUSGABE1:LED1" pad="C"/>
+<contactref element="EIN/AUSGABE1:R2" pad="2"/>
+<wire x1="-780.87" y1="-585.47" x2="-806.77" y2="-617.22" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LED1-I">
 <contactref element="EIN/AUSGABE1:R3" pad="2"/>
 </signal>
-<signal name="EIN/AUSGABE1:LED2-I">
+<signal name="LED2-I">
 <contactref element="EIN/AUSGABE1:R5" pad="2"/>
 </signal>
-<signal name="EIN/AUSGABE1:LED3-I">
+<signal name="LED3-I">
 <contactref element="EIN/AUSGABE1:R4" pad="2"/>
+</signal>
+<signal name="KICK-EN">
+<contactref element="K1:R1" pad="1"/>
+</signal>
+<signal name="IN">
+<contactref element="BLUETOOTH1:R2" pad="1"/>
+<contactref element="BLUETOOTH1:IC1" pad="6"/>
+<wire x1="-309.88" y1="-283.21" x2="-322.26" y2="-288.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RX-P">
+<contactref element="PUI1:X3" pad="P$3"/>
+</signal>
+<signal name="MISO">
+<contactref element="CAMERA1:X1" pad="1"/>
+</signal>
+<signal name="MOSI">
+<contactref element="CAMERA1:X1" pad="4"/>
+</signal>
+<signal name="CLK">
+<contactref element="CAMERA1:X1" pad="3"/>
+</signal>
+<signal name="CS">
+<contactref element="CAMERA1:X1" pad="5"/>
+</signal>
+<signal name="RX-C">
+<contactref element="CAMERA1:X2" pad="3"/>
+</signal>
+<signal name="TX-C">
+<contactref element="CAMERA1:X2" pad="4"/>
+</signal>
+<signal name="OUT1">
+<contactref element="IR-EMPFAENGER1:IC1" pad="3"/>
+</signal>
+<signal name="OUT2">
+<contactref element="IR-EMPFAENGER1:IC2" pad="3"/>
+</signal>
+<signal name="OUT3">
+<contactref element="IR-EMPFAENGER1:IC3" pad="3"/>
+</signal>
+<signal name="OUT4">
+<contactref element="IR-EMPFAENGER1:IC4" pad="3"/>
+</signal>
+<signal name="OUT5">
+<contactref element="IR-EMPFAENGER1:IC5" pad="3"/>
+</signal>
+<signal name="OUT6">
+<contactref element="IR-EMPFAENGER1:IC6" pad="3"/>
+</signal>
+<signal name="TX-P">
+<contactref element="PUI1:X3" pad="P$2"/>
+</signal>
+<signal name="OUT">
+<contactref element="BLUETOOTH1:IC1" pad="1"/>
+</signal>
+<signal name="SDA">
+<contactref element="ENC1:IC1" pad="18"/>
+<contactref element="SENSOREN1:IC4" pad="2"/>
+<contactref element="SENSOREN1:IC2" pad="2"/>
+<contactref element="SENSOREN1:IC5" pad="2"/>
+<contactref element="SENSOREN1:IC6" pad="2"/>
+<contactref element="SENSOREN1:IC7" pad="2"/>
+<contactref element="SENSOREN1:IC8" pad="2"/>
+<contactref element="SENSOREN1:IC3" pad="D"/>
+<contactref element="ANSCHLUESSE1:X5" pad="3"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="23"/>
+<contactref element="PUI1:X4" pad="2"/>
+<wire x1="-670.56" y1="-534.67" x2="-670.56" y2="-556.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-670.56" y1="-513.08" x2="-670.56" y2="-534.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-670.56" y1="-491.49" x2="-670.56" y2="-513.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-670.56" y1="-469.9" x2="-670.56" y2="-491.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-681.99" y1="-450.85" x2="-670.56" y2="-469.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-685.8" y1="-435.61" x2="-681.99" y2="-450.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-726.44" y1="-563.88" x2="-670.56" y2="-556.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-772.21" y1="-583.57" x2="-726.44" y2="-563.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-589.28" y1="-427.99" x2="-670.56" y2="-469.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-561.34" y1="-322.58" x2="-589.28" y2="-427.99" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SCL">
+<contactref element="ENC1:IC1" pad="19"/>
+<contactref element="SENSOREN1:IC4" pad="3"/>
+<contactref element="SENSOREN1:IC2" pad="3"/>
+<contactref element="SENSOREN1:IC5" pad="3"/>
+<contactref element="SENSOREN1:IC6" pad="3"/>
+<contactref element="SENSOREN1:IC7" pad="3"/>
+<contactref element="SENSOREN1:IC8" pad="3"/>
+<contactref element="SENSOREN1:IC3" pad="C"/>
+<contactref element="ANSCHLUESSE1:X5" pad="1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="26"/>
+<contactref element="PUI1:X4" pad="5"/>
+<wire x1="-668.02" y1="-534.67" x2="-668.02" y2="-556.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-668.02" y1="-513.08" x2="-668.02" y2="-534.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-668.02" y1="-491.49" x2="-668.02" y2="-513.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-668.02" y1="-469.9" x2="-668.02" y2="-491.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-684.53" y1="-450.85" x2="-668.02" y2="-469.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-683.26" y1="-435.61" x2="-684.53" y2="-450.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-723.9" y1="-566.42" x2="-668.02" y2="-556.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-777.29" y1="-583.57" x2="-723.9" y2="-566.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-591.82" y1="-433.07" x2="-668.02" y2="-469.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-561.34" y1="-325.12" x2="-591.82" y2="-433.07" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IN1">
+<contactref element="IR_SENDER1:IC1" pad="5"/>
+<contactref element="IR_SENDER1:R1" pad="1"/>
+<wire x1="-517.84" y1="-299.72" x2="-390.2155" y2="-293.075" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IN2">
+<contactref element="IR_SENDER1:IC1" pad="6"/>
+<contactref element="IR_SENDER1:R2" pad="1"/>
+<wire x1="-517.84" y1="-306.07" x2="-390.2155" y2="-292.425" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RGBLED-I">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="21"/>
+</signal>
+<signal name="INTERRUPT-O">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="18"/>
+</signal>
+<signal name="KICKB">
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="10"/>
+<contactref element="K1:D1" pad="1"/>
+<contactref element="K1:C1" pad="1"/>
+<wire x1="-580.39" y1="-391.16" x2="-582.7063" y2="-405.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-715.01" y1="-572.88" x2="-582.7063" y2="-405.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="KICKA">
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="9"/>
+<contactref element="K1:T1" pad="2"/>
+<contactref element="K1:D1" pad="2"/>
+<wire x1="-578.0737" y1="-405.13" x2="-579.12" y2="-424.18" width="0" layer="19" extent="1-1"/>
+<wire x1="-718.01" y1="-572.88" x2="-579.12" y2="-424.18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RST2">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="29"/>
+</signal>
+<signal name="RX-B">
+<contactref element="BLUETOOTH1:IC1" pad="2"/>
+</signal>
+<signal name="TX-B">
+<contactref element="BLUETOOTH1:IC1" pad="3"/>
+</signal>
+<signal name="MA3">
+<contactref element="M3:-" pad="TP"/>
+<contactref element="M3:IC2" pad="2"/>
+<contactref element="M3:IC2" pad="1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="7"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="8"/>
+<wire x1="-207.27" y1="-226.695" x2="-207.27" y2="-227.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.21" y1="119.38" x2="-207.27" y2="-226.695" width="0" layer="19" extent="1-1"/>
+<wire x1="-715.01" y1="-569.88" x2="-207.27" y2="-227.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-718.01" y1="-569.88" x2="-715.01" y2="-569.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENA0">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="2"/>
+<contactref element="ENC1:IC1" pad="2"/>
+<wire x1="-546.1" y1="-335.28" x2="-723.9" y2="-535.94" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENA1">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="7"/>
+<contactref element="ENC1:IC1" pad="4"/>
+<wire x1="-726.44" y1="-543.56" x2="-546.1" y2="-330.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENA2">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="10"/>
+<contactref element="ENC1:IC1" pad="14"/>
+<wire x1="-723.9" y1="-546.1" x2="-561.34" y2="-312.42" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENA3">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="14"/>
+<contactref element="ENC1:IC1" pad="16"/>
+<wire x1="-723.9" y1="-551.18" x2="-561.34" y2="-317.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENB0">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="3"/>
+<contactref element="ENC1:IC1" pad="3"/>
+<wire x1="-546.1" y1="-332.74" x2="-726.44" y2="-538.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENB1">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="6"/>
+<contactref element="ENC1:IC1" pad="5"/>
+<wire x1="-546.1" y1="-327.66" x2="-723.9" y2="-541.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENB2">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="11"/>
+<contactref element="ENC1:IC1" pad="15"/>
+<wire x1="-726.44" y1="-548.64" x2="-561.34" y2="-314.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENB3">
+<contactref element="ANSCHLUESSE-UNTEN1:X2" pad="15"/>
+<contactref element="ENC1:IC1" pad="17"/>
+<wire x1="-726.44" y1="-553.72" x2="-561.34" y2="-320.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA0">
+<contactref element="M0:-" pad="TP"/>
+<contactref element="M0:IC2" pad="2"/>
+<contactref element="M0:IC2" pad="1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="1"/>
+<wire x1="-169.17" y1="-226.695" x2="-169.17" y2="-227.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.21" y1="46.99" x2="-169.17" y2="-226.695" width="0" layer="19" extent="1-1"/>
+<wire x1="-718.01" y1="-560.88" x2="-169.17" y2="-227.965" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MB0">
+<contactref element="M0:+" pad="TP"/>
+<contactref element="M0:IC1" pad="4"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="2"/>
+<wire x1="-24.13" y1="46.99" x2="-149.86" y2="-198.12" width="0" layer="19" extent="1-1"/>
+<wire x1="-715.01" y1="-560.88" x2="-149.86" y2="-198.12" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA1">
+<contactref element="M1:-" pad="TP"/>
+<contactref element="M1:IC2" pad="2"/>
+<contactref element="M1:IC2" pad="1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="3"/>
+<wire x1="-181.87" y1="-226.695" x2="-181.87" y2="-227.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.21" y1="71.12" x2="-181.87" y2="-226.695" width="0" layer="19" extent="1-1"/>
+<wire x1="-718.01" y1="-563.88" x2="-181.87" y2="-227.965" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MB1">
+<contactref element="M1:+" pad="TP"/>
+<contactref element="M1:IC1" pad="4"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="4"/>
+<wire x1="-24.13" y1="71.12" x2="-149.86" y2="-209.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-715.01" y1="-563.88" x2="-149.86" y2="-209.55" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA2">
+<contactref element="M2:-" pad="TP"/>
+<contactref element="M2:IC2" pad="2"/>
+<contactref element="M2:IC2" pad="1"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="5"/>
+<wire x1="-194.57" y1="-226.695" x2="-194.57" y2="-227.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.21" y1="95.25" x2="-194.57" y2="-226.695" width="0" layer="19" extent="1-1"/>
+<wire x1="-718.01" y1="-566.88" x2="-194.57" y2="-227.965" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MB2">
+<contactref element="M2:+" pad="TP"/>
+<contactref element="M2:IC1" pad="4"/>
+<contactref element="ANSCHLUESSE-UNTEN1:X1" pad="6"/>
+<wire x1="-24.13" y1="95.25" x2="-149.86" y2="-220.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-715.01" y1="-566.88" x2="-149.86" y2="-220.98" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MB3">
+<contactref element="M3:+" pad="TP"/>
+<contactref element="M3:IC1" pad="4"/>
+<wire x1="-24.13" y1="119.38" x2="-149.86" y2="-232.41" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
