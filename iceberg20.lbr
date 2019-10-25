@@ -2205,6 +2205,13 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <packageinstance name="CAPACITOR-THT-3"/>
 </packageinstances>
 </package3d>
+<package3d name="DIP1000W53P254L950H420Q8A" urn="urn:adsk.eagle:package:14742986/1" type="model">
+<description>8-DIP, 2.54 mm (0.10 in) pitch, 10.00 mm (0.39 in) span, 9.50 X 6.34 X 4.20 mm body
+&lt;p&gt;8-pin DIP package with 2.54 mm (0.10 in) pitch, 10.00 mm (0.39 in) span with body size 9.50 X 6.34 X 4.20 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIP8"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="N-MOSFET">

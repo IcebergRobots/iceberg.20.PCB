@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1711,21 +1711,6 @@ by exp-lbrs.ulp</description>
 <wire x1="-5" y1="-2.4" x2="-5" y2="1.6" width="0.1524" layer="21"/>
 <wire x1="2.75" y1="-2.4" x2="-2.75" y2="-2.4" width="0.1524" layer="21" curve="-139.58"/>
 </package>
-<package name="HC-05">
-<circle x="-6.35" y="-6.8838" radius="0.25" width="0" layer="21"/>
-<pad name="1" x="-6.35" y="-8.89" drill="1.2" shape="square"/>
-<pad name="2" x="-3.81" y="-8.89" drill="1.2"/>
-<pad name="3" x="-1.27" y="-8.89" drill="1.2"/>
-<pad name="4" x="1.27" y="-8.89" drill="1.2"/>
-<pad name="5" x="3.81" y="-8.89" drill="1.2"/>
-<pad name="6" x="6.35" y="-8.89" drill="1.2"/>
-<text x="-2.54" y="-4.7288" size="1" layer="25" font="vector" ratio="20" align="top-left">&gt;NAME</text>
-<text x="-2.54" y="-5.9472" size="1" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
-<wire x1="-8.05" y1="-10.16" x2="8.05" y2="-10.16" width="0.1524" layer="21"/>
-<wire x1="8.05" y1="-10.16" x2="8.05" y2="27.34" width="0.1524" layer="21"/>
-<wire x1="8.05" y1="27.34" x2="-8.05" y2="27.34" width="0.1524" layer="21"/>
-<wire x1="-8.05" y1="27.34" x2="-8.05" y2="-10.16" width="0.1524" layer="21"/>
-</package>
 <package name="TO-92" urn="urn:adsk.eagle:footprint:29825/1" locally_modified="yes">
 <description>&lt;b&gt;TO 92&lt;/b&gt;</description>
 <wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
@@ -2979,6 +2964,21 @@ by exp-lbrs.ulp</description>
 <rectangle x1="-16.764" y1="-23.114" x2="-16.256" y2="-22.606" layer="51"/>
 <rectangle x1="-19.304" y1="-23.114" x2="-18.796" y2="-22.606" layer="51"/>
 </package>
+<package name="HC-05">
+<circle x="-6.35" y="-6.8838" radius="0.25" width="0" layer="21"/>
+<pad name="1" x="-6.35" y="-8.89" drill="1.2" shape="square"/>
+<pad name="2" x="-3.81" y="-8.89" drill="1.2"/>
+<pad name="3" x="-1.27" y="-8.89" drill="1.2"/>
+<pad name="4" x="1.27" y="-8.89" drill="1.2"/>
+<pad name="5" x="3.81" y="-8.89" drill="1.2"/>
+<pad name="6" x="6.35" y="-8.89" drill="1.2"/>
+<text x="-2.54" y="-4.7288" size="1" layer="25" font="vector" ratio="20" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-5.9472" size="1" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+<wire x1="-8.05" y1="-11.43" x2="8.05" y2="-11.43" width="0.2" layer="21"/>
+<wire x1="8.05" y1="-11.43" x2="8.05" y2="-4.41" width="0.2" layer="21"/>
+<wire x1="8.05" y1="-4.41" x2="-8.05" y2="-4.41" width="0.2" layer="21"/>
+<wire x1="-8.05" y1="-4.41" x2="-8.05" y2="-11.43" width="0.2" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
@@ -3391,20 +3391,6 @@ Switches electrical signals</description>
 <pin name="V+" x="7.62" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <text x="-2.54" y="10.16" size="1.778" layer="95" align="top-left">&gt;Name</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;Value</text>
-</symbol>
-<symbol name="HC-05">
-<pin name="STATE" x="-5.08" y="12.7" length="short" direction="out"/>
-<pin name="RXD" x="-5.08" y="17.78" length="short" direction="in"/>
-<pin name="TXD" x="-5.08" y="15.24" length="short" direction="out"/>
-<pin name="GND" x="20.32" y="10.16" length="short" direction="pwr" rot="R180"/>
-<pin name="VCC" x="20.32" y="17.78" length="short" direction="pwr" rot="R180"/>
-<pin name="EN" x="-5.08" y="10.16" length="short" direction="in"/>
-<wire x1="-2.54" y1="7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="20.32" width="0.254" layer="94"/>
-<wire x1="17.78" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="20.32" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="22.86" size="1.778" layer="95" align="top-left">&gt;Name</text>
-<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;Value</text>
 </symbol>
 <symbol name="LM-35">
 <pin name="VS" x="5.08" y="7.62" length="short" direction="pwr" rot="R180"/>
@@ -3892,6 +3878,20 @@ Switches electrical signals</description>
 <pin name="19(RX1)" x="17.78" y="35.56" length="short" direction="in" rot="R180"/>
 <pin name="VIN" x="-17.78" y="50.8" length="short" direction="pwr"/>
 <pin name="0(RX0)" x="-17.78" y="-7.62" length="short"/>
+</symbol>
+<symbol name="HC-05">
+<pin name="STATE" x="-5.08" y="12.7" length="short" direction="out"/>
+<pin name="RXD" x="-5.08" y="17.78" length="short" direction="in"/>
+<pin name="TXD" x="-5.08" y="15.24" length="short" direction="out"/>
+<pin name="GND" x="20.32" y="10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="20.32" y="17.78" length="short" direction="pwr" rot="R180"/>
+<pin name="EN" x="-5.08" y="10.16" length="short" direction="in"/>
+<wire x1="-2.54" y1="7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="20.32" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="22.86" size="1.778" layer="95" align="top-left">&gt;Name</text>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4391,36 +4391,6 @@ THT
 <attribute name="HERSTELLER-NR" value="TSOP31433" constant="no"/>
 <attribute name="SUPPLIER" value="Mouser" constant="no"/>
 <attribute name="SUPPLIER-NR" value="78-TSOP31433" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HC-05" prefix="IC">
-<description>Bluetooth Modul&lt;b&gt;
-Datenblatt1: &lt;/b&gt; &lt;a href="https://cdn.shopify.com/s/files/1/1509/1638/files/HC-05_Wireless_Bluetooth_Transceiver_Modul_fur_Arduino_Datenblatt.pdf?14386780967915088289"&gt;Link&lt;/a&gt;
-&lt;b&gt;
-Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-bluetooth-module"&gt;Link&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="HC-05" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HC-05">
-<connects>
-<connect gate="G$1" pin="EN" pad="6"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="RXD" pad="2"/>
-<connect gate="G$1" pin="STATE" pad="1"/>
-<connect gate="G$1" pin="TXD" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BESTAND" value="?" constant="no"/>
-<attribute name="HERSTELLER" value="" constant="no"/>
-<attribute name="HERSTELLER-NR" value="" constant="no"/>
-<attribute name="SUPPLIER" value="" constant="no"/>
-<attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5157,6 +5127,36 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <attribute name="HERSTELLER-NR" value="Arduino Mega 2560" constant="no"/>
 <attribute name="SUPPLIER" value="Makerstore" constant="no"/>
 <attribute name="SUPPLIER-NR" value="Arduino Mega 2650" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HC-05" prefix="IC">
+<description>Bluetooth Modul&lt;b&gt;
+Datenblatt1: &lt;/b&gt; &lt;a href="https://cdn.shopify.com/s/files/1/1509/1638/files/HC-05_Wireless_Bluetooth_Transceiver_Modul_fur_Arduino_Datenblatt.pdf?14386780967915088289"&gt;Link&lt;/a&gt;
+&lt;b&gt;
+Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-bluetooth-module"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="HC-05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HC-05">
+<connects>
+<connect gate="G$1" pin="EN" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RXD" pad="2"/>
+<connect gate="G$1" pin="STATE" pad="1"/>
+<connect gate="G$1" pin="TXD" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9940,8 +9940,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9954,7 +9952,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
@@ -9998,9 +9995,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </moduleinst>
 <moduleinst name="5V-LINEARWANDLER1" module="5V-LINEARWANDLER" x="-200.66" y="101.6">
 <attribute name="NAME" x="-200.66" y="101.6" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
-<moduleinst name="5V-SCHALTREGLER1" module="5V-SCHALTREGLER" x="162.56" y="132.08">
-<attribute name="NAME" x="162.56" y="132.08" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="BLUETOOTH1" module="BLUETOOTH" x="-177.8" y="-81.28">
 <attribute name="NAME" x="-177.8" y="-81.28" size="2.032" layer="95" align="bottom-center"/>
@@ -10097,12 +10091,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <instance part="P+4" gate="1" x="96.52" y="-96.52" smashed="yes">
 <attribute name="VALUE" x="99.06" y="-93.98" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+16" gate="1" x="182.88" y="144.78" smashed="yes">
-<attribute name="VALUE" x="185.42" y="147.32" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND7" gate="1" x="162.56" y="114.3" smashed="yes">
-<attribute name="VALUE" x="160.02" y="111.76" size="1.778" layer="96"/>
-</instance>
 <instance part="GND8" gate="1" x="-205.74" y="-63.5" smashed="yes">
 <attribute name="VALUE" x="-208.28" y="-66.04" size="1.778" layer="96"/>
 </instance>
@@ -10138,9 +10126,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </instance>
 <instance part="GND16" gate="1" x="-177.8" y="-99.06" smashed="yes">
 <attribute name="VALUE" x="-180.34" y="-101.6" size="1.778" layer="96"/>
-</instance>
-<instance part="P+21" gate="1" x="142.24" y="144.78" smashed="yes">
-<attribute name="VALUE" x="139.7" y="147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="P+22" gate="1" x="-220.98" y="114.3" smashed="yes">
 <attribute name="VALUE" x="-223.52" y="116.84" size="1.778" layer="96"/>
@@ -10469,11 +10454,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <portref moduleinst="M3" port="+5V"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 </segment>
-<segment>
-<pinref part="P+16" gate="1" pin="+5V"/>
-<wire x1="182.88" y1="142.24" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
-<portref moduleinst="5V-SCHALTREGLER1" port="+5V"/>
-</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -10495,10 +10475,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <segment>
 <portref moduleinst="M3" port="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<portref moduleinst="5V-SCHALTREGLER1" port="GND"/>
-<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 <portref moduleinst="SENSOREN1" port="GND"/>
@@ -10593,11 +10569,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <segment>
 <portref moduleinst="F1" port="IN"/>
 <pinref part="P+6" gate="1" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="P+21" gate="1" pin="+12V"/>
-<portref moduleinst="5V-SCHALTREGLER1" port="+12V"/>
-<wire x1="142.24" y1="142.24" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+22" gate="1" pin="+12V"/>
