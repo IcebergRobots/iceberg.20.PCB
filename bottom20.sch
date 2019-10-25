@@ -3134,7 +3134,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <port name="D4" side="top" coord="0" direction="io"/>
 <port name="D5" side="top" coord="-2.54" direction="io"/>
 <port name="GND" side="left" coord="-7.62" direction="pwr"/>
-<port name="RX" side="bottom" coord="-17.78" direction="in"/>
+<port name="RX" side="bottom" coord="-17.78" direction="out"/>
 <port name="TX" side="bottom" coord="-15.24" direction="out"/>
 <port name="SCL" side="top" coord="-15.24" direction="io"/>
 <port name="SDA" side="top" coord="-17.78" direction="io"/>
@@ -3610,7 +3610,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <ports>
 <port name="CTS" side="right" coord="10.16" direction="in"/>
 <port name="DTR" side="right" coord="7.62" direction="in"/>
-<port name="RX" side="right" coord="5.08" direction="out"/>
+<port name="RX" side="right" coord="5.08" direction="in"/>
 <port name="TX" side="right" coord="2.54" direction="in"/>
 <port name="VID" side="right" coord="-5.08" direction="pwr"/>
 <port name="GND" side="bottom" coord="15.24" direction="pwr"/>
@@ -3679,11 +3679,18 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <label x="109.22" y="101.6" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="RX" class="0">
+<net name="TX" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
 <wire x1="99.06" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 <label x="101.6" y="104.14" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="5"/>
+<wire x1="99.06" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<label x="109.22" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -3735,13 +3742,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
 <label x="101.6" y="71.12" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="TX" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="5"/>
-<wire x1="99.06" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
-<label x="109.22" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -4104,26 +4104,26 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </net>
 <net name="TX" class="0">
 <segment>
+<portref moduleinst="ARDUINO1" port="RX"/>
+<wire x1="175.26" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
+<label x="177.8" y="93.98" size="1.778" layer="95" align="center-left"/>
+</segment>
+<segment>
 <portref moduleinst="ANSCHLUSS1" port="TX"/>
 <wire x1="66.04" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 <label x="68.58" y="43.18" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="RX" class="0">
 <segment>
 <portref moduleinst="ARDUINO1" port="TX"/>
 <wire x1="175.26" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <label x="177.8" y="96.52" size="1.778" layer="95" align="center-left"/>
 </segment>
-</net>
-<net name="RX" class="0">
 <segment>
 <portref moduleinst="ANSCHLUSS1" port="RX"/>
 <wire x1="66.04" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <label x="68.58" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<portref moduleinst="ARDUINO1" port="RX"/>
-<wire x1="175.26" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<label x="177.8" y="93.98" size="1.778" layer="95" align="center-left"/>
 </segment>
 </net>
 <net name="SCL" class="0">
