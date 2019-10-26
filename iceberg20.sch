@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -10899,7 +10899,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <portref moduleinst="ANSCHLUESSE-UNTEN1" port="MA[0..3]"/>
 </segment>
 </bus>
-<bus name="B$1">
+<bus name="IR-SIG[1..6]">
 <segment>
 <wire x1="-50.8" y1="-106.68" x2="-35.56" y2="-106.68" width="0.762" layer="92"/>
 <portref moduleinst="IR-EMPFAENGER1" port="IR-SIG[1..6]"/>
