@@ -9626,13 +9626,9 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="IC1" library="iceberg20" deviceset="P82B96" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="R2" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="R3" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="R4" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="R2" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9687,33 +9683,19 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <instance part="P+2" gate="1" x="58.42" y="43.18" smashed="yes">
 <attribute name="VALUE" x="55.88" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="121.92" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="123.19" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.19" y="42.418" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="124.46" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="125.73" y="44.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.73" y="42.418" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="129.54" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.81" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="42.418" size="1.778" layer="96"/>
+<instance part="P+3" gate="1" x="124.46" y="50.8" smashed="yes">
+<attribute name="VALUE" x="121.92" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="139.7" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.97" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="140.97" y="42.418" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="134.62" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="135.89" y="44.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="42.418" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="147.32" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.59" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="42.418" size="1.778" layer="96"/>
-</instance>
-<instance part="P+3" gate="1" x="121.92" y="50.8" smashed="yes">
-<attribute name="VALUE" x="119.38" y="53.34" size="1.778" layer="96"/>
-</instance>
-<instance part="P+5" gate="1" x="129.54" y="50.8" smashed="yes">
-<attribute name="VALUE" x="127" y="53.34" size="1.778" layer="96"/>
-</instance>
-<instance part="P+6" gate="1" x="139.7" y="50.8" smashed="yes">
-<attribute name="VALUE" x="137.16" y="53.34" size="1.778" layer="96"/>
-</instance>
-<instance part="P+8" gate="1" x="147.32" y="50.8" smashed="yes">
-<attribute name="VALUE" x="144.78" y="53.34" size="1.778" layer="96"/>
+<instance part="P+5" gate="1" x="134.62" y="50.8" smashed="yes">
+<attribute name="VALUE" x="132.08" y="53.34" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9839,7 +9821,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <wire x1="160.02" y1="93.98" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="88.9" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="83.82" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="78.74" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="78.74" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="76.2" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="73.66" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="66.04" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
@@ -9860,12 +9843,19 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <wire x1="129.54" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
 <junction x="160.02" y="66.04"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="X2" gate="G$1" pin="22"/>
+<wire x1="129.54" y1="76.2" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<junction x="160.02" y="76.2"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="17"/>
 <wire x1="114.3" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="81.28" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="81.28" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="X2" gate="G$1" pin="25"/>
+<wire x1="81.28" y1="71.12" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<junction x="81.28" y="71.12"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
@@ -9960,38 +9950,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <label x="93.98" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="RX(SDA)" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="23"/>
-<wire x1="114.3" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
-<label x="104.14" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="RX(SDA)"/>
-<wire x1="121.92" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
-<label x="157.48" y="33.02" size="1.778" layer="95" rot="R180"/>
-<wire x1="139.7" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="30.48" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
-<junction x="139.7" y="30.48"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="RY(SCL)" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="26"/>
-<wire x1="129.54" y1="71.12" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="139.7" y="71.12" size="1.778" layer="95" rot="R180" align="top-left"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="RY(SCL)"/>
-<wire x1="121.92" y1="25.4" x2="147.32" y2="25.4" width="0.1524" layer="91"/>
-<label x="157.48" y="27.94" size="1.778" layer="95" rot="R180"/>
-<wire x1="147.32" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="25.4" x2="147.32" y2="38.1" width="0.1524" layer="91"/>
-<junction x="147.32" y="25.4"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="19"/>
@@ -10033,14 +9991,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <pinref part="P+5" gate="1" pin="+12V"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
-<segment>
-<pinref part="P+6" gate="1" pin="+12V"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+8" gate="1" pin="+12V"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="MB2" class="0">
 <segment>
@@ -10075,37 +10025,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="TY(SCL)" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="25"/>
-<wire x1="114.3" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<label x="93.98" y="71.12" size="1.778" layer="95" rot="R180" align="top-right"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="TY(SCL)"/>
-<label x="139.7" y="30.48" size="1.778" layer="95" rot="R180"/>
-<wire x1="121.92" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="27.94" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
-<junction x="121.92" y="27.94"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="TX(SDA)" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="22"/>
-<wire x1="129.54" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
-<label x="139.7" y="76.2" size="1.778" layer="95" align="bottom-right"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="TX(SDA)"/>
-<wire x1="121.92" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
-<label x="139.7" y="35.56" size="1.778" layer="95" rot="R180"/>
-<wire x1="129.54" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="33.02" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
-<junction x="129.54" y="33.02"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <wire x1="81.28" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
@@ -10118,6 +10037,46 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <wire x1="71.12" y1="30.48" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
 <label x="71.12" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="SY(SCL)"/>
+</segment>
+</net>
+<net name="SDA-12V" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="23"/>
+<wire x1="114.3" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
+<label x="104.14" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RX(SDA)"/>
+<wire x1="124.46" y1="38.1" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="33.02" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="30.48" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="TX(SDA)"/>
+<wire x1="121.92" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<junction x="124.46" y="33.02"/>
+<wire x1="124.46" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
+<label x="142.24" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL-12V" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="26"/>
+<wire x1="129.54" y1="71.12" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
+<label x="139.7" y="71.12" size="1.778" layer="95" rot="R180" align="top-left"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="TY(SCL)"/>
+<wire x1="121.92" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="RY(SCL)"/>
+<wire x1="124.46" y1="27.94" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
+<junction x="124.46" y="25.4"/>
+<wire x1="134.62" y1="25.4" x2="142.24" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="25.4" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
+<junction x="134.62" y="25.4"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<label x="142.24" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
