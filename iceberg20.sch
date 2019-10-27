@@ -294,12 +294,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
@@ -332,19 +326,6 @@ DIN A3, landscape with location and doc. field</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5916,7 +5897,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <port name="D1" side="left" coord="17.78" direction="io"/>
 <port name="SDA" side="right" coord="-17.78" direction="io"/>
 <port name="SCL" side="right" coord="-20.32" direction="io"/>
-<port name="3.3V" side="right" coord="-30.48" direction="pwr"/>
 <port name="KICK-EN" side="right" coord="-25.4" direction="out"/>
 <port name="RX-P" side="left" coord="33.02" direction="in"/>
 <port name="TX-P" side="left" coord="30.48" direction="out"/>
@@ -6438,13 +6418,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <pinref part="IC1" gate="G$1" pin="50"/>
 <wire x1="208.28" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
 <label x="220.98" y="83.82" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="3.3V"/>
-<wire x1="172.72" y1="167.64" x2="160.02" y2="167.64" width="0.1524" layer="91"/>
-<label x="160.02" y="167.64" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -10061,12 +10034,12 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <port name="MB[0..3]" side="left" coord="10.16" direction="in"/>
 <port name="SCL" side="left" coord="0" direction="io"/>
 <port name="SDA" side="left" coord="2.54" direction="io"/>
-<port name="+3V3" side="top" coord="2.54" direction="pwr"/>
 <port name="KICK+" side="right" coord="-10.16" direction="io"/>
 <port name="KICK-" side="right" coord="-12.7" direction="io"/>
 <port name="RGBLED" side="right" coord="2.54" direction="in"/>
 <port name="INTERRUPT" side="right" coord="-2.54" direction="out"/>
 <port name="RST-NANO" side="left" coord="-10.16" direction="in"/>
+<port name="+5V" side="top" coord="2.54" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -10080,8 +10053,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC1" library="iceberg20" deviceset="P82B96" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
@@ -10089,6 +10060,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R2" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10127,12 +10100,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <instance part="GND2" gate="1" x="40.64" y="71.12" smashed="yes">
 <attribute name="VALUE" x="38.1" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V1" gate="G$1" x="81.28" y="109.22" smashed="yes">
-<attribute name="VALUE" x="83.82" y="111.76" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="+3V2" gate="G$1" x="40.64" y="111.76" smashed="yes">
-<attribute name="VALUE" x="43.18" y="114.3" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND3" gate="1" x="86.36" y="17.78" smashed="yes">
 <attribute name="VALUE" x="83.82" y="15.24" size="1.778" layer="96"/>
 </instance>
@@ -10156,6 +10123,12 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 </instance>
 <instance part="P+5" gate="1" x="134.62" y="50.8" smashed="yes">
 <attribute name="VALUE" x="132.08" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="P+6" gate="1" x="81.28" y="109.22" smashed="yes">
+<attribute name="VALUE" x="78.74" y="104.14" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+8" gate="1" x="40.64" y="111.76" smashed="yes">
+<attribute name="VALUE" x="38.1" y="106.68" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -10490,32 +10463,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <label x="172.72" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="5"/>
-<wire x1="114.3" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="9"/>
-<wire x1="114.3" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="13"/>
-<wire x1="114.3" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="86.36" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
-<junction x="81.28" y="91.44"/>
-<wire x1="81.28" y1="91.44" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
-<junction x="81.28" y="96.52"/>
-<wire x1="81.28" y1="96.52" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
-<junction x="81.28" y="101.6"/>
-<wire x1="81.28" y1="101.6" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<wire x1="30.48" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="104.14" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
-<label x="30.48" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <wire x1="81.28" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
@@ -10584,6 +10531,32 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <label x="172.72" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="5"/>
+<wire x1="114.3" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="9"/>
+<wire x1="114.3" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="13"/>
+<wire x1="114.3" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="86.36" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
+<junction x="81.28" y="91.44"/>
+<wire x1="81.28" y1="91.44" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+<junction x="81.28" y="96.52"/>
+<wire x1="81.28" y1="96.52" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
+<junction x="81.28" y="101.6"/>
+<wire x1="81.28" y1="101.6" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="104.14" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
+<label x="30.48" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="P+8" gate="1" pin="+5V"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -10635,8 +10608,7 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10859,11 +10831,8 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <instance part="P+15" gate="1" x="-142.24" y="40.64" smashed="yes">
 <attribute name="VALUE" x="-140.83310625" y="43.03925" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V1" gate="G$1" x="185.42" y="15.24" smashed="yes">
-<attribute name="VALUE" x="187.276190625" y="17.78" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="+3V2" gate="G$1" x="43.18" y="-25.4" smashed="yes">
-<attribute name="VALUE" x="45.72" y="-22.86" size="1.778" layer="96" rot="R180"/>
+<instance part="P+16" gate="1" x="185.42" y="15.24" smashed="yes">
+<attribute name="VALUE" x="186.939971875" y="18.117884375" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -11042,6 +11011,10 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <segment>
 <portref moduleinst="ANSCHLUESSE1" port="+5V"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="ANSCHLUESSE-UNTEN1" port="+5V"/>
+<pinref part="P+16" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11600,18 +11573,6 @@ Datenballt2: &lt;/b&gt; &lt;a href="https://components101.com/wireless/hc-05-blu
 <portref moduleinst="ARDUINO1" port="RX-B"/>
 <wire x1="-71.12" y1="-12.7" x2="-25.4" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-46.5966625" y="-12.214059375" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<portref moduleinst="ANSCHLUESSE-UNTEN1" port="+3V3"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<portref moduleinst="ARDUINO1" port="3.3V"/>
-<wire x1="25.4" y1="-30.48" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="43.18" y1="-30.48" x2="43.18" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="KICK-" class="0">
