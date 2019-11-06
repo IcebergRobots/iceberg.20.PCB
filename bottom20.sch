@@ -3785,16 +3785,15 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <module name="ANSCHLUSS" prefix="X" dx="40.64" dy="25.4">
 <ports>
 <port name="GND" side="bottom" coord="0" direction="pwr"/>
-<port name="+12V" side="top" coord="0" direction="pwr"/>
 <port name="DTR" side="right" coord="7.62" direction="out"/>
 <port name="RX" side="right" coord="5.08" direction="out"/>
 <port name="TX" side="right" coord="2.54" direction="in"/>
-<port name="+5V" side="top" coord="7.62" direction="pwr"/>
 <port name="ARD-RESET" side="right" coord="-2.54" direction="out"/>
 <port name="ARD-INTERRUPT" side="left" coord="7.62" direction="in"/>
-<port name="LED-IN" side="left" coord="5.08" direction="out"/>
 <port name="ARD-RX" side="left" coord="2.54" direction="out"/>
 <port name="ARD-TX" side="left" coord="0" direction="in"/>
+<port name="LED-IN" side="left" coord="5.08" direction="out"/>
+<port name="+12V" side="top" coord="0" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -4150,7 +4149,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <pinref part="P+7" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<portref moduleinst="X" port="+5V"/>
 <wire x1="93.98" y1="58.42" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 </segment>
@@ -4218,6 +4216,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <label x="58.42" y="91.44" size="1.778" layer="95" align="center-left"/>
 </segment>
 <segment>
+<portref moduleinst="X" port="LED-IN"/>
 <wire x1="60.96" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
 <label x="58.42" y="45.72" size="1.778" layer="95" rot="R180" align="center-left"/>
 </segment>
@@ -4256,7 +4255,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </net>
 <net name="N$1" class="0">
 <segment>
-<portref moduleinst="X" port="+12V"/>
 <wire x1="86.36" y1="58.42" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+12V"/>
 </segment>
