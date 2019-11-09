@@ -3505,21 +3505,21 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <label x="149.86" y="121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="MOSI" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="147.32" y1="73.66" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="TP3" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="MISO" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
 <wire x1="147.32" y1="71.12" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="SCK" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
 <wire x1="147.32" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
@@ -3789,11 +3789,12 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <port name="RX" side="right" coord="5.08" direction="out"/>
 <port name="TX" side="right" coord="2.54" direction="in"/>
 <port name="ARD-RESET" side="right" coord="-2.54" direction="out"/>
-<port name="ARD-INTERRUPT" side="left" coord="7.62" direction="in"/>
 <port name="ARD-RX" side="left" coord="2.54" direction="out"/>
 <port name="ARD-TX" side="left" coord="0" direction="in"/>
 <port name="LED-IN" side="left" coord="5.08" direction="out"/>
-<port name="+12V" side="top" coord="0" direction="io"/>
+<port name="+5V" side="top" coord="7.62" direction="pwr"/>
+<port name="+12V" side="top" coord="0" direction="pwr"/>
+<port name="ARD-INTERRUPT" side="left" coord="7.62" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -4057,13 +4058,13 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4117,12 +4118,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <instance part="GND4" gate="1" x="35.56" y="119.38" smashed="yes">
 <attribute name="VALUE" x="33.02" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="P+2" gate="1" x="43.18" y="160.02" smashed="yes">
-<attribute name="VALUE" x="40.64" y="154.94" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+3" gate="1" x="27.94" y="160.02" smashed="yes">
-<attribute name="VALUE" x="25.4" y="154.94" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="P+4" gate="1" x="78.74" y="144.78" smashed="yes">
 <attribute name="VALUE" x="76.2" y="139.7" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -4138,6 +4133,12 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <instance part="P+8" gate="1" x="162.56" y="152.4" smashed="yes">
 <attribute name="VALUE" x="160.02" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="P+2" gate="1" x="43.18" y="160.02" smashed="yes">
+<attribute name="VALUE" x="40.64" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+3" gate="1" x="27.94" y="160.02" smashed="yes">
+<attribute name="VALUE" x="25.4" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4151,11 +4152,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <segment>
 <wire x1="93.98" y1="58.42" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<portref moduleinst="P" port="+5V"/>
-<wire x1="43.18" y1="154.94" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <portref moduleinst="T2" port="+5V"/>
@@ -4173,6 +4169,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <portref moduleinst="A" port="+5V"/>
 <wire x1="162.56" y1="147.32" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="P" port="+5V"/>
+<wire x1="43.18" y1="154.94" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4253,12 +4254,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <label x="182.88" y="99.06" size="1.778" layer="95" align="center-left"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="86.36" y1="58.42" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+12V"/>
-</segment>
-</net>
 <net name="ARD-RESET" class="0">
 <segment>
 <portref moduleinst="A" port="ARD-RESET"/>
@@ -4269,13 +4264,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <portref moduleinst="X" port="ARD-RESET"/>
 <wire x1="111.76" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
 <label x="114.3" y="38.1" size="1.778" layer="95" align="center-left"/>
-</segment>
-</net>
-<net name="+12V" class="0">
-<segment>
-<portref moduleinst="P" port="+12V"/>
-<wire x1="27.94" y1="154.94" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+12V"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4382,7 +4370,18 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <segment>
 <label x="182.88" y="106.68" size="1.778" layer="95" align="center-left"/>
 <wire x1="180.34" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<portref moduleinst="A" port="ARD-INTERRUPT"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<portref moduleinst="P" port="+12V"/>
+<wire x1="27.94" y1="154.94" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="1" pin="+12V"/>
+<portref moduleinst="X" port="+12V"/>
+<wire x1="86.36" y1="58.42" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
