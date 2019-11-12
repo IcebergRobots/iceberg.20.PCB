@@ -4229,13 +4229,14 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <label x="114.3" y="43.18" size="1.778" layer="95" align="center-left"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="40.64" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
-<label x="58.42" y="40.64" size="1.778" layer="95" rot="R180" align="center-left"/>
-</segment>
-<segment>
 <portref moduleinst="A" port="TX"/>
 <wire x1="180.34" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
 <label x="182.88" y="101.6" size="1.778" layer="95" align="center-left"/>
+</segment>
+<segment>
+<portref moduleinst="X" port="ARD-TX"/>
+<wire x1="60.96" y1="40.64" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
+<label x="58.42" y="40.64" size="1.778" layer="95" rot="R180" align="center-left"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -4245,13 +4246,14 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <label x="114.3" y="45.72" size="1.778" layer="95" align="center-left"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
-<label x="58.42" y="43.18" size="1.778" layer="95" rot="R180" align="center-left"/>
-</segment>
-<segment>
 <portref moduleinst="A" port="RX"/>
 <wire x1="180.34" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="182.88" y="99.06" size="1.778" layer="95" align="center-left"/>
+</segment>
+<segment>
+<portref moduleinst="X" port="ARD-RX"/>
+<wire x1="60.96" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<label x="58.42" y="43.18" size="1.778" layer="95" rot="R180" align="center-left"/>
 </segment>
 </net>
 <net name="ARD-RESET" class="0">
@@ -4364,12 +4366,14 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </net>
 <net name="ARD-INTERRUPT" class="0">
 <segment>
-<wire x1="60.96" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<label x="58.42" y="48.26" size="1.778" layer="95" rot="R180" align="center-left"/>
+<portref moduleinst="A" port="ARD-INTERRUPT"/>
+<wire x1="180.34" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
+<label x="182.88" y="106.68" size="1.778" layer="95" align="center-left"/>
 </segment>
 <segment>
-<label x="182.88" y="106.68" size="1.778" layer="95" align="center-left"/>
-<wire x1="180.34" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
+<portref moduleinst="X" port="ARD-INTERRUPT"/>
+<wire x1="60.96" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<label x="58.42" y="48.26" size="1.778" layer="95" rot="R180" align="center-left"/>
 </segment>
 </net>
 <net name="+12V" class="0">
