@@ -263,14 +263,14 @@
 <description>32-QFP, 0.80 mm pitch, 9.00 mm span, 6.95 X 6.95 X 1.20 mm body
 &lt;p&gt;32-pin QFP package with 0.80 mm pitch, 9.00 mm lead span1 X 9.00 mm lead span2 with body size 6.95 X 6.95 X 1.20 mm&lt;/p&gt;</description>
 <circle x="-4.3406" y="3.5975" radius="0.25" width="0" layer="21"/>
-<wire x1="-3.5" y1="3.3475" x2="-3.5" y2="3.5" width="0.12" layer="21"/>
-<wire x1="-3.5" y1="3.5" x2="-3.3475" y2="3.5" width="0.12" layer="21"/>
-<wire x1="3.5" y1="3.3475" x2="3.5" y2="3.5" width="0.12" layer="21"/>
-<wire x1="3.5" y1="3.5" x2="3.3475" y2="3.5" width="0.12" layer="21"/>
-<wire x1="3.5" y1="-3.3475" x2="3.5" y2="-3.5" width="0.12" layer="21"/>
-<wire x1="3.5" y1="-3.5" x2="3.3475" y2="-3.5" width="0.12" layer="21"/>
-<wire x1="-3.5" y1="-3.3475" x2="-3.5" y2="-3.5" width="0.12" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="-3.3475" y2="-3.5" width="0.12" layer="21"/>
+<wire x1="-3.5" y1="3.3475" x2="-3.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.3475" y2="3.5" width="0.2" layer="21"/>
+<wire x1="3.5" y1="3.3475" x2="3.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.3475" y2="3.5" width="0.2" layer="21"/>
+<wire x1="3.5" y1="-3.3475" x2="3.5" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.3475" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="-3.3475" x2="-3.5" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.3475" y2="-3.5" width="0.2" layer="21"/>
 <wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.12" layer="51"/>
 <wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.12" layer="51"/>
 <wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.12" layer="51"/>
@@ -307,8 +307,8 @@
 <smd name="30" x="-1.2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
 <smd name="31" x="-2" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
 <smd name="32" x="-2.8" y="4.2313" dx="1.8998" dy="0.5871" layer="1" roundness="25" rot="R90"/>
-<text x="0" y="5.8162" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.8162" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-3.095409375" y="5.3310125" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-0.0938" y="0.67903125" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="CAPACITOR-THT-13" urn="urn:adsk.eagle:footprint:12595022/1" locally_modified="yes">
 <description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
@@ -415,8 +415,8 @@
 <rectangle x1="5.334" y1="-1.016" x2="5.588" y2="1.016" layer="43"/>
 <pad name="1" x="-2.413" y="0" drill="0.8128"/>
 <pad name="2" x="2.413" y="0" drill="0.8128"/>
-<text x="-5.08" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.08" y="2.921" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-5.08" y="-4.191" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="TESTPAD_B2,54">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
@@ -451,7 +451,7 @@
 <pad name="4" x="9.37" y="0.25" drill="0.8"/>
 <pad name="5" x="11.91" y="0.25" drill="0.8"/>
 <pad name="6" x="14.45" y="0.25" drill="0.8"/>
-<rectangle x1="0" y1="0" x2="16.2" y2="6.1" layer="41"/>
+<rectangle x1="0" y1="0" x2="16.2" y2="6.1" layer="39"/>
 <text x="0" y="7" size="1.27" layer="21" font="vector" ratio="20">&gt;NAME</text>
 <text x="0" y="-1" size="1.27" layer="21" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 </package>

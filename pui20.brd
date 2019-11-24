@@ -57,8 +57,15 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -70,6 +77,95 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -79,6 +175,196 @@
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
+<library name="iceberg20">
+<packages>
+<package name="SWITCH-6MM-SMD" urn="urn:adsk.eagle:footprint:40107/1" locally_modified="yes">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apem.com/files/apem/brochures/ADTS6-ADTSM-KTSC6.pdf"&gt;Datasheet&lt;/a&gt; (ADTSM63NVTR)&lt;/p&gt;</description>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.2" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.2" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<smd name="A1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" roundness="25" rot="R90"/>
+<smd name="A2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" roundness="25" rot="R90"/>
+<smd name="B1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" roundness="25" rot="R90"/>
+<smd name="B2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" roundness="25" rot="R90"/>
+<text x="0" y="3.175" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-3.175" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="SWITCH-12MM-THT">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-5050)&lt;/p&gt;</description>
+<circle x="0" y="0" radius="3.5" width="0.2032" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
+<wire x1="5" y1="0.2" x2="5" y2="1" width="0.2032" layer="51"/>
+<wire x1="-6" y1="4" x2="-6" y2="5" width="0.2032" layer="21"/>
+<wire x1="-5" y1="6" x2="5" y2="6" width="0.2032" layer="21"/>
+<wire x1="6" y1="5" x2="6" y2="4" width="0.2032" layer="21"/>
+<wire x1="6" y1="1" x2="6" y2="-1" width="0.2032" layer="21"/>
+<wire x1="6" y1="-4" x2="6" y2="-5" width="0.2032" layer="21"/>
+<wire x1="5" y1="-6" x2="-5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-5" x2="-6" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.2032" layer="21"/>
+<wire x1="-6" y1="5" x2="-5" y2="6" width="0.2032" layer="21" curve="-90"/>
+<wire x1="5" y1="6" x2="6" y2="5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-5" y1="-6" x2="-6" y2="-5" width="0.2032" layer="21" curve="-90"/>
+<pad name="1" x="6.25" y="-2.5" drill="1.2" diameter="2.159"/>
+<pad name="2" x="-6.25" y="-2.5" drill="1.2" diameter="2.159"/>
+<pad name="3" x="6.25" y="2.5" drill="1.2" diameter="2.159"/>
+<pad name="4" x="-6.25" y="2.5" drill="1.2" diameter="2.159"/>
+<text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="TOGGLE-SWITCH">
+<wire x1="4.5" y1="1.25" x2="-4.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.25" x2="-4.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.25" x2="4.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.25" x2="4.5" y2="1.25" width="0.127" layer="21"/>
+<pad name="A" x="-2.54" y="0" drill="0.7"/>
+<pad name="B" x="2.54" y="0" drill="0.7"/>
+<pad name="C" x="0" y="0" drill="0.7"/>
+</package>
+<package name="2X8">
+<description>&lt;h3&gt;Plated Through Hole - 2x3 Shrouded Header&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Shrouded-10pin.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03x2&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="4.5" y1="7.56" x2="4.5" y2="-20.27" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="-20.27" x2="-4.5" y2="-17.44" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="-16.17" x2="-4.5" y2="7.57" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="7.57" x2="4.4" y2="7.57" width="0.2" layer="21"/>
+<wire x1="4.5" y1="-20.27" x2="-4.5" y2="-20.27" width="0.2" layer="21"/>
+<wire x1="-3.4" y1="6.46" x2="3.4" y2="6.46" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="6.46" x2="3.4" y2="-19.16" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="-19.16" x2="3.4" y2="-19.16" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="6.46" x2="-3.4" y2="-16.85" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="-19.16" x2="-3.4" y2="-16.17" width="0.2032" layer="51"/>
+<wire x1="-2.648" y1="3.175" x2="-2.648" y2="1.905" width="0.2" layer="21"/>
+<wire x1="-2.686" y1="3.175" x2="-2.686" y2="1.905" width="0.2032" layer="22"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
+<pad name="1" x="-1.27" y="2.54" drill="1" diameter="1.8796" shape="square" rot="R270"/>
+<pad name="2" x="1.27" y="2.54" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="3" x="-1.27" y="0" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="4" x="1.27" y="0" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="5" x="-1.27" y="-2.54" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="6" x="1.27" y="-2.54" drill="1" diameter="1.8796" rot="R270"/>
+<text x="-3.81" y="7.874" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.54" y="-18.542" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="1.016" y1="-5.334" x2="1.524" y2="-4.826" layer="51"/>
+<rectangle x1="-1.524" y1="-5.334" x2="-1.016" y2="-4.826" layer="51"/>
+<rectangle x1="-1.524" y1="-5.334" x2="-1.016" y2="-4.826" layer="51"/>
+<rectangle x1="1.016" y1="-5.334" x2="1.524" y2="-4.826" layer="51"/>
+<pad name="7" x="-1.27" y="-5.08" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="8" x="1.27" y="-5.08" drill="1" diameter="1.8796" rot="R270"/>
+<rectangle x1="1.016" y1="-7.874" x2="1.524" y2="-7.366" layer="51"/>
+<rectangle x1="-1.524" y1="-7.874" x2="-1.016" y2="-7.366" layer="51"/>
+<rectangle x1="-1.524" y1="-7.874" x2="-1.016" y2="-7.366" layer="51"/>
+<rectangle x1="1.016" y1="-7.874" x2="1.524" y2="-7.366" layer="51"/>
+<pad name="9" x="-1.27" y="-7.62" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="10" x="1.27" y="-7.62" drill="1" diameter="1.8796" rot="R270"/>
+<rectangle x1="1.016" y1="-10.414" x2="1.524" y2="-9.906" layer="51"/>
+<rectangle x1="-1.524" y1="-10.414" x2="-1.016" y2="-9.906" layer="51"/>
+<rectangle x1="-1.524" y1="-10.414" x2="-1.016" y2="-9.906" layer="51"/>
+<rectangle x1="1.016" y1="-10.414" x2="1.524" y2="-9.906" layer="51"/>
+<pad name="11" x="-1.27" y="-10.16" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="12" x="1.27" y="-10.16" drill="1" diameter="1.8796" rot="R270"/>
+<rectangle x1="1.016" y1="-12.954" x2="1.524" y2="-12.446" layer="51"/>
+<rectangle x1="-1.524" y1="-12.954" x2="-1.016" y2="-12.446" layer="51"/>
+<rectangle x1="-1.524" y1="-12.954" x2="-1.016" y2="-12.446" layer="51"/>
+<rectangle x1="1.016" y1="-12.954" x2="1.524" y2="-12.446" layer="51"/>
+<pad name="13" x="-1.27" y="-12.7" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="14" x="1.27" y="-12.7" drill="1" diameter="1.8796" rot="R270"/>
+<wire x1="-4.5" y1="-17.44" x2="-4.5" y2="-16.17" width="0.2" layer="21"/>
+<rectangle x1="1.016" y1="-15.494" x2="1.524" y2="-14.986" layer="51"/>
+<rectangle x1="-1.524" y1="-15.494" x2="-1.016" y2="-14.986" layer="51"/>
+<rectangle x1="-1.524" y1="-15.494" x2="-1.016" y2="-14.986" layer="51"/>
+<rectangle x1="1.016" y1="-15.494" x2="1.524" y2="-14.986" layer="51"/>
+<pad name="15" x="-1.27" y="-15.24" drill="1" diameter="1.8796" rot="R270"/>
+<pad name="16" x="1.27" y="-15.24" drill="1" diameter="1.8796" rot="R270"/>
+</package>
+<package name="5050">
+<smd name="VDD" x="-2.45" y="1.6" dx="2.5" dy="1.5" layer="1" roundness="25"/>
+<smd name="IN" x="2.45" y="1.6" dx="2.5" dy="1.5" layer="1" roundness="25"/>
+<smd name="GND" x="2.45" y="-1.6" dx="2.5" dy="1.5" layer="1" roundness="25"/>
+<smd name="OUT" x="-2.45" y="-1.6" dx="2.5" dy="1.5" layer="1" roundness="25"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.2" layer="21"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.2" layer="21"/>
+<text x="-2.54" y="3.81" size="1" layer="25" font="vector" ratio="20" align="top-left">&gt;Name</text>
+<text x="-2.567840625" y="-3.865784375" size="1" layer="25" font="vector" ratio="20">&gt;Value</text>
+<circle x="3.047546875" y="-3.0960875" radius="0.2" width="0.4" layer="21"/>
+</package>
+<package name="1206" urn="urn:adsk.eagle:footprint:12172536/3" locally_modified="yes">
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="0.7" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="0.7" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-2.45" y1="1" x2="2.45" y2="1" width="0.05" layer="39"/>
+<wire x1="2.45" y1="1" x2="2.45" y2="-1" width="0.05" layer="39"/>
+<wire x1="2.45" y1="-1" x2="-2.45" y2="-1" width="0.05" layer="39"/>
+<wire x1="-2.45" y1="-1" x2="-2.45" y2="1" width="0.05" layer="39"/>
+<wire x1="-0.7" y1="0.8" x2="0.7" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-0.7" y1="-0.8" x2="0.7" y2="-0.8" width="0.2" layer="21"/>
+<smd name="A" x="-1.5" y="0" dx="1.4" dy="1.5" layer="1" roundness="25" rot="R180"/>
+<smd name="C" x="1.5" y="0" dx="1.4" dy="1.5" layer="1" roundness="25" rot="R180"/>
+<text x="-2.54" y="1.524" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" locally_modified="yes">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="25"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="25"/>
+<text x="-1.905" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="150120RS75000" urn="urn:adsk.eagle:package:12172548/5" type="model">
+<packageinstances>
+<packageinstance name="1206"/>
+</packageinstances>
+</package3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -266,8 +552,389 @@ design rules under a new name.
 </pass>
 </autorouter>
 <elements>
+<element name="EINGABE1:S1" library="iceberg20" package="SWITCH-6MM-SMD" value="SMD-BUTTON" x="5.08" y="-5.08" smashed="yes">
+<attribute name="BESTAND" value="0" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="Alcoswitch" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="4-1437565-1 FSM4JSMA" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.08" y="-1.905" size="1" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="SUPPLIER" value="Bürklin" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="12G482" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.08" y="-8.255" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="EINGABE1:S2" library="iceberg20" package="SWITCH-6MM-SMD" value="SMD-BUTTON" x="5.08" y="-15.24" smashed="yes">
+<attribute name="BESTAND" value="0" x="5.08" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="Alcoswitch" x="5.08" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="4-1437565-1 FSM4JSMA" x="5.08" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.08" y="-12.065" size="1" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="SUPPLIER" value="Bürklin" x="5.08" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="12G482" x="5.08" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.08" y="-18.415" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="EINGABE1:S3" library="iceberg20" package="SWITCH-6MM-SMD" value="SMD-BUTTON" x="5.08" y="-25.4" smashed="yes">
+<attribute name="BESTAND" value="0" x="5.08" y="-25.4" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="Alcoswitch" x="5.08" y="-25.4" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="4-1437565-1 FSM4JSMA" x="5.08" y="-25.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.08" y="-22.225" size="1" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="SUPPLIER" value="Bürklin" x="5.08" y="-25.4" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="12G482" x="5.08" y="-25.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.08" y="-28.575" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="EINGABE1:S4" library="iceberg20" package="SWITCH-12MM-THT" value="BUTTON-12MM" x="7.62" y="-38.1" smashed="yes">
+<attribute name="BESTAND" value="?" x="7.62" y="-38.1" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="Omron" x="7.62" y="-38.1" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="13G7561" x="7.62" y="-38.1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.62" y="-31.877" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="SUPPLIER" value="Bürklin" x="7.62" y="-38.1" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="B3F-4005 " x="7.62" y="-38.1" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="7.62" y="-44.323" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="EINGABE1:S5" library="iceberg20" package="SWITCH-12MM-THT" value="BUTTON-12MM" x="7.62" y="-53.34" smashed="yes">
+<attribute name="BESTAND" value="?" x="7.62" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="Omron" x="7.62" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="13G7561" x="7.62" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.62" y="-47.117" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="SUPPLIER" value="Bürklin" x="7.62" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="B3F-4005 " x="7.62" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="7.62" y="-59.563" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="EINGABE1:S6" library="iceberg20" package="SWITCH-6MM-SMD" value="SMD-BUTTON" x="5.08" y="-66.04" smashed="yes">
+<attribute name="BESTAND" value="0" x="5.08" y="-66.04" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="Alcoswitch" x="5.08" y="-66.04" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="4-1437565-1 FSM4JSMA" x="5.08" y="-66.04" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.08" y="-62.865" size="1" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="SUPPLIER" value="Bürklin" x="5.08" y="-66.04" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="12G482" x="5.08" y="-66.04" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.08" y="-69.215" size="1" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="EINGABE1:S7" library="iceberg20" package="TOGGLE-SWITCH" value="TOGGLE-SWITCH" x="5.08" y="-72.39" smashed="yes">
+<attribute name="BESTAND" value="" x="5.08" y="-72.39" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="" x="5.08" y="-72.39" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="" x="5.08" y="-72.39" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="" x="5.08" y="-72.39" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="" x="5.08" y="-72.39" size="1.778" layer="27" display="off"/>
+</element>
+<element name="EINGABE1:S8" library="iceberg20" package="TOGGLE-SWITCH" value="TOGGLE-SWITCH" x="5.08" y="-76.2" smashed="yes">
+<attribute name="BESTAND" value="" x="5.08" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="" x="5.08" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="" x="5.08" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="" x="5.08" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="" x="5.08" y="-76.2" size="1.778" layer="27" display="off"/>
+</element>
+<element name="EINGABE1:S9" library="iceberg20" package="TOGGLE-SWITCH" value="TOGGLE-SWITCH" x="5.08" y="-80.01" smashed="yes">
+<attribute name="BESTAND" value="" x="5.08" y="-80.01" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="" x="5.08" y="-80.01" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="" x="5.08" y="-80.01" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="" x="5.08" y="-80.01" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="" x="5.08" y="-80.01" size="1.778" layer="27" display="off"/>
+</element>
+<element name="ANSCHLUSS1:X1" library="iceberg20" package="2X8" value="WANNENSTECKER-16" x="-5.08" y="-59.69" smashed="yes">
+<attribute name="BESTAND" value="" x="-5.08" y="-59.69" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="" x="-5.08" y="-59.69" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="" x="-5.08" y="-59.69" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-8.89" y="-51.816" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="" x="-5.08" y="-59.69" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="" x="-5.08" y="-59.69" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-7.62" y="-78.232" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED1" library="iceberg20" package="5050" value="WS2812B" x="-13.97" y="-76.2" smashed="yes">
+<attribute name="BESTAND" value="?" x="-13.97" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="SparkFun Electronics" x="-13.97" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="COM-13667" x="-13.97" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-16.51" y="-72.39" size="1" layer="25" font="vector" ratio="20" align="top-left"/>
+<attribute name="SUPPLIER" value="Mouser" x="-13.97" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="474-COM-13667" x="-13.97" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-16.537840625" y="-80.065784375" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED10" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-21.59" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-21.59" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-21.59" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-21.59" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-24.13" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-21.59" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-21.59" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-24.13" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED2" library="iceberg20" package="5050" value="WS2812B" x="-29.21" y="-76.2" smashed="yes">
+<attribute name="BESTAND" value="?" x="-29.21" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="SparkFun Electronics" x="-29.21" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="COM-13667" x="-29.21" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-31.75" y="-72.39" size="1" layer="25" font="vector" ratio="20" align="top-left"/>
+<attribute name="SUPPLIER" value="Mouser" x="-29.21" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="474-COM-13667" x="-29.21" y="-76.2" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-31.777840625" y="-80.065784375" size="1" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED3" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-36.83" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-36.83" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-36.83" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-36.83" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-39.37" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-36.83" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-36.83" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-39.37" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED4" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-43.18" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-43.18" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-43.18" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-43.18" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-45.72" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-43.18" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-43.18" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-45.72" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED5" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-49.53" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-49.53" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-49.53" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-49.53" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-52.07" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-49.53" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-49.53" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-52.07" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED6" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-55.88" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-55.88" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-55.88" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-55.88" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-58.42" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-55.88" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-55.88" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-58.42" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED7" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-62.23" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-62.23" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-62.23" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-62.23" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-64.77" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-62.23" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-62.23" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-64.77" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED8" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-68.58" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-68.58" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-68.58" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-68.58" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-71.12" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-68.58" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-68.58" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-71.12" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED9" library="iceberg20" package="1206" package3d_urn="urn:adsk.eagle:package:12172548/5" value="LED-GREEN1" x="-74.93" y="-77.47" smashed="yes">
+<attribute name="BESTAND" value="" x="-74.93" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="EVERLIGHT" x="-74.93" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="15-21SYGC/S530-E1/TR8 Everlight" x="-74.93" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-77.47" y="-75.946" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="Bürklin" x="-74.93" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="67S2004" x="-74.93" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-77.47" y="-80.01" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:R1" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330" x="-74.93" y="-85.09" smashed="yes">
+<attribute name="BESTAND" value="-" x="-74.93" y="-85.09" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-74.93" y="-85.09" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-74.93" y="-85.09" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-76.835" y="-83.82" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="-" x="-74.93" y="-85.09" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-74.93" y="-85.09" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-74.93" y="-85.09" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-76.835" y="-87.63" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:R2" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330" x="-74.93" y="-91.44" smashed="yes">
+<attribute name="BESTAND" value="-" x="-74.93" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-74.93" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-74.93" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-76.835" y="-90.17" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="-" x="-74.93" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-74.93" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-74.93" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-76.835" y="-93.98" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:R3" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330" x="-74.93" y="-97.79" smashed="yes">
+<attribute name="BESTAND" value="-" x="-74.93" y="-97.79" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-74.93" y="-97.79" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-74.93" y="-97.79" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-76.835" y="-96.52" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="-" x="-74.93" y="-97.79" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-74.93" y="-97.79" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-74.93" y="-97.79" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-76.835" y="-100.33" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:R4" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330" x="-74.93" y="-104.14" smashed="yes">
+<attribute name="BESTAND" value="-" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-76.835" y="-102.87" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="-" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-76.835" y="-106.68" size="1" layer="27" font="vector" ratio="20"/>
+</element>
 </elements>
 <signals>
+<signal name="EINGABE1:KICK-B">
+<contactref element="EINGABE1:S2" pad="A2"/>
+<contactref element="EINGABE1:S2" pad="A1"/>
+<wire x1="9.055" y1="-17.49" x2="1.105" y2="-17.49" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EINGABE1:CALIBRATION-B">
+<contactref element="EINGABE1:S3" pad="A2"/>
+<contactref element="EINGABE1:S3" pad="A1"/>
+<wire x1="9.055" y1="-27.65" x2="1.105" y2="-27.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EINGABE1:SHIFT-B">
+<contactref element="EINGABE1:S6" pad="A2"/>
+<contactref element="EINGABE1:S6" pad="A1"/>
+<wire x1="9.055" y1="-68.29" x2="1.105" y2="-68.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EINGABE1:GND">
+<contactref element="EINGABE1:S4" pad="3"/>
+<contactref element="EINGABE1:S5" pad="3"/>
+<contactref element="EINGABE1:S1" pad="B2"/>
+<contactref element="EINGABE1:S1" pad="B1"/>
+<contactref element="EINGABE1:S3" pad="B2"/>
+<contactref element="EINGABE1:S3" pad="B1"/>
+<contactref element="EINGABE1:S2" pad="B2"/>
+<contactref element="EINGABE1:S2" pad="B1"/>
+<contactref element="EINGABE1:S6" pad="B2"/>
+<contactref element="EINGABE1:S6" pad="B1"/>
+<contactref element="EINGABE1:S7" pad="C"/>
+<contactref element="EINGABE1:S9" pad="C"/>
+<contactref element="EINGABE1:S8" pad="C"/>
+<wire x1="5.08" y1="-76.2" x2="5.08" y2="-80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-72.39" x2="5.08" y2="-76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="1.105" y1="-63.79" x2="5.08" y2="-72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="9.055" y1="-63.79" x2="1.105" y2="-63.79" width="0" layer="19" extent="1-1"/>
+<wire x1="13.87" y1="-50.84" x2="9.055" y2="-63.79" width="0" layer="19" extent="1-1"/>
+<wire x1="13.87" y1="-35.6" x2="13.87" y2="-50.84" width="0" layer="19" extent="1-1"/>
+<wire x1="9.055" y1="-23.15" x2="13.87" y2="-35.6" width="0" layer="19" extent="1-1"/>
+<wire x1="1.105" y1="-23.15" x2="9.055" y2="-23.15" width="0" layer="19" extent="1-1"/>
+<wire x1="1.105" y1="-12.99" x2="1.105" y2="-23.15" width="0" layer="19" extent="1-1"/>
+<wire x1="9.055" y1="-12.99" x2="1.105" y2="-12.99" width="0" layer="19" extent="1-1"/>
+<wire x1="9.055" y1="-2.83" x2="9.055" y2="-12.99" width="0" layer="19" extent="1-1"/>
+<wire x1="1.105" y1="-2.83" x2="9.055" y2="-2.83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANSCHLUSS1:SCL">
+<contactref element="ANSCHLUSS1:X1" pad="4"/>
+</signal>
+<signal name="ANSCHLUSS1:SDA">
+<contactref element="ANSCHLUSS1:X1" pad="6"/>
+</signal>
+<signal name="ANSCHLUSS1:INTERRUPT">
+<contactref element="ANSCHLUSS1:X1" pad="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="ANSCHLUSS1:X1" pad="7"/>
+<contactref element="ANSCHLUSS1:X1" pad="3"/>
+<contactref element="ANSCHLUSS1:X1" pad="5"/>
+<wire x1="-6.35" y1="-62.23" x2="-6.35" y2="-64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="-59.69" x2="-6.35" y2="-62.23" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+5V">
+<contactref element="ANSCHLUSS1:X1" pad="2"/>
+</signal>
+<signal name="+12V">
+<contactref element="ANSCHLUSS1:X1" pad="1"/>
+</signal>
+<signal name="AUSGABE1:N$1">
+<contactref element="AUSGABE1:LED3" pad="C"/>
+<contactref element="AUSGABE1:LED6" pad="A"/>
+<wire x1="-35.33" y1="-77.47" x2="-57.38" y2="-77.47" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$3">
+<contactref element="AUSGABE1:LED4" pad="C"/>
+<contactref element="AUSGABE1:LED7" pad="A"/>
+<wire x1="-41.68" y1="-77.47" x2="-63.73" y2="-77.47" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$4">
+<contactref element="AUSGABE1:LED5" pad="C"/>
+<contactref element="AUSGABE1:LED8" pad="A"/>
+<wire x1="-48.03" y1="-77.47" x2="-70.08" y2="-77.47" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$5">
+<contactref element="AUSGABE1:LED1" pad="OUT"/>
+<contactref element="AUSGABE1:LED2" pad="IN"/>
+<wire x1="-16.42" y1="-77.8" x2="-26.76" y2="-74.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:GND">
+<contactref element="AUSGABE1:LED1" pad="GND"/>
+<contactref element="AUSGABE1:LED2" pad="GND"/>
+<contactref element="AUSGABE1:LED6" pad="C"/>
+<contactref element="AUSGABE1:LED8" pad="C"/>
+<contactref element="AUSGABE1:LED7" pad="C"/>
+<contactref element="AUSGABE1:LED10" pad="C"/>
+<wire x1="-60.73" y1="-77.47" x2="-67.08" y2="-77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.38" y1="-77.47" x2="-60.73" y2="-77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.76" y1="-77.8" x2="-54.38" y2="-77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.09" y1="-77.47" x2="-26.76" y2="-77.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.52" y1="-77.8" x2="-20.09" y2="-77.47" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:+5V">
+<contactref element="AUSGABE1:LED1" pad="VDD"/>
+<contactref element="AUSGABE1:LED2" pad="VDD"/>
+<wire x1="-16.42" y1="-74.6" x2="-31.66" y2="-74.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$2">
+<contactref element="AUSGABE1:R1" pad="2"/>
+<contactref element="AUSGABE1:LED3" pad="A"/>
+<wire x1="-38.33" y1="-77.47" x2="-73.98" y2="-85.09" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$6">
+<contactref element="AUSGABE1:R2" pad="2"/>
+<contactref element="AUSGABE1:LED4" pad="A"/>
+<wire x1="-44.68" y1="-77.47" x2="-73.98" y2="-91.44" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$7">
+<contactref element="AUSGABE1:LED5" pad="A"/>
+<contactref element="AUSGABE1:R3" pad="2"/>
+<wire x1="-51.03" y1="-77.47" x2="-73.98" y2="-97.79" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$11">
+<contactref element="AUSGABE1:R4" pad="2"/>
+<contactref element="AUSGABE1:LED9" pad="A"/>
+<wire x1="-76.43" y1="-77.47" x2="-73.98" y2="-104.14" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$12">
+<contactref element="AUSGABE1:LED9" pad="C"/>
+<contactref element="AUSGABE1:LED10" pad="A"/>
+<wire x1="-23.09" y1="-77.47" x2="-73.43" y2="-77.47" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:SHIFT-LED">
+<contactref element="AUSGABE1:R4" pad="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="EINGABE1:S4" pad="1"/>
+<contactref element="ANSCHLUSS1:X1" pad="8"/>
+<wire x1="13.87" y1="-40.6" x2="-3.81" y2="-64.77" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="EINGABE1:S5" pad="1"/>
+<contactref element="ANSCHLUSS1:X1" pad="9"/>
+<wire x1="13.87" y1="-55.84" x2="-6.35" y2="-67.31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="ANSCHLUSS1:X1" pad="14"/>
+<contactref element="AUSGABE1:LED1" pad="IN"/>
+<wire x1="-3.81" y1="-72.39" x2="-11.52" y2="-74.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="EINGABE1:S1" pad="A2"/>
+<contactref element="EINGABE1:S1" pad="A1"/>
+<contactref element="ANSCHLUSS1:X1" pad="15"/>
+<wire x1="1.105" y1="-7.33" x2="-6.35" y2="-74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="9.055" y1="-7.33" x2="1.105" y2="-7.33" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="EINGABE1:S9" pad="A"/>
+<contactref element="AUSGABE1:R3" pad="1"/>
+<wire x1="2.54" y1="-80.01" x2="-75.88" y2="-97.79" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="EINGABE1:S7" pad="A"/>
+<contactref element="AUSGABE1:R1" pad="1"/>
+<wire x1="2.54" y1="-72.39" x2="-75.88" y2="-85.09" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="EINGABE1:S8" pad="A"/>
+<contactref element="AUSGABE1:R2" pad="1"/>
+<wire x1="2.54" y1="-76.2" x2="-75.88" y2="-91.44" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -278,4 +945,16 @@ design rules under a new name.
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
