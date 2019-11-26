@@ -350,6 +350,44 @@
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
+<package name="LED_LED5MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+5 mm, round</description>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128"/>
+<pad name="K" x="1.27" y="0" drill="0.8128"/>
+<text x="3.175" y="0.5334" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SKRHAAE010">
+<wire x1="-2.35" y1="-3.75" x2="2.35" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-2.35" x2="-3.75" y2="2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="3.75" x2="2.35" y2="3.75" width="0.127" layer="21"/>
+<wire x1="3.75" y1="2.35" x2="3.75" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="3.75" x2="-3.75" y2="2.35" width="0.127" layer="21"/>
+<wire x1="2.35" y1="3.75" x2="3.75" y2="2.35" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-2.35" x2="2.35" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-2.35" x2="-2.35" y2="-3.75" width="0.127" layer="21"/>
+<hole x="0" y="1.9" drill="0.75"/>
+<hole x="0" y="-1.9" drill="1.05"/>
+<smd name="CENTER" x="-3.575" y="0" dx="1" dy="1.35" layer="1" rot="R90"/>
+<smd name="A" x="-3.575" y="1.425" dx="1" dy="1.35" layer="1" rot="R90"/>
+<smd name="C" x="-3.575" y="-1.425" dx="1" dy="1.35" layer="1" rot="R90"/>
+<smd name="D" x="3.757" y="-1.425" dx="1" dy="1.35" layer="1" rot="R90"/>
+<smd name="COMMON" x="3.757" y="0" dx="1" dy="1.35" layer="1" rot="R90"/>
+<smd name="B" x="3.757" y="1.425" dx="1" dy="1.35" layer="1" rot="R90"/>
+<smd name="8" x="0" y="4.05" dx="2" dy="1.8" layer="1"/>
+<smd name="7" x="0" y="-4.05" dx="2" dy="1.8" layer="1" rot="R180"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="150120RS75000" urn="urn:adsk.eagle:package:12172548/5" type="model">
@@ -766,6 +804,51 @@ design rules under a new name.
 <attribute name="TOLERANZ" value="5%" x="-74.93" y="-104.14" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-76.835" y="-106.68" size="1" layer="27" font="vector" ratio="20"/>
 </element>
+<element name="AUSGABE1:LED11" library="iceberg20" package="LED_LED5MM" value="LED-GREEN-THT" x="-73.66" y="-111.76" smashed="yes">
+<attribute name="BESTAND" value="" x="-73.66" y="-110.49" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="" x="-73.66" y="-110.49" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="" x="-73.66" y="-110.49" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-70.485" y="-111.2266" size="1.27" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="" x="-73.66" y="-110.49" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="" x="-73.66" y="-110.49" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.4596" y="-113.5634" size="1.27" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:LED12" library="iceberg20" package="LED_LED5MM" value="LED-GREEN-THT" x="-73.66" y="-119.38" smashed="yes">
+<attribute name="BESTAND" value="" x="-73.66" y="-118.11" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="" x="-73.66" y="-118.11" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="" x="-73.66" y="-118.11" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-70.485" y="-118.8466" size="1.27" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="" x="-73.66" y="-118.11" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="" x="-73.66" y="-118.11" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.4596" y="-121.1834" size="1.27" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:R5" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="R" x="-74.93" y="-125.73" smashed="yes">
+<attribute name="BESTAND" value="-" x="-74.93" y="-124.46" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-74.93" y="-124.46" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-74.93" y="-124.46" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-76.835" y="-124.46" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="-" x="-74.93" y="-124.46" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-74.93" y="-124.46" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-74.93" y="-124.46" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-76.835" y="-128.27" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="AUSGABE1:R6" library="iceberg20" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="R" x="-64.77" y="-125.73" smashed="yes">
+<attribute name="BESTAND" value="-" x="-74.93" y="-130.81" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="-" x="-74.93" y="-130.81" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="-" x="-74.93" y="-130.81" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-66.675" y="-124.46" size="1" layer="25" font="vector" ratio="20"/>
+<attribute name="SUPPLIER" value="-" x="-74.93" y="-130.81" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="-" x="-74.93" y="-130.81" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANZ" value="5%" x="-74.93" y="-130.81" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-66.675" y="-128.27" size="1" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="EINGABE1:U$1" library="iceberg20" package="SKRHAAE010" value="JOYSTICK" x="-82.55" y="-123.19" smashed="yes">
+<attribute name="BESTAND" value="0" x="-82.55" y="-123.19" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER" value="ALPS" x="-82.55" y="-123.19" size="1.778" layer="27" display="off"/>
+<attribute name="HERSTELLER-NR" value="SKRHAAE010 " x="-82.55" y="-123.19" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="Mouser" x="-82.55" y="-123.19" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER-NR" value="688-SKRHAAE010 " x="-82.55" y="-123.19" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="EINGABE1:KICK-B">
@@ -797,6 +880,8 @@ design rules under a new name.
 <contactref element="EINGABE1:S7" pad="C"/>
 <contactref element="EINGABE1:S9" pad="C"/>
 <contactref element="EINGABE1:S8" pad="C"/>
+<contactref element="EINGABE1:U$1" pad="COMMON"/>
+<wire x1="5.08" y1="-80.01" x2="-78.793" y2="-123.19" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="-76.2" x2="5.08" y2="-80.01" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="-72.39" x2="5.08" y2="-76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="1.105" y1="-63.79" x2="5.08" y2="-72.39" width="0" layer="19" extent="1-1"/>
@@ -859,6 +944,10 @@ design rules under a new name.
 <contactref element="AUSGABE1:LED8" pad="C"/>
 <contactref element="AUSGABE1:LED7" pad="C"/>
 <contactref element="AUSGABE1:LED10" pad="C"/>
+<contactref element="AUSGABE1:LED11" pad="K"/>
+<contactref element="AUSGABE1:LED12" pad="K"/>
+<wire x1="-72.39" y1="-111.76" x2="-72.39" y2="-119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.08" y1="-77.47" x2="-72.39" y2="-111.76" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.73" y1="-77.47" x2="-67.08" y2="-77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.38" y1="-77.47" x2="-60.73" y2="-77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.76" y1="-77.8" x2="-54.38" y2="-77.47" width="0" layer="19" extent="1-1"/>
@@ -934,6 +1023,37 @@ design rules under a new name.
 <contactref element="EINGABE1:S8" pad="A"/>
 <contactref element="AUSGABE1:R2" pad="1"/>
 <wire x1="2.54" y1="-76.2" x2="-75.88" y2="-91.44" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$8">
+<contactref element="AUSGABE1:LED11" pad="A"/>
+<contactref element="AUSGABE1:R5" pad="2"/>
+<wire x1="-74.93" y1="-111.76" x2="-73.98" y2="-125.73" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:N$9">
+<contactref element="AUSGABE1:LED12" pad="A"/>
+<contactref element="AUSGABE1:R6" pad="2"/>
+<wire x1="-63.82" y1="-125.73" x2="-74.93" y2="-119.38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AUSGABE1:STRIKER-LED">
+<contactref element="AUSGABE1:R5" pad="1"/>
+</signal>
+<signal name="AUSGABE1:DEFENCE-LED">
+<contactref element="AUSGABE1:R6" pad="1"/>
+</signal>
+<signal name="EINGABE1:LEFT-J">
+<contactref element="EINGABE1:U$1" pad="A"/>
+</signal>
+<signal name="EINGABE1:CENTER-J">
+<contactref element="EINGABE1:U$1" pad="CENTER"/>
+</signal>
+<signal name="EINGABE1:DOWN-J">
+<contactref element="EINGABE1:U$1" pad="C"/>
+</signal>
+<signal name="EINGABE1:UP-J">
+<contactref element="EINGABE1:U$1" pad="B"/>
+</signal>
+<signal name="EINGABE1:RIGHT-J">
+<contactref element="EINGABE1:U$1" pad="D"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
