@@ -1025,6 +1025,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">NANO</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1141,13 +1142,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="81.28" y1="101.6" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="101.6" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <junction x="68.58" y="109.22"/>
-</segment>
-</net>
-<net name="LED" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="14"/>
-<wire x1="109.22" y1="134.62" x2="111.76" y2="134.62" width="0.1524" layer="91"/>
-<label x="111.76" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ARD-RESET" class="0">
