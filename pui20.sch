@@ -1069,15 +1069,15 @@ DIN A4, landscape with location and doc. field</description>
 <port name="START-B" side="left" coord="10.16" direction="out"/>
 <port name="STOP-B" side="left" coord="7.62" direction="out"/>
 <port name="RESET-B" side="left" coord="5.08" direction="out"/>
-<port name="KICKER-S" side="right" coord="-15.24" direction="out"/>
-<port name="HEADSTART-S" side="right" coord="-10.16" direction="out"/>
+<port name="KICKER-S" side="right" coord="-10.16" direction="out"/>
+<port name="HEADSTART-S" side="right" coord="-15.24" direction="out"/>
 <port name="MOTOR-S" side="right" coord="-12.7" direction="out"/>
 <port name="KICK-B" side="right" coord="7.62" direction="out"/>
 <port name="SHIFT-B" side="right" coord="10.16" direction="out"/>
 <port name="CALIBRATION-B" side="right" coord="5.08" direction="out"/>
-<port name="CENTER-J" side="right" coord="2.54" direction="out"/>
-<port name="DOWN-J" side="right" coord="0" direction="out"/>
-<port name="LEFT-J" side="right" coord="-2.54" direction="out"/>
+<port name="CENTER-J" side="right" coord="0" direction="out"/>
+<port name="DOWN-J" side="right" coord="-2.54" direction="out"/>
+<port name="LEFT-J" side="right" coord="2.54" direction="out"/>
 <port name="RIGHT-J" side="right" coord="-5.08" direction="out"/>
 <port name="UP-J" side="right" coord="-7.62" direction="out"/>
 <port name="GND" side="bottom" coord="7.62" direction="io"/>
@@ -2235,27 +2235,6 @@ DIN A4, landscape with location and doc. field</description>
 <label x="205.74" y="142.24" size="1.778" layer="95" align="center-left"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<portref moduleinst="EINGABE1" port="CENTER-J"/>
-<portref moduleinst="EXPANDER1" port="GPB3"/>
-<wire x1="139.7" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<portref moduleinst="EINGABE1" port="DOWN-J"/>
-<portref moduleinst="EXPANDER1" port="GPB4"/>
-<wire x1="139.7" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<portref moduleinst="EINGABE1" port="LEFT-J"/>
-<portref moduleinst="EXPANDER1" port="GPB5"/>
-<wire x1="139.7" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$15" class="0">
 <segment>
 <portref moduleinst="EINGABE1" port="RIGHT-J"/>
@@ -2298,9 +2277,9 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <portref moduleinst="EINGABE1" port="KICKER-S"/>
-<portref moduleinst="EXPANDER1" port="GPA2"/>
-<wire x1="139.7" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
-<label x="139.7" y="119.38" size="1.778" layer="95"/>
+<portref moduleinst="EXPANDER1" port="GPA0"/>
+<wire x1="139.7" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
+<label x="139.7" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HEADSTART-LED" class="0">
@@ -2310,10 +2289,10 @@ DIN A4, landscape with location and doc. field</description>
 <label x="81.28" y="83.82" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
+<portref moduleinst="EXPANDER1" port="GPA2"/>
 <portref moduleinst="EINGABE1" port="HEADSTART-S"/>
-<portref moduleinst="EXPANDER1" port="GPA0"/>
-<wire x1="139.7" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
-<label x="139.7" y="124.46" size="1.778" layer="95"/>
+<wire x1="160.02" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
+<label x="139.7" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -2341,6 +2320,27 @@ DIN A4, landscape with location and doc. field</description>
 <portref moduleinst="EXPANDER1" port="GPA1"/>
 <wire x1="139.7" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
 <label x="139.7" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<portref moduleinst="EINGABE1" port="LEFT-J"/>
+<portref moduleinst="EXPANDER1" port="GPB3"/>
+<wire x1="139.7" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<portref moduleinst="EINGABE1" port="CENTER-J"/>
+<portref moduleinst="EXPANDER1" port="GPB4"/>
+<wire x1="139.7" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<portref moduleinst="EINGABE1" port="DOWN-J"/>
+<portref moduleinst="EXPANDER1" port="GPB5"/>
+<wire x1="139.7" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
