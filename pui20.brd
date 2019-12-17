@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -195,7 +195,7 @@
 <text x="73" y="14.25" size="1" layer="25" font="vector" ratio="20" align="bottom-center">STATE</text>
 <text x="83.5" y="14.25" size="1" layer="25" font="vector" ratio="20" align="bottom-center">BALL</text>
 <text x="47.5" y="15.75" size="1.4224" layer="25" font="vector" ratio="20">PUI</text>
-<text x="55.5" y="15.75" size="1.016" layer="25" font="vector" ratio="20" align="bottom-right">2002</text>
+<text x="55.5" y="15.75" size="1.016" layer="25" font="vector" ratio="20" align="bottom-right">2020</text>
 <text x="94" y="1" size="1.4224" layer="25" font="vector" ratio="20" align="bottom-right">www.iceberg-robots.de</text>
 <text x="51.5" y="14.5" size="0.8128" layer="25" font="vector" ratio="20" align="bottom-center">Design by Oona</text>
 <wire x1="56" y1="15.25" x2="56" y2="14" width="0.1524" layer="25"/>
