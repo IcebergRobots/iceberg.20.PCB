@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1163,21 +1163,22 @@ DIN A4, landscape with location and doc. field</description>
 <modules>
 <module name="EINGABE" prefix="" dx="45.72" dy="40.64">
 <ports>
-<port name="START-B" side="left" coord="10.16" direction="out"/>
-<port name="STOP-B" side="left" coord="7.62" direction="out"/>
-<port name="RESET-B" side="left" coord="5.08" direction="out"/>
-<port name="KICKER-S" side="right" coord="-10.16" direction="out"/>
-<port name="HEADSTART-S" side="right" coord="-15.24" direction="out"/>
-<port name="MOTOR-S" side="right" coord="-12.7" direction="out"/>
-<port name="KICK-B" side="right" coord="7.62" direction="out"/>
-<port name="SHIFT-B" side="right" coord="10.16" direction="out"/>
-<port name="CALIBRATION-B" side="right" coord="5.08" direction="out"/>
-<port name="CENTER-J" side="right" coord="0" direction="out"/>
-<port name="DOWN-J" side="right" coord="-2.54" direction="out"/>
-<port name="LEFT-J" side="right" coord="2.54" direction="out"/>
-<port name="RIGHT-J" side="right" coord="-5.08" direction="out"/>
-<port name="UP-J" side="right" coord="-7.62" direction="out"/>
-<port name="GND" side="bottom" coord="7.62" direction="io"/>
+<port name="RESET-B" side="left" coord="0" direction="out"/>
+<port name="KICKER-S" side="right" coord="-7.62" direction="out"/>
+<port name="HEADSTART-S" side="right" coord="-12.7" direction="out"/>
+<port name="MOTOR-S" side="right" coord="-10.16" direction="out"/>
+<port name="KICK-B" side="right" coord="10.16" direction="out"/>
+<port name="SHIFT-B" side="right" coord="12.7" direction="out"/>
+<port name="CALIBRATION-B" side="right" coord="7.62" direction="out"/>
+<port name="CENTER-J" side="right" coord="2.54" direction="out"/>
+<port name="DOWN-J" side="right" coord="0" direction="out"/>
+<port name="LEFT-J" side="right" coord="5.08" direction="out"/>
+<port name="RIGHT-J" side="right" coord="-2.54" direction="out"/>
+<port name="UP-J" side="right" coord="-5.08" direction="out"/>
+<port name="START-B" side="left" coord="5.08" direction="out"/>
+<port name="STOP-B" side="left" coord="2.54" direction="out"/>
+<port name="+5V" side="top" coord="-12.7" direction="io"/>
+<port name="GND" side="bottom" coord="-17.78" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1190,16 +1191,17 @@ DIN A4, landscape with location and doc. field</description>
 <part name="S5" library="iceberg20" deviceset="BUTTON-12MM" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S6" library="iceberg20" deviceset="SMD-BUTTON" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S7" library="iceberg20" deviceset="TOGGLE-SWITCH" device=""/>
 <part name="S8" library="iceberg20" deviceset="TOGGLE-SWITCH" device=""/>
 <part name="S9" library="iceberg20" deviceset="TOGGLE-SWITCH" device=""/>
 <part name="U$1" library="iceberg20" deviceset="JOYSTICK" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">Eingabe</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1234,9 +1236,6 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="43.815" y="125.73" size="1.778" layer="95"/>
 <attribute name="VALUE" x="43.815" y="123.19" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="241.3" y="91.44" smashed="yes">
-<attribute name="VALUE" x="238.76" y="88.9" size="1.778" layer="96"/>
-</instance>
 <instance part="GND3" gate="1" x="63.5" y="109.22" smashed="yes">
 <attribute name="VALUE" x="60.96" y="106.68" size="1.778" layer="96"/>
 </instance>
@@ -1244,6 +1243,9 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="S8" gate="1" x="218.44" y="134.62" smashed="yes" rot="R180"/>
 <instance part="S9" gate="1" x="218.44" y="116.84" smashed="yes" rot="R180"/>
 <instance part="U$1" gate="G$1" x="58.42" y="78.74" smashed="yes"/>
+<instance part="P+1" gate="1" x="241.3" y="162.56" smashed="yes">
+<attribute name="VALUE" x="238.76" y="157.48" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1320,20 +1322,6 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S7" gate="1" pin="C"/>
-<wire x1="233.68" y1="152.4" x2="241.3" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="241.3" y1="152.4" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="S9" gate="1" pin="C"/>
-<wire x1="241.3" y1="134.62" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="116.84" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="116.84" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
-<junction x="241.3" y="116.84"/>
-<pinref part="S8" gate="1" pin="C"/>
-<wire x1="233.68" y1="134.62" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
-<junction x="241.3" y="134.62"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="COMMON"/>
 <wire x1="99.06" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
 <label x="109.22" y="86.36" size="1.778" layer="95" xref="yes"/>
@@ -1395,16 +1383,32 @@ DIN A4, landscape with location and doc. field</description>
 <label x="109.22" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="S7" gate="1" pin="C"/>
+<wire x1="233.68" y1="152.4" x2="241.3" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="152.4" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="S9" gate="1" pin="C"/>
+<wire x1="241.3" y1="134.62" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="116.84" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="S8" gate="1" pin="C"/>
+<wire x1="233.68" y1="134.62" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
+<junction x="241.3" y="134.62"/>
+<wire x1="241.3" y1="152.4" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
+<junction x="241.3" y="152.4"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </module>
-<module name="DISPLAY" prefix="" dx="30.48" dy="20.32">
+<module name="DISPLAY" prefix="" dx="35.56" dy="20.32">
 <ports>
-<port name="RX" side="left" coord="7.62" direction="out"/>
-<port name="TX" side="left" coord="5.08" direction="in"/>
 <port name="+5V" side="top" coord="0" direction="pwr"/>
-<port name="GND" side="bottom" coord="0" direction="pwr"/>
+<port name="GND" side="bottom" coord="12.7" direction="pwr"/>
+<port name="RX" side="left" coord="-2.54" direction="in"/>
+<port name="TX" side="left" coord="0" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1420,6 +1424,7 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">Display</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1485,24 +1490,27 @@ DIN A4, landscape with location and doc. field</description>
 </module>
 <module name="ANSCHLUSS" prefix="" dx="30.48" dy="25.4">
 <ports>
-<port name="+5V" side="top" coord="-7.62" direction="pwr"/>
 <port name="+12V" side="top" coord="-2.54" direction="pwr"/>
 <port name="GND" side="bottom" coord="-7.62" direction="pwr"/>
-<port name="START-B" side="right" coord="10.16" direction="in"/>
-<port name="STOP-B" side="right" coord="7.62" direction="in"/>
-<port name="RESET-B" side="right" coord="5.08" direction="in"/>
+<port name="RESET-B" side="right" coord="-2.54" direction="in"/>
 <port name="LED-IN" side="bottom" coord="10.16" direction="out"/>
 <port name="SCL" side="left" coord="7.62" direction="io"/>
 <port name="SDA" side="left" coord="5.08" direction="io"/>
+<port name="RX-DISPLAY" side="right" coord="5.08" direction="out"/>
+<port name="TX-DISPLAY" side="right" coord="7.62" direction="in"/>
+<port name="+5V" side="top" coord="2.54" direction="pwr"/>
+<port name="START-B" side="right" coord="2.54" direction="in"/>
+<port name="STOP-B" side="right" coord="0" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="iceberg20" deviceset="FRAME-A4" device=""/>
 <part name="X1" library="iceberg20" deviceset="WANNENSTECKER-16" device=""/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1518,14 +1526,17 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="VALUE" x="125.73" y="84.074" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="125.73" y="109.728" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="P+1" gate="1" x="144.78" y="119.38" smashed="yes">
-<attribute name="VALUE" x="142.24" y="114.3" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND1" gate="1" x="99.06" y="99.06" smashed="yes">
-<attribute name="VALUE" x="96.52" y="96.52" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="91.44" y="99.06" smashed="yes" rot="R270">
+<attribute name="VALUE" x="88.9" y="101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+2" gate="1" x="119.38" y="119.38" smashed="yes">
 <attribute name="VALUE" x="116.84" y="114.3" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+1" gate="1" x="139.7" y="116.84" smashed="yes">
+<attribute name="VALUE" x="137.16" y="111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND2" gate="1" x="175.26" y="88.9" smashed="yes">
+<attribute name="VALUE" x="172.72" y="86.36" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1538,14 +1549,6 @@ DIN A4, landscape with location and doc. field</description>
 <label x="154.94" y="104.14" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="X1" gate="1" pin="2"/>
-<wire x1="137.16" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="106.68" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="X1" gate="1" pin="6"/>
@@ -1553,14 +1556,7 @@ DIN A4, landscape with location and doc. field</description>
 <label x="139.7" y="101.6" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="START-B" class="0">
-<segment>
-<pinref part="X1" gate="1" pin="8"/>
-<wire x1="137.16" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
-<label x="154.94" y="99.06" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="STOP-B" class="0">
+<net name="RX-DISPLAY" class="0">
 <segment>
 <pinref part="X1" gate="1" pin="9"/>
 <wire x1="121.92" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
@@ -1569,27 +1565,36 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="GND" class="0">
 <segment>
+<pinref part="X1" gate="1" pin="12"/>
+<wire x1="137.16" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="X1" gate="1" pin="10"/>
+<wire x1="137.16" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="96.52" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+<junction x="175.26" y="93.98"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
 <pinref part="X1" gate="1" pin="7"/>
-<wire x1="121.92" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="99.06" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="101.6" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="1" pin="3"/>
-<wire x1="121.92" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-<junction x="119.38" y="104.14"/>
-<pinref part="X1" gate="1" pin="5"/>
-<wire x1="121.92" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<junction x="119.38" y="101.6"/>
-<wire x1="119.38" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="104.14" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="121.92" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X1" gate="1" pin="3"/>
+<wire x1="96.52" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="104.14" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="X1" gate="1" pin="5"/>
+<wire x1="121.92" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="99.06" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<junction x="96.52" y="99.06"/>
+<junction x="96.52" y="101.6"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="X1" gate="1" pin="1"/>
-<wire x1="121.92" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="106.68" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
+<wire x1="119.38" y1="106.68" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="106.68" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INTERRUPT" class="0">
@@ -1611,6 +1616,35 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="X1" gate="1" pin="15"/>
 <wire x1="121.92" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <label x="119.38" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="STOP-B" class="0">
+<segment>
+<pinref part="X1" gate="1" pin="11"/>
+<wire x1="121.92" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="88.9" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="START-B" class="0">
+<segment>
+<pinref part="X1" gate="1" pin="13"/>
+<wire x1="121.92" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
+<label x="104.14" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="X1" gate="1" pin="2"/>
+<wire x1="137.16" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="114.3" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+</net>
+<net name="TX-DISPLAY" class="0">
+<segment>
+<pinref part="X1" gate="1" pin="8"/>
+<wire x1="137.16" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<label x="154.94" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -1659,6 +1693,7 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">Ausgabe</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1944,25 +1979,23 @@ DIN A4, landscape with location and doc. field</description>
 </module>
 <module name="EXPANDER" prefix="" dx="60.96" dy="30.48">
 <ports>
-<port name="GPB0" side="top" coord="27.94" direction="in"/>
-<port name="GPB1" side="top" coord="25.4" direction="in"/>
-<port name="GPB2" side="top" coord="22.86" direction="in"/>
-<port name="GPA0" side="top" coord="7.62" direction="in"/>
-<port name="GPA1" side="top" coord="5.08" direction="in"/>
-<port name="GPA2" side="top" coord="2.54" direction="in"/>
 <port name="+5V" side="right" coord="0" direction="pwr"/>
 <port name="GND" side="left" coord="0" direction="pwr"/>
 <port name="SCL" side="bottom" coord="27.94" direction="io"/>
 <port name="SDA" side="bottom" coord="25.4" direction="io"/>
-<port name="GPB3" side="top" coord="20.32" direction="in"/>
-<port name="GPB4" side="top" coord="17.78" direction="in"/>
-<port name="GPB5" side="top" coord="15.24" direction="in"/>
-<port name="GPB6" side="top" coord="12.7" direction="in"/>
-<port name="GPB7" side="top" coord="10.16" direction="in"/>
-<port name="GPA3" side="top" coord="-20.32" direction="out"/>
-<port name="GPA4" side="top" coord="-22.86" direction="out"/>
-<port name="GPA5" side="bottom" coord="7.62" direction="in"/>
-<port name="GPA6" side="bottom" coord="5.08" direction="out"/>
+<port name="SHIFT-B" side="top" coord="27.94" direction="in"/>
+<port name="KICK-B" side="top" coord="25.4" direction="in"/>
+<port name="CALIBRATION-B" side="top" coord="22.86" direction="in"/>
+<port name="LEFT-J" side="top" coord="20.32" direction="in"/>
+<port name="CENTER-J" side="top" coord="17.78" direction="in"/>
+<port name="DOWN-J" side="top" coord="15.24" direction="in"/>
+<port name="RIGHT-J" side="top" coord="12.7" direction="in"/>
+<port name="UP-J" side="top" coord="10.16" direction="in"/>
+<port name="KICKER-S" side="top" coord="7.62" direction="in"/>
+<port name="MOTOR-S" side="top" coord="5.08" direction="in"/>
+<port name="HEADSTART-S" side="top" coord="2.54" direction="in"/>
+<port name="DEFENCE-LED" side="top" coord="-20.32" direction="out"/>
+<port name="STRIKER-LED" side="top" coord="-22.86" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1975,10 +2008,13 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">Expander</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -2007,6 +2043,12 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="P+2" gate="1" x="104.14" y="134.62" smashed="yes">
 <attribute name="VALUE" x="101.6" y="129.54" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND3" gate="1" x="139.7" y="76.2" smashed="yes">
+<attribute name="VALUE" x="137.16" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="177.8" y="106.68" smashed="yes">
+<attribute name="VALUE" x="175.26" y="104.14" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2021,6 +2063,34 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="134.62" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="GPB5"/>
+<wire x1="137.16" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="86.36" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="1" pin="GPB7"/>
+<wire x1="139.7" y1="83.82" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<junction x="139.7" y="81.28"/>
+<pinref part="IC1" gate="1" pin="GPB6"/>
+<wire x1="137.16" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<junction x="139.7" y="83.82"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="A0"/>
+<wire x1="137.16" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="1" pin="A1"/>
+<wire x1="137.16" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="116.84" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="1" pin="A2"/>
+<wire x1="137.16" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="114.3" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+<junction x="177.8" y="114.3"/>
+<wire x1="177.8" y1="111.76" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
+<junction x="177.8" y="111.76"/>
+<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2056,150 +2126,75 @@ DIN A4, landscape with location and doc. field</description>
 <net name="RESET" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="RESET"/>
-<wire x1="106.68" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
 <label x="99.06" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="104.14" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="116.84" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="119.38" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
+<junction x="104.14" y="116.84"/>
 </segment>
 </net>
-<net name="GPA0" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPA0"/>
-<wire x1="106.68" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<label x="93.98" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GPA1" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPA1"/>
-<wire x1="106.68" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<label x="104.14" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GPA2" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPA2"/>
-<wire x1="106.68" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-<label x="93.98" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GPA3" class="0">
+<net name="LEFT-J" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="GPA3"/>
 <wire x1="106.68" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 <label x="104.14" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPA4" class="0">
+<net name="CENTER-J" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="GPA4"/>
-<wire x1="106.68" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
-<label x="93.98" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="106.68" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<label x="91.44" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPA5" class="0">
+<net name="DOWN-J" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="GPA5"/>
 <wire x1="106.68" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <label x="104.14" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPA6" class="0">
+<net name="RIGHT-J" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="GPA6"/>
-<wire x1="106.68" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
-<label x="93.98" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="106.68" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
+<label x="91.44" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPA7" class="0">
+<net name="UP-J" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="GPA7"/>
 <wire x1="106.68" y1="81.28" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 <label x="104.14" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="NC" class="0">
+<net name="KICKER-S" class="0">
 <segment>
-<pinref part="IC1" gate="1" pin="NC"/>
-<wire x1="106.68" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="1" pin="GPA0"/>
+<wire x1="106.68" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<label x="86.36" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="A0" class="0">
+<net name="MOTOR-S" class="0">
 <segment>
-<pinref part="IC1" gate="1" pin="A0"/>
-<wire x1="137.16" y1="116.84" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
-<label x="149.86" y="116.84" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC1" gate="1" pin="GPA1"/>
+<wire x1="106.68" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
+<label x="104.14" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="A1" class="0">
+<net name="HEADSTART-S" class="0">
 <segment>
-<pinref part="IC1" gate="1" pin="A1"/>
-<wire x1="137.16" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
-<label x="139.7" y="114.3" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC1" gate="1" pin="GPA2"/>
+<wire x1="106.68" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+<label x="86.36" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="A2" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="A2"/>
-<wire x1="137.16" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<label x="149.86" y="111.76" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB0" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB0"/>
-<wire x1="137.16" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
-<label x="139.7" y="99.06" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB1" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB1"/>
-<wire x1="137.16" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
-<label x="149.86" y="96.52" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB2" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB2"/>
-<wire x1="137.16" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
-<label x="139.7" y="93.98" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB3" class="0">
+<net name="STRIKER-LED" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="GPB3"/>
-<wire x1="137.16" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
-<label x="149.86" y="91.44" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB4" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB4"/>
-<wire x1="137.16" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="139.7" y="88.9" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB5" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB5"/>
-<wire x1="137.16" y1="86.36" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
-<label x="149.86" y="86.36" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB6" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB6"/>
-<wire x1="137.16" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
-<label x="139.7" y="83.82" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPB7" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="GPB7"/>
-<wire x1="137.16" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
-<label x="149.86" y="81.28" size="1.778" layer="95" xref="yes"/>
+<wire x1="137.16" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<label x="162.56" y="91.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="INTA" class="0">
@@ -2216,6 +2211,34 @@ DIN A4, landscape with location and doc. field</description>
 <label x="149.86" y="104.14" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="KICK-B" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="GPB0"/>
+<wire x1="137.16" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
+<label x="139.7" y="99.06" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DEFENCE-LED" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="GPB4"/>
+<wire x1="137.16" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="139.7" y="88.9" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SHIFT-B" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="GPB2"/>
+<wire x1="137.16" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
+<label x="139.7" y="93.98" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CALIBRATION-B" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="GPB1"/>
+<wire x1="137.16" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
+<label x="162.56" y="96.52" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -2224,37 +2247,39 @@ DIN A4, landscape with location and doc. field</description>
 <parts>
 <part name="FRAME1" library="iceberg20" deviceset="FRAME-A4" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC1" library="iceberg20" deviceset="L7805" device="" package3d_urn="urn:adsk.eagle:package:16417/2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">Übersicht</text>
 </plain>
 <moduleinsts>
-<moduleinst name="IN" module="EINGABE" x="111.76" y="134.62">
-<attribute name="NAME" value="IN" x="111.76" y="134.62" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="IN" module="EINGABE" x="124.46" y="101.6"/>
+<moduleinst name="X" module="ANSCHLUSS" x="71.12" y="104.14">
+<attribute name="NAME" value="X" x="71.12" y="104.14" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="X" module="ANSCHLUSS" x="58.42" y="134.62">
-<attribute name="NAME" value="X" x="58.42" y="134.62" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="OUT" module="AUSGABE" x="124.46" y="55.88">
+<attribute name="NAME" value="OUT" x="124.46" y="55.88" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="OUT" module="AUSGABE" x="111.76" y="86.36">
-<attribute name="NAME" value="OUT" x="111.76" y="86.36" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="EXP" module="EXPANDER" x="193.04" y="86.36" rot="R90">
+<attribute name="NAME" value="EXP" x="193.04" y="86.36" size="2.032" layer="95" rot="R90" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="EXP" module="EXPANDER" x="180.34" y="116.84" rot="R90">
-<attribute name="NAME" value="EXP" x="180.34" y="116.84" size="2.032" layer="95" rot="R90" align="bottom-center"/>
-</moduleinst>
-<moduleinst name="DISPLAY1" module="DISPLAY" x="228.6" y="116.84">
-<attribute name="NAME" x="228.6" y="116.84" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DISPLAY1" module="DISPLAY" x="121.92" y="147.32">
+<attribute name="NAME" x="121.92" y="144.78" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -2263,299 +2288,318 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="P+1" gate="1" x="55.88" y="165.1" smashed="yes">
-<attribute name="VALUE" x="53.34" y="160.02" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="1" x="68.58" y="134.62" smashed="yes">
+<attribute name="VALUE" x="66.04" y="129.54" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+2" gate="1" x="50.8" y="160.02" smashed="yes">
-<attribute name="VALUE" x="48.26" y="154.94" size="1.778" layer="96" rot="R90"/>
+<instance part="GND1" gate="1" x="63.5" y="81.28" smashed="yes">
+<attribute name="VALUE" x="60.96" y="78.74" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="50.8" y="111.76" smashed="yes">
-<attribute name="VALUE" x="48.26" y="109.22" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="193.04" y="45.72" smashed="yes">
+<attribute name="VALUE" x="190.5" y="43.18" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="180.34" y="76.2" smashed="yes">
-<attribute name="VALUE" x="177.8" y="73.66" size="1.778" layer="96"/>
+<instance part="P+3" gate="1" x="193.04" y="127" smashed="yes">
+<attribute name="VALUE" x="190.5" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+3" gate="1" x="180.34" y="157.48" smashed="yes">
-<attribute name="VALUE" x="177.8" y="152.4" size="1.778" layer="96" rot="R90"/>
+<instance part="GND4" gate="1" x="124.46" y="33.02" smashed="yes">
+<attribute name="VALUE" x="121.92" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="119.38" y="104.14" smashed="yes">
-<attribute name="VALUE" x="116.84" y="101.6" size="1.778" layer="96"/>
+<instance part="P+4" gate="1" x="124.46" y="78.74" smashed="yes">
+<attribute name="VALUE" x="121.92" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="111.76" y="63.5" smashed="yes">
-<attribute name="VALUE" x="109.22" y="60.96" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="134.62" y="127" smashed="yes">
+<attribute name="VALUE" x="132.08" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="P+4" gate="1" x="111.76" y="111.76" smashed="yes">
-<attribute name="VALUE" x="109.22" y="106.68" size="1.778" layer="96" rot="R90"/>
+<instance part="IC1" gate="G$1" x="45.72" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="51.435" y="81.28" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="48.895" y="81.28" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND5" gate="1" x="228.6" y="96.52" smashed="yes">
-<attribute name="VALUE" x="226.06" y="93.98" size="1.778" layer="96"/>
+<instance part="P+5" gate="1" x="45.72" y="88.9" smashed="yes">
+<attribute name="VALUE" x="43.18" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC1" gate="G$1" x="228.6" y="147.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="234.315" y="154.94" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="231.775" y="154.94" size="1.778" layer="96" rot="R270"/>
+<instance part="GND6" gate="1" x="30.48" y="73.66" smashed="yes" rot="R270">
+<attribute name="VALUE" x="27.94" y="76.2" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+5" gate="1" x="228.6" y="162.56" smashed="yes">
-<attribute name="VALUE" x="226.06" y="157.48" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="1" x="121.92" y="167.64" smashed="yes">
+<attribute name="VALUE" x="119.38" y="162.56" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND6" gate="1" x="213.36" y="147.32" smashed="yes" rot="R270">
-<attribute name="VALUE" x="210.82" y="149.86" size="1.778" layer="96" rot="R270"/>
+<instance part="P+6" gate="1" x="53.34" y="66.04" smashed="yes">
+<attribute name="VALUE" x="50.8" y="60.96" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+7" gate="1" x="73.66" y="129.54" smashed="yes">
+<attribute name="VALUE" x="71.12" y="124.46" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+8" gate="1" x="111.76" y="134.62" smashed="yes">
+<attribute name="VALUE" x="109.22" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND3" gate="1" x="106.68" y="71.12" smashed="yes">
+<attribute name="VALUE" x="104.14" y="68.58" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<portref moduleinst="X" port="GND"/>
-<wire x1="50.8" y1="116.84" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-</net>
 <net name="+5V" class="0">
-<segment>
-<portref moduleinst="X" port="+5V"/>
-<wire x1="50.8" y1="152.4" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-</segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <portref moduleinst="EXP" port="+5V"/>
-<wire x1="180.34" y1="152.4" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="121.92" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="OUT" port="+5V"/>
-<wire x1="111.76" y1="104.14" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="73.66" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="DISPLAY1" port="+5V"/>
+<wire x1="121.92" y1="162.56" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VO"/>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="X" port="+5V"/>
+<wire x1="73.66" y1="121.92" x2="73.66" y2="127" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="IN" port="+5V"/>
+<wire x1="111.76" y1="127" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="P+8" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <portref moduleinst="X" port="+12V"/>
-<wire x1="55.88" y1="152.4" x2="55.88" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="121.92" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VI"/>
-<wire x1="228.6" y1="157.48" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="83.82" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<portref moduleinst="IN" port="START-B"/>
-<portref moduleinst="X" port="START-B"/>
-<wire x1="83.82" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<portref moduleinst="IN" port="STOP-B"/>
-<portref moduleinst="X" port="STOP-B"/>
-<wire x1="83.82" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
+<net name="LED-IN" class="0">
 <segment>
 <portref moduleinst="X" port="LED-IN"/>
 <portref moduleinst="OUT" port="LED-IN"/>
-<wire x1="68.58" y1="116.84" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<portref moduleinst="IN" port="RESET-B"/>
-<portref moduleinst="X" port="RESET-B"/>
-<wire x1="83.82" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="86.36" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <portref moduleinst="EXP" port="GND"/>
-<wire x1="180.34" y1="81.28" x2="180.34" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="50.8" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<portref moduleinst="IN" port="GND"/>
-<wire x1="119.38" y1="109.22" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <portref moduleinst="OUT" port="GND"/>
-<wire x1="111.76" y1="68.58" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="38.1" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
 <portref moduleinst="DISPLAY1" port="GND"/>
-<wire x1="228.6" y1="101.6" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="132.08" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="220.98" y1="147.32" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
-<portref moduleinst="IN" port="CALIBRATION-B"/>
-<portref moduleinst="EXP" port="GPB2"/>
-<wire x1="139.7" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<portref moduleinst="X" port="GND"/>
+<wire x1="63.5" y1="83.82" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="IN" port="GND"/>
+<wire x1="106.68" y1="76.2" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <portref moduleinst="X" port="SCL"/>
-<wire x1="38.1" y1="142.24" x2="30.48" y2="142.24" width="0.1524" layer="91"/>
-<label x="30.48" y="142.24" size="1.778" layer="95" rot="R180" align="center-left"/>
+<wire x1="50.8" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+<label x="43.18" y="111.76" size="1.778" layer="95" rot="R180" align="center-left"/>
 </segment>
 <segment>
 <portref moduleinst="EXP" port="SCL"/>
-<wire x1="200.66" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
-<label x="205.74" y="144.78" size="1.778" layer="95" align="center-left"/>
+<wire x1="213.36" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
+<label x="218.44" y="114.3" size="1.778" layer="95" align="center-left"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <portref moduleinst="X" port="SDA"/>
-<wire x1="38.1" y1="139.7" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
-<label x="30.48" y="139.7" size="1.778" layer="95" rot="R180" align="center-left"/>
+<wire x1="50.8" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<label x="43.18" y="109.22" size="1.778" layer="95" rot="R180" align="center-left"/>
 </segment>
 <segment>
 <portref moduleinst="EXP" port="SDA"/>
-<wire x1="200.66" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<label x="205.74" y="142.24" size="1.778" layer="95" align="center-left"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<portref moduleinst="IN" port="RIGHT-J"/>
-<portref moduleinst="EXP" port="GPB6"/>
-<wire x1="139.7" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<portref moduleinst="IN" port="UP-J"/>
-<portref moduleinst="EXP" port="GPB7"/>
-<wire x1="139.7" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<portref moduleinst="IN" port="KICK-B"/>
-<portref moduleinst="EXP" port="GPB1"/>
-<wire x1="139.7" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="111.76" x2="218.44" y2="111.76" width="0.1524" layer="91"/>
+<label x="218.44" y="111.76" size="1.778" layer="95" align="center-left"/>
 </segment>
 </net>
 <net name="SHIFT-LED" class="0">
 <segment>
 <portref moduleinst="OUT" port="SHIFT-LED"/>
-<wire x1="83.82" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
-<label x="81.28" y="78.74" size="1.778" layer="95" align="center-right"/>
+<wire x1="96.52" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<label x="93.98" y="48.26" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
 <portref moduleinst="IN" port="SHIFT-B"/>
-<portref moduleinst="EXP" port="GPB0"/>
-<wire x1="139.7" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
-<label x="139.7" y="144.78" size="1.778" layer="95"/>
+<portref moduleinst="EXP" port="SHIFT-B"/>
+<wire x1="152.4" y1="114.3" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
+<label x="154.94" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="KICKER-LED" class="0">
 <segment>
 <portref moduleinst="OUT" port="KICKER-LED"/>
-<wire x1="83.82" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
-<label x="81.28" y="81.28" size="1.778" layer="95" align="center-right"/>
+<wire x1="96.52" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+<label x="93.98" y="50.8" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
 <portref moduleinst="IN" port="KICKER-S"/>
-<portref moduleinst="EXP" port="GPA0"/>
-<wire x1="139.7" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
-<label x="139.7" y="124.46" size="1.778" layer="95"/>
+<portref moduleinst="EXP" port="KICKER-S"/>
+<wire x1="152.4" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
+<label x="154.94" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HEADSTART-LED" class="0">
 <segment>
 <portref moduleinst="OUT" port="HEADSTART-LED"/>
-<wire x1="83.82" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
-<label x="81.28" y="83.82" size="1.778" layer="95" align="center-right"/>
+<wire x1="96.52" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+<label x="93.98" y="53.34" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
-<portref moduleinst="EXP" port="GPA2"/>
 <portref moduleinst="IN" port="HEADSTART-S"/>
-<wire x1="160.02" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
-<label x="139.7" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<portref moduleinst="OUT" port="DEFENCE-LED"/>
-<portref moduleinst="EXP" port="GPA3"/>
-<wire x1="139.7" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<portref moduleinst="OUT" port="STRIKER-LED"/>
-<portref moduleinst="EXP" port="GPA4"/>
-<wire x1="139.7" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<portref moduleinst="EXP" port="HEADSTART-S"/>
+<wire x1="152.4" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
+<label x="154.94" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOTOR-LED" class="0">
 <segment>
 <portref moduleinst="OUT" port="MOTOR-LED"/>
-<wire x1="83.82" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
-<label x="81.28" y="86.36" size="1.778" layer="95" align="center-right"/>
+<wire x1="96.52" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="93.98" y="55.88" size="1.778" layer="95" align="center-right"/>
 </segment>
 <segment>
 <portref moduleinst="IN" port="MOTOR-S"/>
-<portref moduleinst="EXP" port="GPA1"/>
-<wire x1="139.7" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="139.7" y="121.92" size="1.778" layer="95"/>
+<portref moduleinst="EXP" port="MOTOR-S"/>
+<wire x1="152.4" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
+<label x="154.94" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="CALIBRATION-B" class="0">
+<segment>
+<portref moduleinst="IN" port="CALIBRATION-B"/>
+<portref moduleinst="EXP" port="CALIBRATION-B"/>
+<wire x1="152.4" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LEFT-J" class="0">
 <segment>
 <portref moduleinst="IN" port="LEFT-J"/>
-<portref moduleinst="EXP" port="GPB3"/>
-<wire x1="139.7" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
+<portref moduleinst="EXP" port="LEFT-J"/>
+<wire x1="152.4" y1="106.68" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="CENTER-J" class="0">
 <segment>
 <portref moduleinst="IN" port="CENTER-J"/>
-<portref moduleinst="EXP" port="GPB4"/>
-<wire x1="139.7" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<portref moduleinst="EXP" port="CENTER-J"/>
+<wire x1="152.4" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="DOWN-J" class="0">
 <segment>
 <portref moduleinst="IN" port="DOWN-J"/>
-<portref moduleinst="EXP" port="GPB5"/>
-<wire x1="139.7" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
+<portref moduleinst="EXP" port="DOWN-J"/>
+<wire x1="152.4" y1="101.6" x2="172.72" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RX" class="0">
+<net name="RIGHT-J" class="0">
 <segment>
-<portref moduleinst="DISPLAY1" port="RX"/>
-<portref moduleinst="EXP" port="GPA5"/>
-<wire x1="208.28" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
-<label x="203.2" y="124.46" size="1.778" layer="95"/>
+<portref moduleinst="IN" port="RIGHT-J"/>
+<portref moduleinst="EXP" port="RIGHT-J"/>
+<wire x1="152.4" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="UP-J" class="0">
+<segment>
+<portref moduleinst="IN" port="UP-J"/>
+<portref moduleinst="EXP" port="UP-J"/>
+<wire x1="152.4" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DEFENCE-LED" class="0">
+<segment>
+<portref moduleinst="EXP" port="DEFENCE-LED"/>
+<portref moduleinst="OUT" port="DEFENCE-LED"/>
+<wire x1="172.72" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="STRIKER-LED" class="0">
+<segment>
+<portref moduleinst="EXP" port="STRIKER-LED"/>
+<portref moduleinst="OUT" port="STRIKER-LED"/>
+<wire x1="172.72" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="KICK-B" class="0">
+<segment>
+<portref moduleinst="IN" port="KICK-B"/>
+<portref moduleinst="EXP" port="KICK-B"/>
+<wire x1="152.4" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RESET-B" class="0">
+<segment>
+<portref moduleinst="X" port="RESET-B"/>
+<portref moduleinst="IN" port="RESET-B"/>
+<wire x1="91.44" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="START-B" class="0">
+<segment>
+<portref moduleinst="IN" port="START-B"/>
+<portref moduleinst="X" port="START-B"/>
+<wire x1="96.52" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="STOP-B" class="0">
+<segment>
+<portref moduleinst="IN" port="STOP-B"/>
+<portref moduleinst="X" port="STOP-B"/>
+<wire x1="96.52" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
 <portref moduleinst="DISPLAY1" port="TX"/>
-<portref moduleinst="EXP" port="GPA6"/>
-<wire x1="208.28" y1="121.92" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
-<label x="203.2" y="121.92" size="1.778" layer="95"/>
+<wire x1="99.06" y1="147.32" x2="93.98" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="147.32" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
+<portref moduleinst="X" port="TX-DISPLAY"/>
+<wire x1="93.98" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="RX" class="0">
 <segment>
-<portref moduleinst="DISPLAY1" port="+5V"/>
-<wire x1="228.6" y1="132.08" x2="228.6" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VO"/>
+<portref moduleinst="X" port="RX-DISPLAY"/>
+<wire x1="91.44" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="96.52" y2="144.78" width="0.1524" layer="91"/>
+<portref moduleinst="DISPLAY1" port="RX"/>
+<wire x1="96.52" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
