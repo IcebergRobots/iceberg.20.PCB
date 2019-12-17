@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1169,6 +1169,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,1,106.003,120.813,X1,,,,,"/>
+<approved hash="113,1,84.4973,117.947,X2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
