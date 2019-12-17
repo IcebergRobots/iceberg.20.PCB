@@ -191,18 +191,19 @@
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.2" layer="21"/>
 <wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.2" layer="21"/>
 <text x="-2.54" y="3.81" size="1" layer="25" font="vector" ratio="20" align="top-left">&gt;Name</text>
-<text x="-2.54" y="-3.81" size="1" layer="25" font="vector" ratio="20">&gt;Value</text>
+<text x="-2.567840625" y="-3.865784375" size="1" layer="25" font="vector" ratio="20">&gt;Value</text>
+<circle x="3.047546875" y="-3.0960875" radius="0.2" width="0.4" layer="21"/>
 </package>
 <package name="SO24" urn="urn:adsk.eagle:footprint:13362123/1" locally_modified="yes">
 <description>24-SOIC, 1.27 mm pitch, 10.32 mm span, 15.40 X 7.50 X 2.65 mm body
 &lt;p&gt;24-pin SOIC package with 1.27 mm pitch, 10.32 mm span with body size 15.40 X 7.50 X 2.65 mm&lt;/p&gt;</description>
-<circle x="-4.8399" y="7.8047" radius="0.25" width="0" layer="21"/>
-<wire x1="-3.8" y1="7.5547" x2="-3.8" y2="7.8" width="0.12" layer="21"/>
-<wire x1="-3.8" y1="7.8" x2="3.8" y2="7.8" width="0.12" layer="21"/>
-<wire x1="3.8" y1="7.8" x2="3.8" y2="7.5547" width="0.12" layer="21"/>
-<wire x1="-3.8" y1="-7.5547" x2="-3.8" y2="-7.8" width="0.12" layer="21"/>
-<wire x1="-3.8" y1="-7.8" x2="3.8" y2="-7.8" width="0.12" layer="21"/>
-<wire x1="3.8" y1="-7.8" x2="3.8" y2="-7.5547" width="0.12" layer="21"/>
+<circle x="-4.8399" y="7.8047" radius="0.25" width="0.2" layer="21"/>
+<wire x1="-3.8" y1="7.5547" x2="-3.8" y2="7.8" width="0.2" layer="21"/>
+<wire x1="-3.8" y1="7.8" x2="3.8" y2="7.8" width="0.2" layer="21"/>
+<wire x1="3.8" y1="7.8" x2="3.8" y2="7.5547" width="0.2" layer="21"/>
+<wire x1="-3.8" y1="-7.5547" x2="-3.8" y2="-7.8" width="0.2" layer="21"/>
+<wire x1="-3.8" y1="-7.8" x2="3.8" y2="-7.8" width="0.2" layer="21"/>
+<wire x1="3.8" y1="-7.8" x2="3.8" y2="-7.5547" width="0.2" layer="21"/>
 <wire x1="3.8" y1="-7.8" x2="-3.8" y2="-7.8" width="0.12" layer="51"/>
 <wire x1="-3.8" y1="-7.8" x2="-3.8" y2="7.8" width="0.12" layer="51"/>
 <wire x1="-3.8" y1="7.8" x2="3.8" y2="7.8" width="0.12" layer="51"/>
@@ -231,7 +232,7 @@
 <smd name="22" x="4.7718" y="4.445" dx="2.216" dy="0.6315" layer="1" roundness="25"/>
 <smd name="23" x="4.7718" y="5.715" dx="2.216" dy="0.6315" layer="1" roundness="25"/>
 <smd name="24" x="4.7718" y="6.985" dx="2.216" dy="0.6315" layer="1" roundness="25"/>
-<text x="0" y="8.6897" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="-0.122696875" y="8.2289125" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-8.435" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" locally_modified="yes">
@@ -253,8 +254,8 @@
 <package name="PLCC-2">
 <smd name="A" x="-1.45" y="0" dx="1.4" dy="1.4" layer="1" roundness="25" rot="R90"/>
 <smd name="C" x="1.45" y="0" dx="1.4" dy="1.4" layer="1" roundness="25" rot="R90"/>
-<wire x1="-1.35" y1="-1" x2="1.35" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="1" x2="1.35" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-1" x2="1.35" y2="-1" width="0.2" layer="21"/>
+<wire x1="-1.35" y1="1" x2="1.35" y2="1" width="0.2" layer="21"/>
 <text x="-2.54" y="-1.27" size="1" layer="21" font="vector" ratio="20" rot="SR180" align="center">+</text>
 <text x="-2.54" y="1.27" size="1" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;Value</text>
@@ -310,18 +311,6 @@
 <text x="-3.095409375" y="5.3310125" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-0.0938" y="0.67903125" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="CAPACITOR-THT-13" urn="urn:adsk.eagle:footprint:12595022/1" locally_modified="yes">
-<description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
-&lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
-<circle x="0" y="0" radius="6.75" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="6.75" width="0.12" layer="51"/>
-<wire x1="-5.37" y1="5.37" x2="-4.62" y2="5.37" width="0.2" layer="21"/>
-<wire x1="-4.995" y1="5.745" x2="-4.995" y2="4.995" width="0.2" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.85" diameter="1.55"/>
-<pad name="2" x="2.54" y="0" drill="0.85" diameter="1.55"/>
-<text x="0" y="7.385" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-7.385" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
 <package name="CAPACITOR-THT-4" urn="urn:adsk.eagle:footprint:12868259/1" locally_modified="yes">
 <description>Radial Polarized Capacitor, 1.50 mm pitch, 4.00 mm body diameter, 7.00 mm body height
 &lt;p&gt;Radial Polarized Capacitor package with 1.50 mm pitch, 0.60 mm lead diameter, 4.00 mm body diameter and 7.00 mm body height&lt;/p&gt;</description>
@@ -333,30 +322,6 @@
 <pad name="2" x="0.75" y="0" drill="0.6"/>
 <text x="0" y="3.0213" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="CAPACITOR-THT-10" urn="urn:adsk.eagle:footprint:14089933/1" locally_modified="yes">
-<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
-&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
-<circle x="0" y="0" radius="5" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="5" width="0.12" layer="51"/>
-<wire x1="-4.1325" y1="4.1326" x2="-3.3825" y2="4.1326" width="0.2" layer="21"/>
-<wire x1="-3.7575" y1="4.5076" x2="-3.7575" y2="3.7576" width="0.2" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="1.15" diameter="1.85"/>
-<pad name="2" x="2.5" y="0" drill="1.15" diameter="1.85"/>
-<text x="0" y="5.635" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="CAPACITOR-THT-6.3" urn="urn:adsk.eagle:footprint:14142678/1" locally_modified="yes">
-<description>Radial Polarized Capacitor, 2.50 mm pitch, 6.55 mm body diameter, 11.00 mm body height
-&lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
-<circle x="0" y="0" radius="3.4" width="0.12" layer="21"/>
-<circle x="0" y="0" radius="3.4" width="0.12" layer="51"/>
-<wire x1="-3.0012" y1="3.0012" x2="-2.2512" y2="3.0012" width="0.12" layer="21"/>
-<wire x1="-2.6262" y1="3.3762" x2="-2.6262" y2="2.6262" width="0.12" layer="21"/>
-<pad name="1" x="-1.25" y="0" drill="0.75" diameter="1.45"/>
-<pad name="2" x="1.25" y="0" drill="0.75" diameter="1.45"/>
-<text x="0" y="4.035" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-4.035" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="C0805" urn="urn:adsk.eagle:footprint:12867826/1" locally_modified="yes">
 <description>Chip, 2.00 X 1.25 X 1.30 mm body
@@ -376,13 +341,13 @@
 <description>Radial Polarized Capacitor, 1.30 mm pitch, 3.25 mm body diameter, 5.00 mm body height
 &lt;p&gt;Radial Polarized Capacitor package with 1.30 mm pitch (lead spacing), 0.40 mm lead diameter, 3.25 mm body diameter and 5.00 mm body height&lt;/p&gt;</description>
 <circle x="0" y="0" radius="1.75" width="0.12" layer="21"/>
-<circle x="0" y="0" radius="1.75" width="0.12" layer="51"/>
-<wire x1="-1.8345" y1="1.8345" x2="-1.0845" y2="1.8345" width="0.12" layer="21"/>
-<wire x1="-1.4595" y1="2.2095" x2="-1.4595" y2="1.4595" width="0.12" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.2" layer="51"/>
+<wire x1="-2.9395375" y1="-0.001465625" x2="-2.1895375" y2="-0.001465625" width="0.2" layer="21"/>
+<wire x1="-2.5645375" y1="0.373534375" x2="-2.5645375" y2="-0.376465625" width="0.2" layer="21"/>
 <pad name="1" x="-0.65" y="0" drill="0.55" diameter="1.05"/>
 <pad name="2" x="0.65" y="0" drill="0.55" diameter="1.05"/>
-<text x="0" y="2.8445" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.385" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-0.013" y="2.0632375" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.385" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="CRYSTAL_HC49U-V">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
@@ -455,7 +420,7 @@
 <text x="0" y="7" size="1.27" layer="21" font="vector" ratio="20">&gt;NAME</text>
 <text x="0" y="-1" size="1.27" layer="21" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 </package>
-<package name="5X1">
+<package name="3X1">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
@@ -489,7 +454,7 @@
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="1.397" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
 </package>
@@ -576,6 +541,42 @@
 <text x="-2.54" y="1.524" size="1" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="CAPACITOR-THT-13" urn="urn:adsk.eagle:footprint:12595022/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="6.75" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="6.75" width="0.12" layer="51"/>
+<wire x1="-2.83" y1="1.56" x2="-2.08" y2="1.56" width="0.2" layer="21"/>
+<wire x1="-2.455" y1="1.935" x2="-2.455" y2="1.185" width="0.2" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.85" diameter="1.55"/>
+<pad name="2" x="2.54" y="0" drill="0.85" diameter="1.55"/>
+<text x="0" y="7.385" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.305" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPACITOR-THT-10" urn="urn:adsk.eagle:footprint:14089933/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="5" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="5" width="0.12" layer="51"/>
+<wire x1="-2.8625" y1="-2.2174" x2="-2.1125" y2="-2.2174" width="0.2" layer="21"/>
+<wire x1="-2.4875" y1="-1.8424" x2="-2.4875" y2="-2.5924" width="0.2" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="1.15" diameter="1.85"/>
+<pad name="2" x="2.5" y="0" drill="1.15" diameter="1.85"/>
+<text x="0" y="5.635" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.635" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPACITOR-THT-6.3" urn="urn:adsk.eagle:footprint:14142678/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 2.50 mm pitch, 6.55 mm body diameter, 11.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="3.4" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="3.4" width="0.12" layer="51"/>
+<wire x1="-1.606384375" y1="1.46619375" x2="-0.856384375" y2="1.46619375" width="0.2" layer="21"/>
+<wire x1="-1.231384375" y1="1.84119375" x2="-1.231384375" y2="1.09119375" width="0.2" layer="21"/>
+<pad name="1" x="-1.25" y="0" drill="0.75" diameter="1.45"/>
+<pad name="2" x="1.25" y="0" drill="0.75" diameter="1.45"/>
+<text x="0" y="4.035" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.035" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOIC127P1032X265-24M" urn="urn:adsk.eagle:package:13361986/1" type="model">
@@ -598,32 +599,11 @@
 <packageinstance name="ATMEGA328P-AU"/>
 </packageinstances>
 </package3d>
-<package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
-<description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
-&lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="CAPACITOR-THT-13"/>
-</packageinstances>
-</package3d>
 <package3d name="CAPPRD150W60D400H700A" urn="urn:adsk.eagle:package:12868066/1" type="model">
 <description>Radial Polarized Capacitor, 1.50 mm pitch, 4.00 mm body diameter, 7.00 mm body height
 &lt;p&gt;Radial Polarized Capacitor package with 1.50 mm pitch, 0.60 mm lead diameter, 4.00 mm body diameter and 7.00 mm body height&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPACITOR-THT-4"/>
-</packageinstances>
-</package3d>
-<package3d name="CAPPRD500W90D1000H1150A" urn="urn:adsk.eagle:package:14089895/1" type="model">
-<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
-&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="CAPACITOR-THT-10"/>
-</packageinstances>
-</package3d>
-<package3d name="CAPPRD250W50D655H1100A" urn="urn:adsk.eagle:package:14142613/1" type="model">
-<description>Radial Polarized Capacitor, 2.50 mm pitch, 6.55 mm body diameter, 11.00 mm body height
-&lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="CAPACITOR-THT-6.3"/>
 </packageinstances>
 </package3d>
 <package3d name="CAPC2012X130" urn="urn:adsk.eagle:package:12867820/1" type="model">
@@ -650,6 +630,27 @@
 <package3d name="150120RS75000" urn="urn:adsk.eagle:package:12172548/5" type="model">
 <packageinstances>
 <packageinstance name="1206"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD508W60D1300H2550A" urn="urn:adsk.eagle:package:12595008/1" type="model">
+<description>Radial Polarized Capacitor, 5.08 mm pitch, 13.00 mm body diameter, 25.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.08 mm pitch, 0.60 mm lead diameter, 13.00 mm body diameter and 25.50 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-13"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD500W90D1000H1150A" urn="urn:adsk.eagle:package:14089895/1" type="model">
+<description>Radial Polarized Capacitor, 5.00 mm pitch, 10.00 mm body diameter, 11.50 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 5.00 mm pitch (lead spacing), 0.90 mm lead diameter, 10.00 mm body diameter and 11.50 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-10"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD250W50D655H1100A" urn="urn:adsk.eagle:package:14142613/1" type="model">
+<description>Radial Polarized Capacitor, 2.50 mm pitch, 6.55 mm body diameter, 11.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 2.50 mm pitch (lead spacing), 0.50 mm lead diameter, 6.55 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPACITOR-THT-6.3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1391,7 +1392,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <gate name="G$1" symbol="CON-01X03" x="2.54" y="5.08"/>
 </gates>
 <devices>
-<device name="" package="5X1">
+<device name="" package="3X1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3347,7 +3348,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="C2" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="1u"/>
 <part name="C4" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="1u"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C3" library="iceberg20" deviceset="ELKO" device="-THT-4,7UF" package3d_urn="urn:adsk.eagle:package:14449053/1" value="4,7u, 16V"/>
+<part name="C3" library="iceberg20" deviceset="ELKO" device="-THT-4,7UF" package3d_urn="urn:adsk.eagle:package:14449053/1" value="4,7 µF, 16 V, ±20%, 3x5 mm"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n"/>
 <part name="Q1" library="iceberg20" deviceset="CRYSTAL" device="" value="16MHz"/>
@@ -4410,6 +4411,76 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1@LED,48.26,152.4,LED1,VDD,+5V,,,"/>
+<approved hash="104,1@LED,76.2,152.4,LED2,VDD,+5V,,,"/>
+<approved hash="104,1@LED,104.14,152.4,LED3,VDD,+5V,,,"/>
+<approved hash="104,1@LED,132.08,152.4,LED4,VDD,+5V,,,"/>
+<approved hash="104,1@LED,160.02,152.4,LED5,VDD,+5V,,,"/>
+<approved hash="104,1@LED,187.96,152.4,LED6,VDD,+5V,,,"/>
+<approved hash="104,1@LED,215.9,152.4,LED7,VDD,+5V,,,"/>
+<approved hash="104,1@LED,243.84,152.4,LED8,VDD,+5V,,,"/>
+<approved hash="104,1@LED,48.26,121.92,LED9,VDD,+5V,,,"/>
+<approved hash="104,1@LED,76.2,121.92,LED10,VDD,+5V,,,"/>
+<approved hash="104,1@LED,104.14,121.92,LED11,VDD,+5V,,,"/>
+<approved hash="104,1@LED,132.08,121.92,LED12,VDD,+5V,,,"/>
+<approved hash="104,1@LED,160.02,121.92,LED13,VDD,+5V,,,"/>
+<approved hash="104,1@LED,187.96,121.92,LED14,VDD,+5V,,,"/>
+<approved hash="104,1@LED,215.9,121.92,LED15,VDD,+5V,,,"/>
+<approved hash="104,1@LED,243.84,121.92,LED16,VDD,+5V,,,"/>
+<approved hash="104,1@LED,48.26,91.44,LED17,VDD,+5V,,,"/>
+<approved hash="104,1@LED,76.2,91.44,LED18,VDD,+5V,,,"/>
+<approved hash="104,1@LED,104.14,91.44,LED19,VDD,+5V,,,"/>
+<approved hash="104,1@LED,132.08,91.44,LED20,VDD,+5V,,,"/>
+<approved hash="104,1@LED,160.02,91.44,LED21,VDD,+5V,,,"/>
+<approved hash="104,1@LED,187.96,91.44,LED22,VDD,+5V,,,"/>
+<approved hash="104,1@LED,215.9,91.44,LED23,VDD,+5V,,,"/>
+<approved hash="104,1@LED,243.84,91.44,LED24,VDD,+5V,,,"/>
+<approved hash="104,1@LED,48.26,60.96,LED25,VDD,+5V,,,"/>
+<approved hash="104,1@LED,76.2,60.96,LED26,VDD,+5V,,,"/>
+<approved hash="104,1@LED,104.14,60.96,LED27,VDD,+5V,,,"/>
+<approved hash="104,1@LED,132.08,60.96,LED28,VDD,+5V,,,"/>
+<approved hash="104,1@LED,160.02,60.96,LED29,VDD,+5V,,,"/>
+<approved hash="104,1@LED,187.96,60.96,LED30,VDD,+5V,,,"/>
+<approved hash="104,1@LED,215.9,60.96,LED31,VDD,+5V,,,"/>
+<approved hash="104,1@LED,243.84,60.96,LED32,VDD,+5V,,,"/>
+<approved hash="208,1,45.72,106.68,+5V,sup,,,,"/>
+<approved hash="208,1,78.74,142.24,+5V,sup,,,,"/>
+<approved hash="208,1,243.84,106.68,+5V,sup,,,,"/>
+<approved hash="208,1,162.56,149.86,+5V,sup,,,,"/>
+<approved hash="208,1,43.18,154.94,+5V,out,,,,"/>
+<approved hash="208,1,43.18,157.48,+5V,sup,,,,"/>
+<approved hash="208,1,93.98,63.5,+5V,sup,,,,"/>
+<approved hash="206,1,111.76,45.72,RX,,,,,"/>
+<approved hash="206,1,60.96,43.18,RX,,,,,"/>
+<approved hash="213,1,198.12,127,BIT0,in,,,,"/>
+<approved hash="213,1,198.12,129.54,BIT1,in,,,,"/>
+<approved hash="213,1,198.12,132.08,BIT2,in,,,,"/>
+<approved hash="213,1,198.12,134.62,BIT3,in,,,,"/>
+<approved hash="213,1,198.12,116.84,MULTIPLEXER-ENABLE,in,,,,"/>
+<approved hash="213,1,129.54,139.7,ARD-RESET,in,,,,"/>
+<approved hash="213,1,180.34,99.06,RX,in,,,,"/>
+<approved hash="213,1,180.34,114.3,TRANSISTOR-SIGNAL-A,in,,,,"/>
+<approved hash="213,1,129.54,129.54,TRANSISTOR-SIGNAL-B,in,,,,"/>
+<approved hash="106,1@ANSCHLUSS,99.06,99.06,CTS,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,1@LED,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,1@PHOTOTRANSISTOR,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,1@ARDUINO,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,1@ANSCHLUSS,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,1@SCHALTREGLER,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="118,1@LED,49.53,152.4,Net,+5V,,,,"/>
+<approved hash="118,1@LED,54.61,152.4,Net,GND,,,,"/>
+<approved hash="118,1@PHOTOTRANSISTOR,125.73,160.02,Net,+5V,,,,"/>
+<approved hash="118,1@PHOTOTRANSISTOR,90.17,132.08,Net,GND,,,,"/>
+<approved hash="118,1@ARDUINO,81.28,140.97,Net,+5V,,,,"/>
+<approved hash="118,1@ARDUINO,97.79,73.66,Net,GND,,,,"/>
+<approved hash="118,1@ANSCHLUSS,137.16,101.6,Net,+5V,,,,"/>
+<approved hash="118,1@ANSCHLUSS,102.235,83.82,Net,+12V,,,,"/>
+<approved hash="118,1@SCHALTREGLER,134.62,93.98,Net,+12V,,,,"/>
+<approved hash="118,1@SCHALTREGLER,138.43,88.9,Net,+5V,,,,"/>
+<approved hash="118,1@SCHALTREGLER,143.51,91.44,Net,GND,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
