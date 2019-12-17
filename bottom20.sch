@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -369,8 +369,8 @@
 <wire x1="1.1" y1="0.725" x2="1.1" y2="-0.725" width="0.12" layer="51"/>
 <smd name="1" x="-1.0717" y="0" dx="1.1719" dy="1.5653" layer="1" roundness="25"/>
 <smd name="2" x="1.0717" y="0" dx="1.1719" dy="1.5653" layer="1" roundness="25"/>
-<text x="0" y="1.7317" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.7317" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="-0.0185625" y="1.369184375" size="1" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0.0185625" y="-1.32270625" size="1" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="CAPACITOR-THT-3" urn="urn:adsk.eagle:footprint:14449095/1" locally_modified="yes">
 <description>Radial Polarized Capacitor, 1.30 mm pitch, 3.25 mm body diameter, 5.00 mm body height
@@ -1649,7 +1649,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="C15" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n"/>
 <part name="C16" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n"/>
 <part name="C17" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100n"/>
-<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
+<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="330R"/>
 </parts>
 <sheets>
 <sheet>
@@ -1888,9 +1888,9 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="NAME" x="202.184" y="38.481" size="1.778" layer="95"/>
 <attribute name="VALUE" x="202.184" y="33.401" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="25.4" y="165.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.9014" y="161.29" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="28.702" y="161.29" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="25.4" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.9014" y="163.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.702" y="163.83" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1899,8 +1899,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <net name="LED-IN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="170.18" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
-<label x="20.32" y="170.18" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="172.72" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
+<label x="20.32" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2595,6 +2595,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="DIN"/>
+<wire x1="25.4" y1="162.56" x2="25.4" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2672,6 +2673,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R17" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="C1" library="iceberg20" deviceset="C" device="0805" package3d_urn="urn:adsk.eagle:package:12867820/1" value="100nF"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2883,6 +2886,13 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <instance part="P+18" gate="1" x="165.1" y="127" smashed="yes">
 <attribute name="VALUE" x="162.56" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C1" gate="G$1" x="134.62" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="134.239" y="161.544" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="139.319" y="161.544" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND4" gate="1" x="147.32" y="160.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="149.86" y="157.48" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2962,6 +2972,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <junction x="246.38" y="33.02"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="160.02" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -2969,6 +2984,9 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <wire x1="124.46" y1="160.02" x2="127" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="127" y1="160.02" x2="127" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
+<junction x="127" y="160.02"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="127" y1="160.02" x2="132.08" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -3343,11 +3361,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="R3" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="LED1" library="iceberg20" deviceset="LED-GREEN1" device="" package3d_urn="urn:adsk.eagle:package:12172548/5"/>
-<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="110"/>
+<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="110R"/>
 <part name="S2" library="iceberg20" deviceset="SMD-BUTTON" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED2" library="iceberg20" deviceset="LED-GREEN1" device="" package3d_urn="urn:adsk.eagle:package:12172548/5"/>
-<part name="R2" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="110"/>
+<part name="R2" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="110R"/>
 </parts>
 <sheets>
 <sheet>
@@ -3807,7 +3825,7 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
+<part name="R1" library="iceberg20" deviceset="R" device="" package3d_urn="urn:adsk.eagle:package:23553/2" value="330R"/>
 </parts>
 <sheets>
 <sheet>
@@ -4150,10 +4168,6 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <pinref part="P+7" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="58.42" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <portref moduleinst="T2" port="+5V"/>
 <wire x1="78.74" y1="137.16" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -4174,6 +4188,11 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <portref moduleinst="P" port="+5V"/>
 <wire x1="43.18" y1="154.94" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<portref moduleinst="X" port="+5V"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">

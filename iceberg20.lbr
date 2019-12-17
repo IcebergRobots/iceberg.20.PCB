@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -2219,36 +2219,77 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <wire x1="-17.78" y1="2.921" x2="-17.78" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-17.78" y1="-2.921" x2="-17.78" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-17.78" y1="1.016" x2="-17.78" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="21" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="22" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="23" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="24" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="25" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="26" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="27" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="28" x="-16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-16.51" y="-3.81" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="-13.97" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="3" x="-11.43" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="4" x="-8.89" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="5" x="-6.35" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="6" x="-3.81" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="7" x="-1.27" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="8" x="1.27" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="9" x="3.81" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="10" x="6.35" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="11" x="8.89" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="12" x="11.43" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="13" x="13.97" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="14" x="16.51" y="-3.81" drill="0.8128" rot="R90"/>
+<pad name="15" x="16.51" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="16" x="13.97" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="17" x="11.43" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="18" x="8.89" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="19" x="6.35" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="20" x="3.81" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="21" x="1.27" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="22" x="-1.27" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="23" x="-3.81" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="24" x="-6.35" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="25" x="-8.89" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="26" x="-11.43" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="27" x="-13.97" y="3.81" drill="0.8128" rot="R90"/>
+<pad name="28" x="-16.51" y="3.81" drill="0.8128" rot="R90"/>
 <text x="-18.034" y="-2.921" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="-8.509" y="-0.635" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="LED_LED5MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+5 mm, round</description>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128"/>
+<pad name="K" x="1.27" y="0" drill="0.8128"/>
+<text x="3.175" y="0.5334" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SKRHAAE010">
+<wire x1="-2.35" y1="-3.75" x2="2.35" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-2.35" x2="-3.75" y2="2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="3.75" x2="2.35" y2="3.75" width="0.127" layer="21"/>
+<wire x1="3.75" y1="2.35" x2="3.75" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="3.75" x2="-3.75" y2="2.35" width="0.127" layer="21"/>
+<wire x1="2.35" y1="3.75" x2="3.75" y2="2.35" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-2.35" x2="2.35" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-2.35" x2="-2.35" y2="-3.75" width="0.127" layer="21"/>
+<hole x="0" y="1.9" drill="0.75"/>
+<hole x="0" y="-1.9" drill="1.05"/>
+<smd name="CENTER" x="-3.575" y="0" dx="1" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="A" x="-3.575" y="1.425" dx="1" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="C" x="-3.575" y="-1.425" dx="1" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="D" x="3.757" y="-1.425" dx="1" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="COMMON" x="3.757" y="0" dx="1" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="B" x="3.757" y="1.425" dx="1" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="8" x="0" y="4.25" dx="2" dy="1.8" layer="1" roundness="25"/>
+<smd name="7" x="0" y="-4.35" dx="2" dy="1.8" layer="1" roundness="25" rot="R180"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="21"/>
+</package>
+<package name="TESTPAD-LONG">
+<smd name="P$1" x="0" y="0" dx="4" dy="2" layer="1" roundness="50"/>
 </package>
 </packages>
 <packages3d>
@@ -3512,6 +3553,32 @@ Switches electrical signals</description>
 <pin name="VDD" x="0" y="25.4" length="middle" direction="pwr" rot="R270"/>
 <pin name="VSS" x="0" y="-25.4" length="middle" direction="pwr" rot="R90"/>
 <text x="0" y="-5.08" size="1.778" layer="94" rot="R90" align="center-left">MCP23017</text>
+</symbol>
+<symbol name="JOYSTICK-4DIR">
+<wire x1="5.08" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="15.24" width="0.254" layer="94"/>
+<wire x1="35.56" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="B" x="40.64" y="12.7" length="middle" rot="R180"/>
+<pin name="COMMON" x="40.64" y="7.62" length="middle" rot="R180"/>
+<pin name="D" x="40.64" y="2.54" length="middle" rot="R180"/>
+<pin name="A" x="0" y="12.7" length="middle"/>
+<pin name="CENTER-PUSH" x="0" y="7.62" length="middle"/>
+<pin name="C" x="0" y="2.54" length="middle"/>
+<text x="5.08" y="16.51" size="1.27" layer="95" font="vector" ratio="20">&gt;Name</text>
+<text x="5.08" y="-2.54" size="1.27" layer="95" font="vector" ratio="20">&gt;Value</text>
+</symbol>
+<symbol name="LINEAR_78XX">
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="VI" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="VO" x="10.16" y="0" length="short" direction="pas" rot="R180"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5369,8 +5436,8 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 </devices>
 </deviceset>
 <deviceset name="GPIO-EXPANDER" prefix="IC">
-<description>Bitte hier mit dem Befehl Description eine passende Beschreibung angeben (kann kurz sein) und Datenblatt verlinken
-&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;</description>
+<description>MCP23017-E/SP
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.mouser.de/datasheet/2/268/20001952C-1129816.pdf"&gt;Link&lt;/a&gt;</description>
 <gates>
 <gate name="1" symbol="MCP23017" x="10.16" y="20.32"/>
 </gates>
@@ -5412,6 +5479,101 @@ IC: digital; Demultiplexer/ Multiplexer; Kanäle: 16; SMD; SO24
 <attribute name="HERSTELLER-NR" value="" constant="no"/>
 <attribute name="SUPPLIER" value="" constant="no"/>
 <attribute name="SUPPLIER-NR" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-GREEN-THT" prefix="LED">
+<description>Bitte hier mit dem Befehl Description eine passende Beschreibung angeben (kann kurz sein) und Datenblatt verlinken
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.iceberg-robots.de/"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="LED_LED5MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="" constant="no"/>
+<attribute name="HERSTELLER" value="" constant="no"/>
+<attribute name="HERSTELLER-NR" value="" constant="no"/>
+<attribute name="SUPPLIER" value="" constant="no"/>
+<attribute name="SUPPLIER-NR" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JOYSTICK">
+<description>Multi-direktionale Schalter 4 Dir Center Push 50mA 12V DC
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.mouser.de/datasheet/2/15/skqu-1155891.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="JOYSTICK-4DIR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SKRHAAE010">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="CENTER-PUSH" pad="CENTER"/>
+<connect gate="G$1" pin="COMMON" pad="COMMON"/>
+<connect gate="G$1" pin="D" pad="D"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="0" constant="no"/>
+<attribute name="HERSTELLER" value="ALPS" constant="no"/>
+<attribute name="HERSTELLER-NR" value="SKRHAAE010 " constant="no"/>
+<attribute name="SUPPLIER" value="Mouser" constant="no"/>
+<attribute name="SUPPLIER-NR" value="688-SKRHAAE010 " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPAD-LONG">
+<gates>
+<gate name="G$1" symbol="TESTPAD_TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TESTPAD-LONG">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L7805" prefix="IC">
+<description>Spannungsregler, 5 V, TO220, 35 V
+&lt;b&gt;Datenblatt: &lt;/b&gt; &lt;a href="https://www.buerklin.com/medias/sys_master/root/h6e/had/8866986229790/8866986229790.pdf"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LINEAR_78XX" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="TO220V">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VI" pad="1"/>
+<connect gate="G$1" pin="VO" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16417/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BESTAND" value="?" constant="no"/>
+<attribute name="HERSTELLER" value="STMicroelectronics" constant="no"/>
+<attribute name="HERSTELLER-NR" value="L7805AB-V" constant="no"/>
+<attribute name="SUPPLIER" value="Bürklin" constant="no"/>
+<attribute name="SUPPLIER-NR" value="40S9756" constant="no"/>
 </technology>
 </technologies>
 </device>
