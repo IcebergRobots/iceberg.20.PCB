@@ -204,7 +204,7 @@
 <text x="68.75" y="0.75" size="1.778" layer="25" font="vector" ratio="15" align="bottom-center">--&gt;</text>
 <wire x1="47" y1="16.25" x2="47" y2="17.5" width="0.1524" layer="25"/>
 <wire x1="47" y1="17.5" x2="48.25" y2="17.5" width="0.1524" layer="25"/>
-<text x="17.900903125" y="1.59124375" size="1.1" layer="16" ratio="20" rot="MR0">www.iceberg-robots.de</text>
+<text x="17.900903125" y="1.59124375" size="1.1" layer="16" font="vector" ratio="20" rot="MR0">www.iceberg-robots.de</text>
 <wire x1="83.59565625" y1="9.634915625" x2="83.40425625" y2="9.634915625" width="0.04" layer="21"/>
 <wire x1="83.40425625" y1="9.634915625" x2="83.108846875" y2="9.594715625" width="0.04" layer="21"/>
 <wire x1="83.108846875" y1="9.594715625" x2="82.721275" y2="9.479515625" width="0.04" layer="21"/>
